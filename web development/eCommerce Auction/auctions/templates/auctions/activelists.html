@@ -1,0 +1,21 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    {% for list in auction_list %}
+    <a href="{% url 'listing_page' list.id %}" id="list_page_link">
+      <div class="card">
+        <img class="card-img-top" src="{{ list.image }}">
+        <div class="card-body">
+          <div class="card-text">
+            <div class="title"><b>{{ list.title }}</b></div>
+            <div class="price"><b>Price: $</b>{{ list.starting_bid }}</div>
+            <div>
+              <p>Created <span class="timestamp" data-timestamp="{{ list.timestamp|date:'M d, Y g:i A' }}"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+{% endblock %}

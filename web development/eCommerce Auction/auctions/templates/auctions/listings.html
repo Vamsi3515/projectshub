@@ -1,0 +1,88 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h3><b>Listing: {{ list_item.title }}</b></h3>
+    <div class="list_container">
+        {% if watchlist_exists %}
+          <a href="{% url 'remove_from_watchlist_listings_page' list_item.id %}" class="watchlist_control_btn">Remove from watchlist</a>
+        {% else %}
+          <a href="{% url 'addtowatchlist' list_item.id %}" class="watchlist_control_btn">Watchlist</a>
+        {% endif %}
+      <div class="item-img">
+          <img src="{{ list_item.image }}" alt="{{ list_item.title }}">
+          {% if list_item.is_auction_closed %}
+            <button class="close_auction">Auction Closed</button>
+          {% else %}
+            {% if user == list_item.user %}
+              <a href="{% url 'close_auction' list_item.id %}" class="close_auction" title="Close your auction">Close Auction</a>
+            {% endif %}
+          {% endif %}
+      </div>
+      <div class="text-block">
+          <p id="description">{{ list_item.description }}</p>
+          <p id="price">${{ list_item.current_bid }}</p>
+      </div>
+      <div class="bid">
+        {% if list_item.is_auction_closed %}
+          <p class="bidding_closed_text">Bidding is closed!</p>
+          <br>
+          {% if user == list_item.winner %}
+            <div class="alert alert-success" role="alert">
+              Congratulations, you won this auction!
+            </div>
+          {% endif %}
+        {% else %}
+          <p id="bid_text">{{ bid_count }} bid(s) so far. Your bid is the current bid.</p>
+          <form action="{% url 'bidding' list_item.id %}" method="post">
+            {% csrf_token %}
+            <input type="number" class="bid-input" placeholder="Bid" name="bid_amount" step="0.01" required>
+            <input type="submit" id="bid_btn" value="Place Bid">
+          </form>        
+        {% endif %}
+        {% if messages %}
+          <ul>
+              {% for message in messages %}
+                  {% if message.tags == 'success' %}
+                    <div class="alert alert-success" role="alert">
+                      {{ message }}
+                    </div>
+                  {% else %}
+                    <div class="alert alert-danger" role="alert">
+                      {{ message }}
+                    </div>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="details">
+          <h3>Details</h3>
+          <ul>
+              <li>Listed by: <span id="user">{{ list_item.user }}</span></li>
+              {% if list_item.category %}
+                <li>Category: {{ list_item.category }}</li>
+              {% else %}
+                <li>Category: No Category Listed</li>
+              {% endif %}
+          </ul>
+      </div>
+  </div>
+  
+  <div class="comments-section">
+    <h2>Comments</h2>
+    {% for comment in comments %}
+      <div class="comment">
+        <div class="comment-author">{{ comment.user }}</div>
+        <div class="comment-text">{{ comment.comment }}</div>
+        <div class="comment-date">
+          <span class="timestamp" data-timestamp="{{ comment.timestamp|date:'M d, Y g:i A' }}"></span>
+        </div>
+      </div>
+    {% endfor %}
+    <form class="comment-form" action="{% url 'comments' list_item.id %}" method="post">
+      {% csrf_token %}
+      <textarea name="comment_text" placeholder="Add a comment..." required></textarea>
+      <input type="submit" value="Post Comment">
+    </form>
+  </div>
+{% endblock %}

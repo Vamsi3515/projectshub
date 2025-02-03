@@ -1,0 +1,295 @@
+body {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    max-width: 80em;
+    width: auto;
+    height: 13em;
+    margin: 20px;
+}
+
+.card-img-top{
+    width: 190px;
+    height: 100%;
+}
+
+.card-text{
+    margin: 5px 0px 0px 10px;
+}
+
+.card-text div{
+    margin-bottom: 10px;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.price{
+    font-size: 16px;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#list_page_link{
+    color: black;
+    text-decoration: none;
+}
+
+input.bid-input[type='number']::-webkit-outer-spin-button,
+input.bid-input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.list_container{
+    max-width: 99%;
+    width: auto;
+}
+.watchlist_control_btn{
+    background-color: #6C757D;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.watchlist_control_btn:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#price{
+    font-weight: 600;
+    font-size: 25px;
+}
+#bid_text{
+    margin-bottom: 5px;
+}
+.bid-input{
+    width: 100%;
+    height: 30px;
+    border: 1px rgba(128, 128, 128, 0.381) solid;
+    margin-bottom: 15px;
+}
+#bid_btn{
+    background-color: #0D7BFF;
+    color: white;
+    padding: 10px;
+    font-weight: 550;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#user{
+    color: #0D7BFF;
+}
+
+.item-img{
+    margin: 10px;
+    max-width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-img img{
+    width: auto;
+    height: 250px;
+}
+
+.comments-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #d2e9f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comments-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    margin-bottom: 10px;
+}
+
+.comment-date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.comment-form input[type="submit"] {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.comment-form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.watchlist_container {
+    width: 95%;
+    margin: 5px auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+#watchlist_img {
+    width: 100px;
+    height: auto;
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.watchlist_info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#watchlist_title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+#watchlist_price {
+    font-size: 1em;
+}
+
+#wishlist_remove {
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#wishlist_remove:hover{
+    background-color: rgb(0, 70, 161);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .watchlist_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #watchlist_img {
+        margin: 0 0 10px 0;
+    }
+
+    #wishlist_remove {
+        margin: 10px 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.wishlist_anchor{
+    color: black;
+}
+
+.wishlist_anchor:hover{
+    text-decoration: none;
+}
+
+.empty_watchlist{
+    margin: 30px;
+    color: red;
+}
+
+.list-page-link{
+    color: black;
+}
+
+.list-page-link:hover{
+    color: black;
+    text-decoration: none;
+}
+
+
+.close_auction{
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.close_auction:hover{
+    color: white;
+    background-color: rgb(255, 166, 0);
+    text-decoration: none;
+}
+
+.bidding_closed_text{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
