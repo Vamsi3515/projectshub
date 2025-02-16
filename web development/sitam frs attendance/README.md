@@ -96,7 +96,7 @@ For any inquiries or feedback, please reach out at: **<saivamsikrishna3515@gmail
 ---
 
 ## 🔗 Links
-- [Live Demo (if available)](available soon...)
+- [Live Demo ](available soon...)
 ---
 
 ### 🚧 TODO
