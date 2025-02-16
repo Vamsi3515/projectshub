@@ -1,0 +1,54 @@
+{% extends 'frs_attendance/layout.html' %}
+{% load static %}
+
+{% block head %}
+    {% block title %}<title>Add New Branch</title>{% endblock %}
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'frs_attendance/css/main.css' %}">
+    {% endblock %}
+{% endblock %}
+
+{% block body %}
+<button id="go-back">Back</button>
+
+    <div class="add-branch-container">
+        <h1 class="add-branch-title">Add New Branch</h1>
+        <form method="POST" action="{% url 'add-branch' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="add-branch-form-group">
+                <label for="branch_name" class="add-branch-label">Branch Name</label>
+                <input type="text" id="branch_name" name="branch_name" class="add-branch-input" required placeholder="Enter branch name">
+            </div>
+            <div class="add-branch-form-group">
+                <label for="batch" class="add-branch-label">Batch (Start Year)</label>
+                <select id="batch" name="batch" class="add-branch-select" required>
+                    <option value="">-- Select Year --</option>
+                    {% for year in batch_years %}
+                        <option value="{{ year }}">{{ year }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="add-branch-form-group">
+                <label for="strength" class="add-branch-label">Class Strength</label>
+                <input type="number" id="strength" name="strength" class="add-branch-input" required placeholder="Enter class strength">
+            </div>
+            <button type="submit" class="add-branch-btn">Add Branch</button>
+        </form>
+        {% if messages %}
+            <div class="alert alert-success" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+    
+{% block script %}
+    <script src="{% static 'frs_attendance/js/main.js' %}"></script>
+{% endblock %}

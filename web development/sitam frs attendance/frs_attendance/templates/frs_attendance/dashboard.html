@@ -1,0 +1,61 @@
+{% extends 'frs_attendance/layout.html' %}
+{% load static %}
+
+{% block head %}
+    {% block title %}<title>Attendance Dashboard</title>{% endblock %}
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'frs_attendance/css/main.css' %}">
+    {% endblock %}
+{% endblock %}
+
+{% block body %}
+<button id="go-back">Back</button>
+<div class="container my-5">
+    <h1 class="text-center">Attendance Dashboard</h1>
+    <div class="card p-4 shadow">
+        <form id="filter-form">
+            {% csrf_token %}
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="attendance-date" class="form-label">Select Date</label>
+                    <input type="date" id="attendance-date" name="date" class="form-control" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="branch" class="form-label">Select Branch</label>
+                    <select id="branch" name="branch" class="form-control" required>
+                        <option value="">--Select Branch--</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="batch" class="form-label">Select Batch</label>
+                    <select id="batch" name="batch" class="form-control" required>
+                        <option value="">--Select Batch--</option>
+                    </select>
+                </div>
+            </div>            
+            <div class="text-center my-4">
+                <button type="submit" id="load-data" class="btn btn-primary">Load Attendance</button>
+            </div>
+        </form>        
+
+        <div class="chart-container my-5">
+            <canvas id="attendance-chart" style="max-height: 400px;"></canvas>
+        </div>
+
+        <div class="text-center my-4">
+            <button id="download-present" class="btn btn-success me-2">Download Presentees</button>
+            <button id="download-absent" class="btn btn-danger">Download Absentees</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+    
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'frs_attendance/js/dashboard.js' %}"></script>
+{% endblock %}

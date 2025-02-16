@@ -1,0 +1,32 @@
+staticfiles
+venv
+media
+
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pdb
+
+# Environment variables and secrets
+.env
+
+# Django specific
+db.sqlite3  # Ignore if using SQLite for development
+*.log  # Logs, like error.log or debug.log
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Ignore all files in face_recognition folder
+face_recognition/*
+
+# Except for encodings.pickle
+!face_recognition/encodings.pickle

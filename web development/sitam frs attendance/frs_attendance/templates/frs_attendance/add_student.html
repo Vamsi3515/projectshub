@@ -1,0 +1,66 @@
+{% extends 'frs_attendance/layout.html' %}
+{% load static %}
+
+{% block head %}
+    {% block title %}<title>Add New Student</title>{% endblock %}
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'frs_attendance/css/main.css' %}">
+    {% endblock %}
+{% endblock %}
+
+{% block body %}
+<button id="go-back">Back</button>
+
+    <div class="student-form-container">
+        <h2 class="text-center">Register New Student</h2>
+
+        <!-- Messages -->
+       
+        <div class="alert alert-success" id="msg-success-student-block">
+            <p id="msg-success-student"></p>
+        </div>
+       
+        <div class="alert alert-danger" id="msg-error-student-block">
+            <p id="msg-error-student"></p>
+        </div>
+
+        <div class="camera">
+            <video id="camera-stream" autoplay></video>
+        </div>
+        <img id="swap-camera" src="{% static 'frs_attendance/assets/swap-camera.png' %}" alt="swap camera">
+        <form id="student-form" action="/add-student/" method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label">Student Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter student name" required>
+            </div>
+            <div class="mb-3">
+                <label for="roll_num" class="form-label">Roll Number</label>
+                <input type="text" id="roll_num" name="roll_num" class="form-control" placeholder="Enter roll number" required>
+            </div>
+            <div class="mb-3">
+                <label for="branch" class="form-label">Branch</label>
+                <select id="branch" name="branch" class="form-control" required>
+                    <option value="" disabled selected>Select a branch</option>
+                    {% for branch in branches %}
+                        <option value="{{ branch.id }}">{{ branch.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email (Optional)</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register Student</button>
+        </form>
+
+        <div class="spinner-border" id="load_progress" role="status">
+            <span class="sr-only"></span>
+        </div>
+               
+    </div>
+{% endblock %}
+    
+{% block script %}
+    <script src="{% static 'frs_attendance/js/main.js' %}"></script>
+{% endblock %}

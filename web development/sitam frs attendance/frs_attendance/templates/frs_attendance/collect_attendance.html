@@ -1,0 +1,31 @@
+{% extends 'frs_attendance/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Attendance System</title>
+    {% block link %}
+        <link rel="stylesheet" href="{% static 'frs_attendance/css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'frs_attendance/css/collect_attendance.css' %}">
+    {% endblock %}
+{% endblock %}
+
+{% block body %}
+    <button id="go-back">Back</button>
+    <div class="attendance-container">
+        <div class="camera-section">
+            <video id="camera-stream" autoplay muted></video>
+            <div class="face-indicator"></div>
+            <button id="swap-camera" class="swap-camera-btn">Switch Camera</button>
+        </div>
+        <div class="info-section">
+            <h2>Attendance Details</h2>
+            <p><strong>Name:</strong> <span id="name-display">N/A</span></p>
+            <p><strong>Roll Number:</strong> <span id="roll-display">N/A</span></p>
+            <p id="attendance-status" class="status-message">Status: Not Marked</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'frs_attendance/js/collectAttendance.js' %}"></script>
+{% endblock %}
