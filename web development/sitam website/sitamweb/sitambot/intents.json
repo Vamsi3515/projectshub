@@ -1,0 +1,959 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "How are you?",
+                "Hello",
+                "Hi",
+                "Good morning",
+                "Good evening",
+                "Hey",
+                "What's up?"
+            ],
+            "responses": [
+                "Hi there! How can I assist you today?",
+                "Hello! How can I help you?",
+                "Greetings! How can I assist?"
+            ]
+        },
+        {
+            "tag": "sitam_description",
+            "patterns": [
+                "What is SITAM?",
+                "Tell me about SITAM",
+                "What is SITAM college?",
+                "What is SITAM full form?"
+            ],
+            "responses": [
+                "SITAM stands for **Satya Institute of Technology and Management**, affiliated with **JNTUGV** (Jawaharlal Nehru Technological University-Gurajada Vizianagaram).",
+                "SITAM is a prestigious engineering college located in Vizianagaram, established in 2008.",
+                "SITAM is an institution for excellence in education and technology, located in Vizianagaram."
+            ]
+        },
+        {
+            "tag": "director",
+            "patterns": [
+                "Who is the director of SITAM?",
+                "director of sitam"
+            ],
+            "responses": [
+                "The director of SITAM is **Dr. Majji Sashi Bhushana Rao**."
+            ]
+        },
+        {
+            "tag": "principal",
+            "patterns": [
+                "Who is the principal of SITAM?",
+                "principal of sitam",
+                "who is principal of SITAM?",
+                "who is principle of SITAM?"
+            ],
+            "responses": [
+                "Dr.D.V. Ramamurthy is the principal of sitam"
+            ]
+        },
+        {
+            "tag": "owner",
+            "patterns": [
+                "Who is the owner of SITAM?",
+                "Who founded SITAM?",
+                "Who is the owner of the college?",
+                "Who is the chairman of SITAM?",
+                "Who is the head of SITAM?"
+            ],
+            "responses": [
+                "SITAM is owned by **Sri Botcha Satyanarayana**.",
+                "The owner of SITAM is **Sri Botcha Satyanarayana**.",
+                "SITAM is headed by **Sri Botcha Satyanarayana**."
+            ]
+        },
+        
+        {
+            "tag": "hod_cse",
+            "patterns": [
+                "Who is the HOD of CSE?",
+                "Who heads the CSE department?",
+                "HOD of Computer Science and Engineering",
+                "Head of CSE"
+            ],
+            "responses": [
+                "The HOD of the CSE department is Dr. G. Venu Madhava Rao. He is a Professor with a Ph.D. You can reach him at drgvmr@gmail.com."
+            ]
+            },
+            {
+            "tag": "hod_ece",
+            "patterns": [
+                "Who is the HOD of ECE?",
+                "Who heads the ECE department?",
+                "HOD of Electronics and Communication Engineering",
+                "Head of ECE"
+            ],
+            "responses": [
+                "The HOD of the ECE department is Dr. T. D. V. A. Naidu, a Professor with a Ph.D. You can reach him at damodar.telu@sitam.co.in.",
+                "Another HOD of the ECE department is Yedla Santhosh, an Associate Professor with M.Tech and pursuing a Ph.D. You can reach him at santhoshyedla@sitam.co.in."
+            ]
+            },
+            {
+            "tag": "hod_mech",
+            "patterns": [
+                "Who is the HOD of MECH?",
+                "Who heads the Mechanical Engineering department?",
+                "HOD of Mechanical Engineering",
+                "Head of MECH"
+            ],
+            "responses": [
+                "The HOD of the Mechanical Engineering department is CH. Venkata Lakshmi, an Associate Professor with M.E in CAD/CAM and pursuing a Ph.D. You can reach her at venkatalakshmi.ch@sitam.co.in."
+            ]
+            },
+            {
+            "tag": "hod_civil",
+            "patterns": [
+                "Who is the HOD of CIVIL?",
+                "Who heads the Civil Engineering department?",
+                "HOD of Civil Engineering",
+                "Head of CIVIL"
+            ],
+            "responses": [
+                "The HOD of the Civil Engineering department is Dr. G. Ravi Kishore, a Professor with a Ph.D. from IIT Kharagpur. You can reach him at ravikishore.g@sitam.co.in."
+            ]
+            },
+            {
+            "tag": "hod_bs_h",
+            "patterns": [
+                "Who is the HOD of Basic Sciences and Humanities?",
+                "Who heads the BS&H department?",
+                "HOD of BS&H",
+                "Head of Basic Sciences and Humanities"
+            ],
+            "responses": [
+                "The HOD of the Basic Sciences and Humanities department is Dr. K. Sreelatha, a Professor in Mathematics with an M.Sc., M.Phil., and Ph.D. You can reach her at sreelatha.karanam@sitam.co.in."
+            ]
+            },
+            {
+            "tag": "college_history",
+            "patterns": [
+                "Tell me about the history of SITAM.",
+                "What is the history of SITAM?",
+                "Who founded SITAM?",
+                "Give me details about SITAM's history."
+            ],
+            "responses": [
+                "SITAM (Satya Institute of Technology and Management) was established in 2008 under the Gayatri Vidya Parishad Society. The society was founded by eminent educationists, academicians, and industrialists. The founder President was Professor B. Sarveswara Rao, and the second President was Dr. B. Swami. The college is known for its infrastructure, dedicated faculty, and academic excellence."
+            ]
+            },
+            {
+            "tag": "college_details",
+            "patterns": [
+                "What is SITAM?",
+                "Tell me about SITAM college.",
+                "Give me details about SITAM."
+            ],
+            "responses": [
+                "SITAM stands for Satya Institute of Technology and Management. It is affiliated with JNTUGV (Jawaharlal Nehru Technological University-Gurajada Vizianagaram). The college was established in 2008 and is located in Gajularega, Vizianagaram."
+            ]
+            },
+            {
+            "tag": "contact_details",
+            "patterns": [
+                "What is the contact information for SITAM?",
+                "How do I contact SITAM?",
+                "Give me SITAM's address and phone numbers."
+            ],
+            "responses": [
+                "You can contact SITAM at:\n\nAddress: Jonnaguddi Area, Vizianagaram, Andhra Pradesh 535002\nPhone: +91 9290251491, +91 8465002566, +91 7331174015, 08922-234779/5\nEmail: sitam@sitam.co.in\n[View on Map](https://maps.app.goo.gl/NoDY4rqxHE7DWyFn9)"
+            ]
+            },
+            {
+            "tag": "chairman",
+            "patterns": [
+                "Who is the chairman of SITAM?",
+                "Tell me about SITAM's chairman."
+            ],
+            "responses": [
+                "The chairman of SITAM is Sri Botcha Satyanarayana. He is also the chairman of the Satya Educational Institutions."
+            ]
+            },
+            {
+            "tag": "director",
+            "patterns": [
+                "Who is the director of SITAM?",
+                "Tell me about SITAM's director."
+            ],
+            "responses": [
+                "The director of SITAM is Dr. Majji Sashibhushana Rao."
+            ]
+            },
+            {
+            "tag": "secretary",
+            "patterns": [
+                "Who is the secretary of SITAM?",
+                "Tell me about the secretary of SITAM."
+            ],
+            "responses": [
+                "The Secretary and Correspondent of SITAM is Dr. Botcha Jhanshi Lakshmi."
+            ]
+            },
+            {
+            "tag": "principal",
+            "patterns": [
+                "Who is the principal of SITAM?",
+                "Tell me about SITAM's principal."
+            ],
+            "responses": [
+                "The principal of SITAM is Dr. D. V. Ramamurthy."
+            ]
+            },
+        
+        {
+            "tag": "contact_us",
+            "patterns": [
+                "How can I contact SITAM?",
+                "What is the contact number of SITAM?",
+                "How do I reach SITAM?",
+                "Where is SITAM located?"
+            ],
+            "responses": [
+                "You can contact SITAM at +91-XXXX-XXXX.",
+                "SITAM is located in Vizianagaram, and you can reach us at +91-XXXX-XXXX for inquiries.",
+                "For any queries, call +91-XXXX-XXXX or visit our campus in Vizianagaram."
+            ]
+        },
+        {
+            "tag": "courses_offered",
+            "patterns": [
+                "What courses are offered at SITAM?",
+                "Which courses are available in SITAM?",
+                "Tell me about courses at SITAM",
+                "What are the courses in SITAM?"
+            ],
+            "responses": [
+                "SITAM offers undergraduate and postgraduate courses in various engineering disciplines like CSE, ECE, Civil, and Mechanical.",
+                "At SITAM, we provide B.Tech courses in CSE, ECE, Civil Engineering, and Mechanical Engineering.",
+                "SITAM offers a wide range of courses, including B.Tech, M.Tech, and MBA in different specializations."
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "How can I apply for admission?",
+                "What is the admission process for SITAM?",
+                "Tell me about the admission procedure.",
+                "When does SITAM start its admissions?"
+            ],
+            "responses": [
+                "To apply for admission, visit our official website and fill out the application form online.",
+                "The admission process includes an entrance exam followed by counseling. Check our website for detailed instructions.",
+                "SITAM starts its admission process in May each year. Visit the admissions page on our website for further details."
+            ]
+        },
+        {
+            "tag": "fees",
+            "patterns": [
+                "What is the fee structure of SITAM?",
+                "How much is the tuition fee at SITAM?",
+                "Tell me about the fees at SITAM.",
+                "What are the hostel fees in SITAM?"
+            ],
+            "responses": [
+                "The fee structure for SITAM varies depending on the course and category. Please visit our website for detailed fee information.",
+                "For B.Tech students, the annual tuition fee is around ₹1,00,000. Other fees such as hostel and transportation vary.",
+                "The hostel fees for SITAM range between ₹20,000 - ₹30,000 annually."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+              "Bye",
+              "Goodbye",
+              "See you later",
+              "Take care"
+            ],
+            "responses": [
+              "Goodbye! Have a great day!",
+              "See you soon!",
+              "Take care!"
+            ]
+          },
+        {
+            "tag": "campus_facilities",
+            "patterns": [
+                "What are the facilities available on the SITAM campus?",
+                "Tell me about the campus facilities at SITAM.",
+                "What does SITAM offer in terms of facilities?",
+                "Does SITAM have a hostel?"
+            ],
+            "responses": [
+                "SITAM has state-of-the-art facilities including well-equipped laboratories, sports complexes, hostels, and a library.",
+                "The SITAM campus includes hostel facilities, a fully equipped gym, sports facilities, and an advanced library.",
+                "SITAM offers various facilities such as Wi-Fi, hostels, cafeteria, transport services, and recreational areas."
+            ]
+        },
+        {
+            "tag": "placement",
+            "patterns": [
+                "What is the placement record of SITAM?",
+                "Tell me about SITAM's placements.",
+                "How are the placements at SITAM?",
+                "What companies visit SITAM for placements?"
+            ],
+            "responses": [
+                "SITAM has a strong placement record with top companies like TCS, Wipro, Infosys, and more hiring our graduates.",
+                "SITAM's placement cell works hard to get our students placed in reputed companies across India and abroad.",
+                "Our placement record is impressive, with many students securing jobs in renowned companies during campus recruitment."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": [
+                "What events are held at SITAM?",
+                "Tell me about the events at SITAM.",
+                "What kind of events are organized at SITAM?",
+                "When is the next event at SITAM?"
+            ],
+            "responses": [
+                "SITAM organizes various events like technical fests, cultural programs, sports meets, and guest lectures throughout the year.",
+                "We host multiple events such as **TechFest**, **Cultural Fest**, and more. Stay updated on our website for upcoming events.",
+                "SITAM regularly hosts events, including conferences, workshops, and festivals. Check our events page for details."
+            ]
+        },
+        {
+            "tag": "courses_after_graduation",
+            "patterns": [
+                "What can I do after completing my degree from SITAM?",
+                "What courses can I pursue after graduation?",
+                "Tell me about post-graduation options after SITAM.",
+                "What options are available after B.Tech from SITAM?"
+            ],
+            "responses": [
+                "After completing your degree at SITAM, you can pursue M.Tech, MBA, or opt for various competitive exams like GATE, GRE, and CAT.",
+                "You can go for higher studies like M.Tech, MBA, or take up a job. Many students also pursue courses like Data Science or AI.",
+                "After B.Tech, you can apply for postgraduate courses, appear for competitive exams, or work in industry-leading companies."
+            ]
+        },
+        {
+            "tag": "sitam_achievements",
+            "patterns": [
+                "What are the achievements of SITAM?",
+                "Tell me about SITAM's achievements.",
+                "What are SITAM's notable achievements?"
+            ],
+            "responses": [
+                "SITAM has won numerous awards in academics, sports, and co-curricular activities, including national-level tech fests and sports competitions.",
+                "SITAM has been awarded for its outstanding academic performance and also boasts several achievements in sports and cultural events.",
+                "SITAM regularly excels in various competitions and has earned accolades in technical and cultural domains."
+            ]
+        },
+        {
+            "tag": "faculty",
+            "patterns": [
+                "Who are the faculty members at SITAM?",
+                "Tell me about the faculty at SITAM.",
+                "Who are the professors in CSE department?",
+                "What is the qualification of faculty at SITAM?"
+            ],
+            "responses": [
+                "The faculty at SITAM are highly qualified with many professors holding PhDs and years of experience in their respective fields.",
+                "Our faculty members are experts in various fields, with several having international exposure and research credentials.",
+                "SITAM has a dedicated team of professors and lecturers, specializing in subjects across multiple disciplines."
+            ]
+        },
+        {
+            "tag": "sitam_location",
+            "patterns": [
+                "Where is SITAM located?",
+                "Tell me the address of SITAM.",
+                "Where can I find SITAM?",
+                "How can I reach SITAM?"
+            ],
+            "responses": [
+                "SITAM is located in Vizianagaram, Andhra Pradesh, India. It is situated near the town's outskirts, offering a peaceful learning environment.",
+                "You can reach SITAM by bus, car, or train. It is easily accessible from Vizianagaram Railway Station and the nearest bus stops."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "What sports facilities are available at SITAM?",
+                "Does SITAM offer sports facilities?",
+                "Tell me about sports at SITAM.",
+                "What kind of sports activities are conducted at SITAM?"
+            ],
+            "responses": [
+                "SITAM has various sports facilities, including a football ground, basketball court, and indoor games like table tennis and badminton.",
+                "We conduct regular sports events and have a sports complex that includes cricket, basketball, volleyball, and a gymnasium."
+            ]
+        },
+        {
+            "tag": "library",
+            "patterns": [
+                "Does SITAM have a library?",
+                "Tell me about the library at SITAM.",
+                "What facilities are available in the SITAM library?",
+                "How can I access the library at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM has a well-equipped library with a wide collection of books, journals, and online resources.",
+                "The library at SITAM is spacious and provides digital resources, textbooks, and research papers for students."
+            ]
+        },
+        {
+            "tag": "extracurricular_activities",
+            "patterns": [
+                "What extracurricular activities are available at SITAM?",
+                "Tell me about the extracurricular activities at SITAM.",
+                "What non-academic activities are conducted at SITAM?",
+                "Are there any clubs in SITAM?"
+            ],
+            "responses": [
+                "SITAM offers a variety of extracurricular activities including clubs for music, drama, dance, photography, and debate.",
+                "At SITAM, we encourage students to participate in extracurricular activities like drama, music, coding clubs, and more."
+            ]
+        },
+        {
+            "tag": "admission_criteria",
+            "patterns": [
+                "What are the eligibility criteria for admission?",
+                "What are the requirements for SITAM admission?",
+                "What is the minimum eligibility for SITAM?",
+                "Who can apply for SITAM?"
+            ],
+            "responses": [
+                "To apply for admission to SITAM, students must have completed their 12th grade with a minimum of 50% marks in relevant subjects.",
+                "The minimum eligibility for B.Tech admission at SITAM is 50% in the 12th grade with a valid score in the entrance exam."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Does SITAM offer scholarships?",
+                "Tell me about scholarships at SITAM.",
+                "Are there any scholarships for students?",
+                "What scholarships can I apply for at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM offers scholarships based on merit, entrance exam performance, and financial need.",
+                "There are several scholarships available, including merit-based scholarships and government-funded schemes."
+            ]
+        },
+        {
+            "tag": "student_life",
+            "patterns": [
+                "What is student life like at SITAM?",
+                "Tell me about student life at SITAM.",
+                "How is student life in SITAM?",
+                "What do students do in their free time at SITAM?"
+            ],
+            "responses": [
+                "Student life at SITAM is vibrant and energetic, with numerous clubs, events, and activities to engage in.",
+                "Students at SITAM participate in technical fests, cultural activities, sports events, and community service projects."
+            ]
+        },
+        {
+            "tag": "hostel_facilities",
+            "patterns": [
+                "What are the hostel facilities at SITAM?",
+                "Tell me about the hostel at SITAM.",
+                "Does SITAM provide hostel accommodations?",
+                "What are the amenities in SITAM hostel?"
+            ],
+            "responses": [
+                "SITAM provides well-furnished hostel accommodations for both male and female students, with amenities like Wi-Fi, food, and recreational spaces.",
+                "The hostel facilities at SITAM include comfortable rooms, 24/7 internet, mess, and a gym."
+            ]
+        },
+        {
+            "tag": "guest_lectures",
+            "patterns": [
+                "Are there guest lectures at SITAM?",
+                "Tell me about the guest lectures at SITAM.",
+                "Does SITAM organize guest lectures?",
+                "Who are the guest speakers at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM regularly organizes guest lectures by experts from various industries and academic fields.",
+                "We invite renowned guest speakers from diverse fields to give lectures and workshops for our students."
+            ]
+        },
+        {
+            "tag": "research_opportunities",
+            "patterns": [
+                "Are there any research opportunities at SITAM?",
+                "Tell me about the research programs at SITAM.",
+                "Does SITAM have any research facilities?",
+                "Can I participate in research at SITAM?"
+            ],
+            "responses": [
+                "SITAM has research programs and opportunities in various engineering fields like CSE, ECE, and Mechanical Engineering.",
+                "Students at SITAM can get involved in research projects and internships, especially in fields like AI, robotics, and data science."
+            ]
+        },
+        {
+            "tag": "faculty",
+            "patterns": [
+                "Who are the faculty members at SITAM?",
+                "Tell me about the faculty at SITAM.",
+                "Who teaches at SITAM?",
+                "Can you give me a list of professors at SITAM?"
+            ],
+            "responses": [
+                "SITAM has a team of experienced and dedicated faculty members who are experts in their respective fields.",
+                "Our faculty members are highly qualified, many holding advanced degrees and research experience in their fields of study."
+            ]
+        },
+        {
+            "tag": "placements",
+            "patterns": [
+                "What are the placement opportunities at SITAM?",
+                "Tell me about placements at SITAM.",
+                "What companies visit SITAM for placements?",
+                "Can I get placed at SITAM?"
+            ],
+            "responses": [
+                "SITAM has a dedicated placement cell that assists students in securing internships and final placements in top companies.",
+                "Several reputed companies, including tech giants and startups, visit SITAM for campus placements every year."
+            ]
+        },
+        {
+            "tag": "internships",
+            "patterns": [
+                "Does SITAM offer internship opportunities?",
+                "Tell me about internships at SITAM.",
+                "Are there internship programs available for students?",
+                "How can I apply for internships at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM offers various internship opportunities, especially in the fields of technology, engineering, and management.",
+                "Internship programs at SITAM are provided through industry tie-ups, and the placement cell also helps students find internships."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": [
+                "What events are conducted at SITAM?",
+                "Tell me about events at SITAM.",
+                "Are there any cultural or technical events in SITAM?",
+                "When is the next event at SITAM?"
+            ],
+            "responses": [
+                "SITAM organizes various events, including technical fests, cultural activities, sports competitions, and guest lectures.",
+                "We hold regular events such as 'TechFests' for tech enthusiasts and 'Cultural Fests' for showcasing talents in music, dance, and arts."
+            ]
+        },
+        {
+            "tag": "fees_structure",
+            "patterns": [
+                "What is the fee structure at SITAM?",
+                "How much is the tuition fee at SITAM?",
+                "Tell me about the fee structure for B.Tech at SITAM.",
+                "What are the fees for engineering courses at SITAM?"
+            ],
+            "responses": [
+                "The fee structure for B.Tech courses at SITAM varies depending on the course and year. Please visit the official website for detailed fee information.",
+                "SITAM's fee structure is affordable compared to many other private colleges in the region. You can find the detailed breakdown on the admission page."
+            ]
+        },
+        {
+            "tag": "academic_programs",
+            "patterns": [
+                "What academic programs are offered at SITAM?",
+                "Tell me about the courses at SITAM.",
+                "What programs can I study at SITAM?",
+                "Does SITAM offer any postgraduate programs?"
+            ],
+            "responses": [
+                "SITAM offers various undergraduate programs in engineering fields like Computer Science, Mechanical, Civil, and Electrical.",
+                "Currently, SITAM offers B.Tech in multiple disciplines. Postgraduate programs are also being planned for future admissions."
+            ]
+        },
+        {
+            "tag": "student_support",
+            "patterns": [
+                "What student support services are available at SITAM?",
+                "Tell me about student support at SITAM.",
+                "Does SITAM have a counseling service?",
+                "What help can students get at SITAM?"
+            ],
+            "responses": [
+                "SITAM provides various support services like career counseling, personal counseling, mentoring programs, and academic assistance.",
+                "We have a student welfare department that addresses academic and personal concerns, ensuring students' well-being."
+            ]
+        },
+        {
+            "tag": "campus_facilities",
+            "patterns": [
+                "What campus facilities are available at SITAM?",
+                "Tell me about the campus at SITAM.",
+                "What facilities are available for students at SITAM?",
+                "Can I use the campus facilities at SITAM?"
+            ],
+            "responses": [
+                "SITAM has state-of-the-art campus facilities, including Wi-Fi, laboratories, seminar halls, sports facilities, and a cafeteria.",
+                "The campus is equipped with the latest technology, including a high-speed internet connection and modern classrooms."
+            ]
+        },
+        {
+            "tag": "alumni",
+            "patterns": [
+                "Who are the alumni of SITAM?",
+                "Tell me about SITAM alumni.",
+                "What do the alumni of SITAM do?",
+                "Can I get in touch with SITAM alumni?"
+            ],
+            "responses": [
+                "SITAM has a strong network of alumni who are now working in leading companies across the world. They actively engage with current students through events and mentorship.",
+                "Our alumni play an essential role in the development of the institution by providing guidance and support to current students."
+            ]
+        },
+        {
+            "tag": "management",
+            "patterns": [
+                "Who is the management of SITAM?",
+                "Tell me about the management team of SITAM.",
+                "Who runs SITAM?",
+                "What is the management structure of SITAM?"
+            ],
+            "responses": [
+                "SITAM is managed by a team of experienced professionals, led by the founder and chairman, Sri Botcha Satyanarayana.",
+                "The management team at SITAM includes distinguished individuals with expertise in education, administration, and student welfare."
+            ]
+        },
+        {
+            "tag": "admissions",
+            "patterns": [
+                "How can I apply for admission to SITAM?",
+                "What is the admission process at SITAM?",
+                "Tell me about SITAM admissions.",
+                "When do admissions open at SITAM?"
+            ],
+            "responses": [
+                "To apply for admission to SITAM, you need to fill out the online application form on our official website.",
+                "The admission process involves filling out the application form, followed by an entrance exam or counseling, depending on the course."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Does SITAM offer scholarships?",
+                "Tell me about the scholarships available at SITAM.",
+                "How can I apply for scholarships at SITAM?",
+                "Are there any scholarships for merit students at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM offers various scholarships to meritorious students based on their academic performance and entrance exam scores.",
+                "Students can apply for scholarships by filling out the scholarship application form available on our website after the admission process."
+            ]
+        },
+        {
+            "tag": "sports",
+            "patterns": [
+                "What sports are available at SITAM?",
+                "Tell me about sports facilities at SITAM.",
+                "Can I join sports at SITAM?",
+                "What kind of sports activities are conducted at SITAM?"
+            ],
+            "responses": [
+                "SITAM has excellent sports facilities, including outdoor and indoor games like cricket, football, basketball, badminton, and table tennis.",
+                "We encourage students to participate in sports activities to promote physical fitness and teamwork."
+            ]
+        },
+        {
+            "tag": "library",
+            "patterns": [
+                "Is there a library at SITAM?",
+                "Tell me about the library at SITAM.",
+                "What books are available at the SITAM library?",
+                "Can students access the library at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM has a well-stocked library with a wide range of academic books, journals, and e-resources.",
+                "The library is open to all students and faculty members and provides a quiet space for study and research."
+            ]
+        },
+        {
+            "tag": "canteen",
+            "patterns": [
+                "Tell me about the canteen at SITAM.",
+                "What food is available at the SITAM canteen?",
+                "Can I get snacks in the canteen at SITAM?",
+                "Is there a cafeteria at SITAM?"
+            ],
+            "responses": [
+                "SITAM has a spacious canteen that serves nutritious and affordable meals, snacks, and beverages to students and faculty.",
+                "The canteen is open throughout the day, offering a variety of vegetarian and non-vegetarian options."
+            ]
+        },
+        {
+            "tag": "transportation",
+            "patterns": [
+                "Is there a transportation facility at SITAM?",
+                "Tell me about transportation options at SITAM.",
+                "How do I travel to SITAM from the city?",
+                "Is there a bus service from SITAM?"
+            ],
+            "responses": [
+                "SITAM provides transportation services to and from the city for students and staff through dedicated buses.",
+                "You can also avail of private transport options to reach the campus."
+            ]
+        },
+        {
+            "tag": "hostel",
+            "patterns": [
+                "Is there a hostel facility at SITAM?",
+                "Tell me about the hostel at SITAM.",
+                "Can I stay in the SITAM hostel?",
+                "What is the hostel fee at SITAM?"
+            ],
+            "responses": [
+                "Yes, SITAM provides hostel facilities for both male and female students with all necessary amenities.",
+                "The hostel is equipped with modern facilities like Wi-Fi, mess, and recreational areas. You can find more information on the hostel fees on the official website."
+            ]
+        },
+        {
+            "tag": "exam_schedule",
+            "patterns": [
+                "When is the exam at SITAM?",
+                "Tell me the exam schedule at SITAM.",
+                "When does the next exam start at SITAM?",
+                "Can you share the exam dates at SITAM?"
+            ],
+            "responses": [
+                "The exam schedule is usually published on the official website a few weeks before the exams begin. Please refer to the academic calendar for exact dates.",
+                "You can also check with your department or faculty for updates on exam schedules."
+            ]
+        },
+        {
+            "tag": "courses_offered",
+            "patterns": [
+                "What courses does SITAM offer?",
+                "Tell me about the engineering courses at SITAM.",
+                "What programs are available at SITAM?",
+                "What degree programs can I study at SITAM?"
+            ],
+            "responses": [
+                "SITAM offers a variety of engineering programs, including B.Tech in Computer Science, Mechanical Engineering, Civil Engineering, and Electrical Engineering.",
+                "We also plan to expand our course offerings in the future to include postgraduate programs."
+            ]
+        },
+        {
+            "tag": "technical_fests",
+            "patterns": [
+                "What technical fests are conducted at SITAM?",
+                "Tell me about tech events at SITAM.",
+                "Are there any technical events at SITAM?",
+                "When is the next technical fest at SITAM?"
+            ],
+            "responses": [
+                "SITAM organizes an annual technical fest where students showcase innovative projects, participate in coding contests, and attend tech talks.",
+                "The technical fest is one of the most awaited events, attracting participants from various colleges."
+            ]
+        },
+        {
+            "tag": "Alumni",
+            "patterns": [
+                "Tell me about SITAM alumni.",
+                "How can I connect with SITAM alumni?",
+                "What is the alumni network at SITAM?",
+                "Who are the notable alumni of SITAM?",
+                "Can I attend alumni events?"
+            ],
+            "responses": [
+                "SITAM alumni are spread across various industries and have made significant contributions. You can connect with them through our alumni portal or attend alumni events organized by the college.",
+                "Our alumni network is very active, and we have regular meetups and events. You can find more details on the alumni portal or contact the alumni office for more information."
+            ]
+        },
+        {
+            "tag": "Faculty",
+            "patterns": [
+                "Who is the faculty for CSE department?",
+                "Who is the faculty for ECE department?",
+                "Who is the faculty for EEE department?",
+                "Who is the faculty for MECH department?",
+                "Who is the faculty for CIVIL department?",
+                "Who is the faculty for BBA department?",
+                "Who is the faculty for MBA department?",
+                "Who is the faculty for BS&H department?",
+                "Tell me about the faculty at SITAM.",
+                "Who are the professors in the Computer Science department?",
+                "What is the faculty-student ratio in SITAM?"
+            ],
+            "responses": [
+                "SITAM has highly qualified faculty members across all departments. You can find the detailed faculty list on the official college website.",
+                "The Computer Science department at SITAM has experienced professors who guide students through both academic and research activities."
+            ]
+        },
+        {
+            "tag": "Events",
+            "patterns": [
+                "What events are happening at SITAM?",
+                "Tell me about upcoming events in SITAM.",
+                "When is the next seminar at SITAM?",
+                "Can I participate in college events?"
+            ],
+            "responses": [
+                "SITAM regularly organizes workshops, seminars, and cultural events. For the latest updates, check the events section of the SITAM website.",
+                "We have various events throughout the year including technical and cultural festivals. You can find all details on our events page."
+            ]
+        },
+        {
+            "tag": "Placements",
+            "patterns": [
+                "Tell me about the SITAM placement process.",
+                "Which companies come for placements at SITAM?",
+                "What is the placement record of SITAM?",
+                "How can I prepare for SITAM placements?"
+            ],
+            "responses": [
+                "SITAM has a dedicated placement cell that works with top companies for campus placements. You can get more details on the placement process from the college's placement office.",
+                "Several reputed companies visit SITAM for campus recruitment. You can check the placement records and placement preparation tips on the placement page."
+            ]
+        },
+        {
+            "tag": "Campus Facilities",
+            "patterns": [
+                "What facilities are available at SITAM?",
+                "Tell me about SITAM's campus facilities.",
+                "Do you have a library in SITAM?",
+                "Is there a sports complex at SITAM?"
+            ],
+            "responses": [
+                "SITAM offers state-of-the-art facilities, including a large library, sports complex, computer labs, and recreational areas for students.",
+                "Yes, we have a variety of facilities including a well-equipped library, modern labs, and spacious sports grounds. You can find more information on our campus life page."
+            ]
+        },
+        {
+            "tag": "Admission Requirements",
+            "patterns": [
+                "What are the requirements for admission to SITAM?",
+                "How do I apply for admission to SITAM?",
+                "What is the eligibility for B.Tech admission in SITAM?",
+                "Tell me about SITAM's admission process."
+            ],
+            "responses": [
+                "To apply for B.Tech at SITAM, you must meet the eligibility criteria specified on the admissions page. You also need to qualify in JEE or other relevant entrance exams.",
+                "The admission process involves filling out the application form, attending counseling sessions, and meeting the academic requirements. Visit the admissions page for detailed instructions."
+            ]
+        },
+        {
+            "tag": "Contact Information",
+            "patterns": [
+                "How can I contact SITAM?",
+                "What is the contact number for SITAM?",
+                "Where is SITAM located?",
+                "How do I reach the SITAM administration?"
+            ],
+            "responses": [
+                "You can contact SITAM through the official contact page on the website or reach out to the administration office at the provided phone number and email.",
+                "SITAM is located in Vizianagaram, Andhra Pradesh. For more details, refer to the college's contact information page."
+            ]
+        },
+        {
+            "tag": "who_are_you",
+            "patterns": [
+              "Who are you?",
+              "What is your name?",
+              "Tell me about yourself",
+              "Are you a bot?"
+            ],
+            "responses": [
+              "I am the SITAM chatbot, here to assist you with any information related to the college.",
+              "I'm SITAM Bot, your virtual assistant for college-related queries."
+            ]
+          },
+          {
+            "tag": "how_are_you",
+            "patterns": [
+              "How are you?",
+              "How's it going?",
+              "What's up?"
+            ],
+            "responses": [
+              "I'm just a bot, but I'm here to help you!",
+              "I'm doing great, thank you! How can I assist you today?"
+            ]
+          },
+          {
+            "tag": "thank_you",
+            "patterns": [
+              "Thanks",
+              "Thank you",
+              "Thanks a lot",
+              "I appreciate it"
+            ],
+            "responses": [
+              "You're welcome!",
+              "Glad to help!",
+              "Anytime!"
+            ]
+          },
+          {
+            "tag": "affirmative",
+            "patterns": [
+              "Yes",
+              "Yeah",
+              "Sure",
+              "Absolutely",
+              "Of course"
+            ],
+            "responses": [
+              "Great!",
+              "Alright!",
+              "Okay!"
+            ]
+          },
+          {
+            "tag": "negative",
+            "patterns": [
+              "No",
+              "Nope",
+              "Not really",
+              "I don't think so"
+            ],
+            "responses": [
+              "Alright, let me know if there's anything else you need.",
+              "No problem, feel free to ask if you need help."
+            ]
+          },
+          {
+            "tag": "unrecognized",
+            "patterns": [
+              "I don't understand",
+              "What?",
+              "Can you repeat that?",
+              "Say that again"
+            ],
+            "responses": [
+              "I'm sorry, I didn't quite understand that. Can you rephrase?",
+              "I didn't get that. Could you try asking differently?",
+              "I'm not sure I understand. Could you clarify your question?"
+            ]
+          },
+          {
+            "tag": "fallback",
+            "patterns": [
+                "agdgjgyhdwoyihwfuyf8h",
+                "hadsah",
+                "fg",
+                "dyuwhfuwgfj",
+                "72497905924",
+                "puruwgrjkh"
+            ],
+            "responses": [
+              "Sorry, I didn't understand that. Can you ask something else?",
+              "I'm not sure how to help with that. Could you try asking another way?",
+              "I didn't get that. You can ask me about SITAM, HODs, or general information about the college."
+            ]
+          },
+          {
+            "tag": "package",
+            "patterns": [
+                "what is highest package?",
+                "what is lowest package?",
+                "package of sitam"
+            ],
+            "responses": [
+              "The highest salary package offered at Satya Institute of Technology and Management (SITAM) in Vizianagaram is 10 LPA. The lowest salary package offered is 2.5 LPA."
+            ]
+          }   
+    ]
+}
