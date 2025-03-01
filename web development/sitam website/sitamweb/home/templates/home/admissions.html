@@ -1,0 +1,177 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <header class="admission_head">
+        <h1>Welcome to SITAM College Admissions</h1>
+        <p>Your first step to a bright future!</p>
+    </header>
+
+    <section class="admissions">
+        <h2>Admission Process</h2>
+        <div class="admissions-content">
+            <div class="admissions_category">
+                <h3>Category ‘A’ - Regular Admissions</h3>
+                <p>
+                    Admissions under Category 'A' are managed by the AP State Council of Higher Education 
+                    through a common entrance test <b>EAMCET</b>. Students prefer this institution after University Colleges 
+                    due to its excellent reputation.
+                </p>
+            </div>
+            <div class="admissions_category">
+                <h3>Category ‘B’ - Management Admissions</h3>
+                <p>
+                    Admissions under Category 'B' are conducted directly by the college. 
+                    These are based on the merit achieved in common entrance exams like <b>EAMCET</b> or <b>AIEEE</b>. 
+                    A golden opportunity for talented students aiming for excellence.
+                </p>
+            </div>
+            <div class="admissions_category">
+                <h3>Scheme for PIO/Foreign Nationals</h3>
+                <p>
+                    We allocate 15% supernumerary seats for <b>Persons of Indian Origin (PIOs)</b> 
+                    and <b>Foreign Nationals</b> across both B.Tech and M.Tech programs.
+                    This ensures a diverse and international learning environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="admissions-category">
+        <h2>SITAM Admissions Form</h2>
+        <p>Please fill out the form, and we'll get back to you soon. Thanks for your interest in SITAM.</p><br>
+        <label for="category-select">Choose Admission Category:</label>
+        <select id="category-select">
+            <option value="" disabled selected>-- Select Category --</option>
+            <option value="category-a">Category A - Regular Admissions</option>
+            <option value="category-b">Category B - Management Admissions</option>
+            <option value="category-c">Category C - PIO/Foreign Nationals</option>
+        </select>
+    </section>
+
+    <section class="form-section" id="form-container">
+        <div class="admisions_form">
+            <section class="form-section">
+                <div id="admissions-form-catA">
+                    <form id="form-catA">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                        
+                        <label for="mobile">Your Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile number" required>
+                        
+                        <label for="email">Your Email ID</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email ID" required>
+                        
+                        <label for="address">Your Address</label>
+                        <textarea id="address" name="address" placeholder="Enter your Address" rows="3" required></textarea>
+                        
+                        <label for="branch">Select Branch in Engineering</label>
+                        <select id="branch" name="branch" multiple>
+                            <option value="civil">Civil</option>
+                            <option value="eee">EEE</option>
+                            <option value="mechanical">Mechanical</option>
+                            <option value="ece">ECE</option>
+                            <option value="cse">CSE</option>
+                            <option value="ai-ds">AI & DS</option>
+                        </select>
+                        
+                        <label for="inter-marks">Inter Marks</label>
+                        <input type="number" id="inter-marks" name="inter-marks" placeholder="Enter your Inter Marks" required>
+                        
+                        <label for="hall-ticket">Enter your EAMCET Hall Ticket Number</label>
+                        <input type="text" id="hall-ticket" name="hall-ticket" placeholder="Enter your EAMCET Hall Ticket Number" required>
+                        
+                        <label for="rank">Enter your EAMCET Rank</label>
+                        <input type="number" id="rank" name="rank" placeholder="Enter your EAMCET Rank" required>
+                        
+                        <label for="queries">Any Other Queries</label>
+                        <textarea id="queries" name="queries" placeholder="Enter your Queries" rows="3"></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="admissions-form-catB">
+                    <form id="form-catB">
+                        <label for="nameB">Your Name</label>
+                        <input type="text" id="nameB" name="name" placeholder="Enter your Name" required>
+                        
+                        <label for="mobileB">Your Mobile Number</label>
+                        <input type="tel" id="mobileB" name="mobile" placeholder="Enter your Mobile number" required>
+                        
+                        <label for="emailB">Your Email ID</label>
+                        <input type="email" id="emailB" name="email" placeholder="Enter your Email ID" required>
+                        
+                        <label for="addressB">Your Address</label>
+                        <textarea id="addressB" name="address" placeholder="Enter your Address" rows="3" required></textarea>
+                        
+                        <label for="branchB">Select Branch in Engineering</label>
+                        <select id="branchB" name="branch" multiple>
+                            <option value="civil">BBA</option>
+                            <option value="eee">MBA</option>
+                        </select>
+                        
+                        <label for="exam-scoreB">Exam Score (EAMCET or AIEEE)</label>
+                        <input type="text" id="exam-scoreB" name="exam-score" placeholder="Enter your Exam Score" required>
+                        
+                        <label for="rankB">Rank</label>
+                        <input type="number" id="rankB" name="rank" placeholder="Enter your Rank" required>
+                        
+                        <label for="queriesB">Any Other Queries</label>
+                        <textarea id="queriesB" name="queries" placeholder="Enter your Queries" rows="3"></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>                
+                <div id="admissions-form-catC">
+                    <form id="form-catC">
+                        <label for="nameC">Your Name</label>
+                        <input type="text" id="nameC" name="name" placeholder="Enter your Name" required>
+                        
+                        <label for="mobileC">Your Mobile Number</label>
+                        <input type="tel" id="mobileC" name="mobile" placeholder="Enter your Mobile number" required>
+                        
+                        <label for="emailC">Your Email ID</label>
+                        <input type="email" id="emailC" name="email" placeholder="Enter your Email ID" required>
+                        
+                        <label for="addressC">Your Address</label>
+                        <textarea id="addressC" name="address" placeholder="Enter your Address" rows="3" required></textarea>
+                        
+                        <label for="branchC">Select Branch in Engineering</label>
+                        <select id="branchC" name="branch" multiple>
+                            <option value="civil">Civil</option>
+                            <option value="eee">EEE</option>
+                            <option value="mechanical">Mechanical</option>
+                            <option value="ece">ECE</option>
+                            <option value="cse">CSE</option>
+                            <option value="ai-ds">AI & DS</option>
+                            <option value="ai-ds">BBA</option>
+                            <option value="ai-ds">MBA</option>
+                        </select>
+                        
+                        <label for="nationalityC">Your Nationality</label>
+                        <input type="text" id="nationalityC" name="nationality" placeholder="Enter your Nationality" required>
+                        
+                        <label for="passportC">Passport Number</label>
+                        <input type="text" id="passportC" name="passport" placeholder="Enter your Passport Number" required>
+                        
+                        <label for="exam-scoreC">Exam Score (if applicable)</label>
+                        <input type="text" id="exam-scoreC" name="exam-score" placeholder="Enter Exam Score (if applicable)">
+                        
+                        <label for="queriesC">Any Other Queries</label>
+                        <textarea id="queriesC" name="queries" placeholder="Enter your Queries" rows="3"></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+</body>
+</html>
+{% endblock %}
+
+{% block static %}
+    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block title %}
+    {{ event.title }} | Event Details
+{% endblock %}
+
+{% block body %}
+
+    <div class="container event-detail-container">
+        <a href="javascript:history.back()" class="back-link">&larr; Go Back</a>
+        <div class="event-header">
+            <h1>{{ event.title }}</h1>
+            <p class="text-muted"><i class="bi bi-calendar-event"></i> {{ event.timestamp|date:"F d, Y" }}</p>
+        </div>
+        <img src="{{ event.thumbnail.url }}" alt="{{ event.title }}" class="event-thumbnail">
+        
+        <div class="event-details">
+            <h5>Description</h5>
+            <p>{% if event.description %}{{ event.description }}{% else %}☹️ Event data not available.{% endif %}</p>
+            
+            <h5>Venue</h5>
+            <p><i class="bi bi-geo-alt"></i> {{ event.venue }}</p>
+            
+            <h5>Date & Time</h5>
+            <p><i class="bi bi-clock"></i> {{ event.timestamp|date:"F d, Y" }} at {{ event.time|default:"Not Available" }}</p>
+        </div>
+
+        <div class="other-events">
+            <h3>Other Recent Events</h3>
+            {% for other_event in other_events %}
+                <div class="other-event-card">
+                    <img src="{{ other_event.thumbnail.url }}" alt="{{ other_event.title }}">
+                    <div>
+                        <h5>{{ other_event.title }}</h5>
+                        <p><i class="bi bi-calendar-event"></i> {{ other_event.timestamp|date:"F d, Y" }}</p>
+                        <a href="{% url 'home:event_detail' other_event.id %}" class="btn btn-sm btn-outline-primary">View Event</a>
+                    </div>
+                </div>
+            {% empty %}
+                <p>No other events available.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

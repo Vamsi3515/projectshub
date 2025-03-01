@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.50s ease;
+}
+
+body{
+    background: url("/static/assets/college/college-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-forgot-pw {
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+    height: auto;
+    background-color: #fff;
+}
+
+.load-block{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+
+#forgotPwBlock h1{
+    margin: 10px 10px 30px 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    margin: 8px 0px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #13ca3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #207a25;
+}
+
+#updatePasswordBlock h2{
+    margin: 10px;
+}
+
+/* loader */
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITAM</title>
+    <link rel="stylesheet" href="{% static 'css/student-portal.css' %}">
+</head>
+<body>
+<main class="background_wrapper">
+    <div class="arrow">
+        <a class="button__back" href="{% url 'home:index' %}">Back to home</a>
+    <div class="login_form_wrapper">
+      <form action="{% url 'student:studentPortalLogin' %}" class="login__form" method="post">
+        {% csrf_token %}
+        <h1 class="title">Student Login</h1>
+        <div class="login_form_content">
+          <div class="login_content_box">
+            <ion-icon name="person-outline"></ion-icon>
+            <div class="login_content_box--input">
+              <input type="text" class="login__input email--input" name="reg_id" required/>
+              <label for="reg_id" class="login__label">Register ID</label>
+            </div>
+          </div>
+          <div class="login_content_box">
+            <div class="login_content_box--input">
+              <input type="password" class="login__input password--input" name="student-password" required>
+              <label for="student-password" class="login__label">Password</label>
+            </div>
+          </div>
+          {% if error %}
+            <div class="alert alert-warning" role="alert">
+              {{error}}
+            </div>
+          {% endif %}
+          <div class="remember_login">
+            <a href="{% url 'student:forgot_password' %}" class="forget__login text--sm">Forget password?</a>
+          </div>
+          <button type="submit" class="button__login">Login</a></button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>

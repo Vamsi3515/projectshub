@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/student-portal.css' %}" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Student Dashboard</h2>
+            <button class="close-btn" id="close-btn">&times;</button>
+        </div>
+        <div class="student-profile" data-studentId="{{ student_profile.user.username }}">
+            {% if student_img %}
+                <img src="{{ student_img }}" alt="{{ student_name }} Image" width="160px" height="160px">
+            {% else %}
+                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt="" width="160px" height="160px">
+            {% endif %}
+            <h5 id="student-profile-name">{{ student_profile.user.username }}</h5>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-menu-li"><a href="{% url 'student:studentPortal' %}" id="profile" class="sidebar-menu-a sidebar_home">Home</a></li>
+            <li class="sidebar-menu-li"><a href="#" id="notifications" class="sidebar-menu-a sidebar_notifications">Notifications</a></li>
+            <li class="sidebar-menu-li"><a href="#" id="profile_settings" class="sidebar-menu-a sidebar_profile_settings">Profile</a></li>
+        </ul><br>
+        <ul class="sidebar-menu-2">
+            <a href="{% url 'home:index' %}" class="sitam-home-link">Back to Sitam Home</a>
+            <a href="{% url 'student:studentPortalLogout' %}" class="logout">Logout</a>
+        </ul>
+        <div class="sidebar-footer">
+            <p>SITAM STUDENT PORTAL</p>
+        </div>
+    </div>
+    <div class="main-content" id="main-content">
+        <nav class="breadcrumb">
+            <button class="open-btn" id="open-btn">&#9776;</button>
+        </nav>
+        <div id="student-content">
+            <div class="student-details-container">
+                <div class="student-greet">
+                    <h3>Welcome Back, <span>{{student_name}}</span></h3>
+                </div>
+                <div class="student-details">
+                    <ul>
+                        <li>Course <span>{{ student_profile.course }}</span></li>
+                        <li>Branch <span>{{ student_profile.branch.code }}</span></li>
+                        <li>Year <span>{{ student_profile.year }}</span></li>
+                        <li>Backlogs <span>{{ student_semester.backlogs_count|default:"0" }}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="student-performance">
+                <h2>Accademic Performance</h2>
+                <div class="overall-percentage">
+                    <div class="student-chart">
+                        <canvas id="studyChart" data-percentage="{{ student_percentage|default:'0' }}"></canvas>
+                    </div>             
+                </div>
+                <div class="semester-wise-performances">
+                    <h3>Semester Wise Performance</h3>
+                    <div class="semester-wise-performance">
+                        {% for semester in student_semester %}
+                            <div class="performance">
+                                <canvas id="studentCGPA{{ forloop.counter }}" data-studentcgpa="{{ semester.cgpa|default:'0' }}" data-charttitle="{{ semester.semester }}"></canvas>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>                
+            </div>
+            <!--Resume-->
+            <section class="student-docs-section">
+                <div class="resume-container">
+                    <h2>My Resume</h2>
+                    {% if student_profile.resume %}                
+                        <a href="{{ student_profile.resume.url }}" download="resume.jpg" class="download-btn resume-download-btn">Download Resume</a>
+                    {% else %}
+                        <h6>No resume uploaded</h6>
+                    {% endif %}
+                    <h6 class="no-resume-msg"></h6>
+                </div>
+                <div class="cv-container">
+                    <h2>My CV</h2>
+                    {% if student_profile.cv %}                    
+                        <a href="{{ student_profile.cv.url }}" download="resume.jpg" class="download-btn cv-download-btn">Download CV</a>
+                    {% else %}
+                        <h6>No CV uploaded</h6>
+                    {% endif %}
+                    <h6 class="no-cv-msg"></h6>
+                </div>
+            </section>
+            <!--Certificates and Acheivements-->
+            <div id="certificate-section-div">
+                {% if certificates %}
+                    <section class="certificates-achievements certificates-exists student-content-section">
+                        <h3>My Certificates and Acheivements</h3>
+                        <div class="certificates-container" id="certificates-container">
+                            <button id="prevBtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                            <div class="certificates-wrapper" id="certificate-wrapper">
+                                {% for certificate in certificates %}
+                                <div class="certificate-item" id="certificate-item">
+                                    {% if certificate.image %}
+                                        <img src="{{ certificate.image.url }}" alt="{{ certificate.name }}" id="certificate-item-img">
+                                    {% endif %}
+                                    <div class="certificate-info">
+                                        <h4 id="certificate-info-name">{{ certificate.name }}</h4>
+                                        <a href="{{ certificate.image.url }}" target="_blank" id="certificate-info-url">View Certificate</a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <button id="nextBtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                {% else %}
+                    <section class="certificates-achievements certificates-exists student-content-section">
+                        <h3>My Certificates and Acheivements</h3>
+                        <div class="certificates-container" id="certificates-container">
+                            <div class="certificates-wrapper" id="certificate-wrapper">
+                                <div class="certificate-item" id="certificate-item">
+                                    <h5 id="no-certificates-text">No Certificates Uploaded ☹️</h5>
+                                    <img src="" alt="" id="certificate-item-img">
+                                    <div class="certificate-info">
+                                        <h4 id="certificate-info-name"></h4>
+                                        <a href="" target="_blank" id="certificate-info-url"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                {% endif %}
+            </div>
+            <!--Portofolio-->
+            <div id="portfolio-section-div">
+                {% if portfolio_url or portfolio_file %}
+                <section class="portfolio-section student-content-section">
+                    <h3>Check My Portfolio</h3>
+                    <a id="view_portfolio" {% if portfolio_file %} href="{{ portfolio_file.url }}" {% else %} href="{{ portfolio_url }}" {% endif %}><img src="/static/assets/student/right_arrow_gif.gif" alt="click_here_arrow" width="20px" height="20px">View Portfolio</a>
+                </section>            
+                {% endif %}
+            </div>
+
+            <!--Projects-->
+            {% if projects %}
+                <section class="projects-section student-content-section">
+                    <h2>My Projects</h2>
+                    <div class="projects-container">
+                        {% for project in projects %}
+                            <div class="project-card" data-projectID="{{ project.id }}">
+                                <img src="{{project.project_image.url}}" alt="{{project.project_name}}">
+                                <h5 class="project-title">{{project.project_name}}</h5>
+                                <a href="{{project.project_link}}" class="view-project">View Project</a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endif %}
+            
+            <!--Student Extracurricular Activities-->
+            {% if activities %}
+                <section class="extracurricular student-content-section">
+                    <h3>Extracurricular Activities</h3>
+                    <div class="activity-container">
+                        {% for activity in activities %}
+                        <div class="activity-img">
+                            <img src="{{activity.activity_image.url}}" alt="{{activity.activity_name}}">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endif %}
+            <!--Student Contact-->
+            <section class="student-contact student-content-section">
+                <h3>Get in touch</h3>
+                {% if student_profile.email %}
+                    <a href="mailto:{{student_profile.email}}">
+                        <i class='bx bxs-envelope'></i><span class="student-email">{{student_profile.email}}</span>
+                    </a>
+                {% endif %}
+                <br>
+                {% if student_profile.mobile_number %}
+                    <a href="tel:{{student_profile.mobile_number}}">
+                        <i class='bx bxs-phone-call'></i><span class="student-phone">+91 {{student_profile.mobile_number}}</span>
+                    </a>
+                {% endif %}
+                <br>
+                {% if student_profile.linkedin %}
+                    <a href="{{student_profile.linkedin}}" target="_blank">
+                        <i class='bx bxl-linkedin-square'></i><span class="student-linkedin">{{student_profile.linkedin}}</span>
+                    </a>
+                {% endif %}
+                <br>
+                {% if student_profile.github %}
+                    <a href="{{student_profile.github}}" target="_blank">
+                        <i class='bx bxl-github'></i><span class="student-github">{{student_profile.github}}</span>
+                    </a>
+                {% endif %}                 
+            </section>
+            <div id="student-notifications">
+                {% for notification in notifications %}
+                    <div class="notification-section">
+                        <div class="notification-subject">
+                            <h5>{{ notification.title }}</h5>
+                            <p>{{ notification.content }}</p>
+                        </div>
+                        <h6>{{ notification.timestamp }}</h6>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- STUDENT PROFILE SETTINGS -->
+            <div id="student-setting">
+                <div id="student-profile_settings">
+                    <h3>Profile</h3>
+                    <section class="student-profile-update">
+                        <div class="student-profile-pic-update">
+                            {% if student_img %}
+                                    <img src="{{ student_img }}" alt="{{ student_name }} Image">
+                                    <button class="stundent_profile_update_btn" data-imgUpdate="{{ student_img }}">Update Profile</button>
+                            {% else %}
+                                    <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt="" width="160px" height="160px">
+                                    <button class="stundent_profile_update_btn">Upload Profile</button>
+                            {% endif %}
+                        </div>
+                        <div class="profile-details-update">
+                            <h3>Update Contacts</h3>
+                            <div class="place-row"><i class='bx bxs-envelope'></i><span id="studentEmail">{{student_profile.email}}</span></div>
+                            <div class="place-row"><i class='bx bxs-phone-call'></i><span id="studentNumber">+91 {{student_profile.mobile_number}}</span></div>
+                            <div class="place-row"><i class='bx bxl-linkedin-square'></i><span id="studentLinkedin">{{student_profile.linkedin}}</span></div>
+                            <div class="place-row"><i class='bx bxl-github'></i><span id="studentGithub">{{student_profile.github}}</span></div>
+                            <div class="editContact">
+                                <button id="editContact-btn">Edit Contacts <i class='bx bxs-edit-alt'></i></button>
+                            </div>
+                            <div class="changePassword">
+                                <button id="changepw-btn">Change Password <i class='bx bxs-password'></i></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="student-upload-documents">
+                    <div class="resume-upload">
+                        <form action="{% url 'student:updateStudentResume' %}" method="post" id="resume-upload-form" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="custom-file-upload">
+                                <label for="resume-upload" class="custom-file-label resume-upload-label">
+                                    {% if student_profile.resume %}
+                                        Update Resume
+                                    {% else %}
+                                        Upload Resume
+                                    {% endif %}
+                                </label>
+                                <input type="file" id="resume-upload" name="resume" class="file-input">
+                                {% if student_profile.resume %}
+                                    <i class='bx bxs-trash-alt' title="delete resume" id="remove_resume"></i>
+                                {% endif %}
+                                <i class='trash_icon_resume bx'></i>
+                                <p class="resume-upload-msg"></p>
+                            </div>
+                            <input type="submit" name="update-resume" id="upload-resume-btn" value="Submit" title="Submit Resume">
+                        </form>
+                    </div>                
+                    <div class="cv-upload">
+                        <form action="{% url 'student:updateStudentCV' %}" method="post" id="cv-upload-form" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="custom-file-upload">
+                                <label for="cv-upload" class="custom-file-label cv-upload-label">
+                                    {% if student_profile.cv %}
+                                        Update CV
+                                    {% else %}
+                                        Upload CV
+                                    {% endif %}
+                                </label>
+                                <input type="file" id="cv-upload" name="cv" class="file-input">
+                                {% if student_profile.cv %}
+                                    <i class='bx bxs-trash-alt' title="delete cv" id="remove_cv"></i>
+                                {% endif %}
+                                <i class='trash_icon_cv bx'></i>
+                                <p class="cv-upload-msg"></p>
+                            </div>
+                            <input type="submit" name="update-cv" id="upload-cv-btn" value="Submit" title="Submit CV">
+                        </form>
+                    </div>                
+                    <div class="portfolio-upload">
+                        <form action="{% url 'student:updateStudentPortfolio' %}" method="post" id="portfolio-upload-form" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="custom-file-upload">
+                                <label class="custom-file-label custom-file-label-portfolio">
+                                    {% if student_profile.portfolio_link or student_profile.portfolio_file %}
+                                        Update portfolio
+                                    {% else %}
+                                        Upload portfolio
+                                    {% endif %}
+                                </label>
+                                <input type="file" id="portfolio-upload-file" name="portfolio-file" class="file-input">
+                                <p class="portfolio-upload-msg"></p>
+                                <h6>or</h6>
+                                <input type="text" id="portfolio-upload-link" name="portfolio-link" class="url-input" placeholder="Paste portfolio url here">
+                            </div>
+                            {% if portfolio_file or portfolio_link %}
+                                <i class='bx bxs-trash-alt' title="delete portfolio" id="remove_portfolio"></i>
+                            {% endif %}
+                            <i class='trash_icon_portfolio bx'></i>
+                            <input type="submit" name="update-portfolio" id="upload-portfolio-btn" value="Submit" title="Submit Portfolio">
+                        </form>
+                    </div>
+                </section>
+                <section id="certificate-updates">
+                    <h3>Manage Certificates</h3>
+                    <div class="certificates-updates-container">
+                        <div class="dynamic-certificate-block">
+                            {% if certificates %}
+                                {% for certificate in certificates %}
+                                    <div class="certificate-update-block" id="certificate-{{ certificate.id }}" >
+                                        <div id="certificate_name">{{ certificate.name }}</div>
+                                        <div class="place-row">
+                                            <div id="certificate_view_btn">
+                                                <a href="{{ certificate.image.url }}" target="_blank" alt="{{ certificate.name }}">
+                                                    <i class="fa fa-eye" title="view {{ certificate.name }}"></i>
+                                                </a>
+                                            </div>
+                                            <div class="certificate_delete" data-certificate-id="{{ certificate.id }}"><i class="bx bxs-trash-alt" title="delete {{ certificate.name }}"></i></div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <button id="add_certificate" title="add certificate">Add <i class='bx bx-plus'></i></button>
+                    </div>
+                </section>
+                <section id="projects-updates">
+                    <h3>Manage Projects</h3>
+                    <div class="projects-updates-container">
+                        <div class="dynamic-project-block">
+                            {% if projects %}
+                                {% for project in projects %}
+                                    <div class="project-update-block" id="project-{{ project.id }}" >
+                                        <div id="project_name">{{ project.project_name }}</div>
+                                        <div class="place-row">
+                                            <!-- <div class="project_edit" data-project-name="{{ project.project_name }}" data-project-link="{{ project.project_link }}" title="edit {{ project.project_name }}"><i class='bx bxs-edit-alt'></i></div> -->
+                                            <div class="project_delete" data-project-id="{{ project.id }}"><i class="bx bxs-trash-alt" title="delete {{ project.project_name }}"></i></div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <button id="add_project" title="add project">Add <i class='bx bx-plus'></i></button>
+                    </div>
+                </section>
+                <section id="extracurricular-activities-update">
+                    <h3>Manage Extracurricular Activities</h3>
+                    <div class="activity-updates-container">
+                        <div class="dynamic-activity-block">
+                            {% for activity in activities %}
+                            <div class="activity-update-block" id="activity-{{ activity.id }}">
+                                <img src="{{activity.activity_image.url}}" alt="{{activity.activity_name}}" class="activity-image">
+                                <i class='bx bxs-message-square-x activity_delete' data-activity-id="{{ activity.id }}"></i>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <button id="add_activity" title="add activity">Add <i class='bx bx-plus'></i></button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6HIHIP4bWE7ljwz9ZzvZ1NR6hG0KbnPkm0V8FQZ2ELv5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'js/student-portal.js' %}"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>

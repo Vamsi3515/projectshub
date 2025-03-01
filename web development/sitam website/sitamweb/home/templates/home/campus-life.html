@@ -1,0 +1,221 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Life@SITAM
+{% endblock %}
+
+{% block body %}
+
+<div class="campus_life">
+    <!-- Life @SITAM Section -->
+<section class="life-sitam" data-aos="fade-up">
+    <div class="content">
+        <h1>Life @SITAM</h1>
+    </div>
+    <div class="banner">
+        <img src="/static/assets/campus/banner.webp" alt="Students enjoying campus life">
+    </div>
+  </section>
+  
+  <!-- Experience @SITAM Section -->
+  <section class="campus-life-experience" data-aos="fade-left">
+    <div class="campus-life-experience-container">
+        <div class="campus-life-experience-text" data-aos="fade-right">
+            <h2>Experience @SITAM</h2>
+            <p>
+                SITAM offers a world-class educational experience with state-of-the-art
+                facilities, vibrant campus life, and a commitment to excellence.
+            </p>
+        </div>
+        <div class="campus-life-experience-image">
+            <img src="/static/assets/campus/experiance.jpg" alt="Students walking on campus">
+        </div>
+    </div>
+  </section>
+  
+  <!-- Disciplines Section -->
+  <section class="campus-life-disciplines" data-aos="zoom-in">
+    <div class="campus-life-disciplines-container">
+        <h2 class="campus-life-disciplines-title">Disciplines at SITAM</h2>
+        <div class="campus-life-disciplines-grid">
+            <div class="campus-life-discipline-card" data-aos="flip-left">
+                <img src="/static/assets/campus/engineer.jpg" alt="Engineering">
+                <p>Engineering</p>
+            </div>
+            <div class="campus-life-discipline-card" data-aos="flip-left">
+                <img src="/static/assets/campus/management.jpg" alt="Management">
+                <p>Management</p>
+            </div>
+            <div class="campus-life-discipline-card" data-aos="flip-left">
+                <img src="/static/assets/campus/polytechnic.webp" alt="Polytechnic">
+                <p>Polytechnic</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Programs Section -->
+      <section class="campus-life-programs" data-aos="fade-up"> 
+          <div class="campus-life-programs-container">
+              <h2 class="campus-life-programs-title">Top Programs at SITAM</h2>
+              <div class="campus-life-programs-list">
+              <div class="campus-life-program-card" data-aos="fade-right">
+                  <h3>B.Tech in Computer Science</h3>
+                  <p>Learn cutting-edge technologies like AI, ML, and Blockchain with practical exposure.</p>
+                  <a href="#" class="campus-life-program-link">Explore More →</a>
+              </div>
+              <div class="campus-life-program-card" data-aos="fade-left">
+                  <h3>BBA in Management</h3>
+                  <p>Get hands-on training in leadership, finance, and marketing strategies.</p>
+                  <a href="#" class="campus-life-program-link">Explore More →</a>
+              </div>
+              <div class="campus-life-program-card" data-aos="fade-right">
+                  <h3>MBA in Business Administration</h3>
+                  <p>Specialize in business analytics, operations, or HR with industry-aligned courses.</p>
+                  <a href="#" class="campus-life-program-link">Explore More →</a>
+              </div>
+              </div>
+              <button class="campus-life-programs-view-more">View More ↓</button>
+          </div>
+          </section>
+  
+  <!-- Infrastructure and Facilities Section -->
+  <section class="campus-life-infrastructure" data-aos="fade-up">
+    <div class="campus-life-infrastructure-container">
+        <h2 class="campus-life-infrastructure-title">Infrastructure and Facilities</h2>
+        <div class="campus-life-infrastructure-grid">
+            <div class="campus-life-infrastructure-card" data-aos="fade-right">
+                <img src="/static/assets/campus/library.jpg" alt="Library">
+                <p>State-of-the-art Library</p>
+            </div>
+            <div class="campus-life-infrastructure-card" data-aos="fade-left">
+                <img src="/static/assets/campus/cse_lab.jpg" alt="Laboratories">
+                <p>Modern Laboratories</p>
+            </div>
+            <div class="campus-life-infrastructure-card" data-aos="fade-right">
+                <img src="/static/assets/campus/gound.jpg" alt="Sports Complex">
+                <p>Sports Ground</p>
+            </div>
+            <div class="campus-life-infrastructure-card" data-aos="fade-left">
+                <img src="/static/assets/campus/ai&ds lab.jpg" alt="Smart Classrooms">
+                <p>Smart Classrooms</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Partnerships and Collaborations Section -->
+  <section class="campus-life-partnerships" data-aos="fade-up">
+      <div class="campus-life-partnerships-container">
+        <h2 class="campus-life-partnerships-title">Prestigious Collaborations</h2>
+        <div class="campus-life-partnerships-logos">
+          <!-- Partner Logo -->
+          <div class="campus-life-partnership-logo">
+            <img src="/static/assets/placements/tcs.png" alt="tcs" data-aos="fade-right">
+          </div>
+          <div class="campus-life-partnership-logo">
+            <img src="/static/assets/placements/meil.jpeg" alt="meil" data-aos="fade-left">
+          </div>
+          <div class="campus-life-partnership-logo">
+            <img src="/static/assets/placements/alovie_technologies.jpeg" alt="alovie_technologies" data-aos="fade-right">
+          </div>
+          <div class="campus-life-partnership-logo">
+            <img src="/static/assets/placements/fluentgrid.jpg" alt="fluentgrid" data-aos="fade-left">
+          </div>
+          <div class="campus-life-partnership-logo">
+            <img src="/static/assets/placements/spookfishinnovations.jpeg" alt="spookfishinnovations" data-aos="fade-right">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Testimonials Section -->
+  <section class="campus-life-testimonials" data-aos="zoom-in">
+    <div class="campus-life-testimonials-container">
+        <h2 class="campus-life-testimonials-title">What our Students Say...</h2>
+        <div class="campus-life-testimonials-slider">
+            <div class="campus-life-testimonial-card" data-aos="fade-up">
+                <p class="campus-life-testimonial-text">
+                    "I had a great experience at SITAM. The faculty is supportive, and the campus life is vibrant, offering numerous opportunities to learn and grow."
+                </p>
+                <h3 class="campus-life-testimonial-name">- Vamsi Krishna</h3>
+            </div>
+            <div class="campus-life-testimonial-card" data-aos="fade-up">
+                <p class="campus-life-testimonial-text">
+                    "The infrastructure and facilities at SITAM are top-notch. I loved the workshops and industrial visits that helped me gain practical knowledge."
+                </p>
+                <h3 class="campus-life-testimonial-name">- Pavan</h3>
+            </div>
+            <div class="campus-life-testimonial-card" data-aos="fade-up">
+                <p class="campus-life-testimonial-text">
+                    "SITAM gave me a platform to explore my interests and enhance my skills. It was an incredible journey that prepared me for my career."
+                </p>
+                <h3 class="campus-life-testimonial-name">- Surekha</h3>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <!-- Student Culture Section -->
+  <section class="campus-life-culture" data-aos="fade-up">
+      <div class="campus-life-culture-container">
+        <h2 class="campus-life-culture-title">Explore, Engage & Enjoy</h2>
+        <div class="campus-life-culture-grid">
+          <!-- Activity Card -->
+          <div class="campus-life-culture-card" data-aos="fade-right">
+            <img src="/static/assets/campus/club.jpg" alt="Student Clubs">
+            <h3>Clubs & Societies</h3>
+            <p>Join vibrant clubs for arts, tech, music, and more.</p>
+          </div>
+          <!-- <div class="campus-life-culture-card">
+            <img src="housing.jpg" alt="Student Housing">
+            <h3>Housing</h3>
+            <p>Comfortable and safe accommodations on campus.</p>
+          </div> -->
+          <div class="campus-life-culture-card" data-aos="fade-left">
+            <img src="/static/assets/campus/events.jpg" alt="Cultural Festivals">
+            <h3>Cultural Festivals</h3>
+            <p>Celebrate traditions and cultures with grand events.</p>
+          </div>
+          <div class="campus-life-culture-card" data-aos="fade-right">
+            <img src="/static/assets/campus/sports.jpg" alt="Sports Activities">
+            <h3>Sports Activities</h3>
+            <p>Participate in sports events and competitions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="living-sitam" data-aos="fade-up">
+      <div class="living-sitam-header" data-aos="fade-down">
+        <h2>Living @ SITAM</h2>
+        <p>Explore Residential Life, Transport Facilities, and Safety & Security at SITAM.</p>
+      </div>
+      <div class="living-sitam-grid">
+        <!-- Residential Life -->
+        <div class="living-sitam-card" data-aos="fade-left">
+          <img src="/static/assets/campus/hostel.jpg" alt="Residential Life">
+          <h3>Residential Life</h3>
+          <p>Comfortable on-campus housing with modern amenities to make you feel at home.</p>
+        </div>
+        <!-- Transport -->
+        <div class="living-sitam-card" data-aos="fade-right">
+          <img src="/static/assets/campus/transport.webp" alt="Transport Facilities">
+          <h3>Transport</h3>
+          <p>Safe and reliable transportation to and from campus, ensuring convenience for all students.</p>
+        </div>
+        <!-- Safety & Security -->
+        <div class="living-sitam-card" data-aos="fade-left">
+          <img src="/static/assets/campus/ambulence.jpg" alt="Safety and Security">
+          <h3>Safety & Security</h3>
+          <p>24/7 security and ambulence facilty available.</p>
+        </div>
+      </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block static %}
+    <script src="{% static 'js/index.js' %}" type="text/javascript"></script>
+{% endblock %}

@@ -1,0 +1,108 @@
+from django.contrib import admin
+from django import forms
+from dal import autocomplete
+from .models import *
+
+
+# Admin customization for PersonalDetails
+@admin.register(PersonalDetails)
+class PersonalDetailsAdmin(admin.ModelAdmin):
+    list_display = ['student_id', 'gender', 'date_of_birth', 'email', 'mobile_number']
+    search_fields = ['student_id__name', 'student_id__student_id']
+    list_filter = ['gender', 'date_of_birth']
+
+# Admin customization for SitamUser
+@admin.register(SitamUser)
+class SitamUserAdmin(admin.ModelAdmin):
+    list_display = ['username', 'user_type', 'is_registered']
+    search_fields = ['username', 'user_type']
+    list_filter = ['user_type', 'is_registered']
+    ordering = ['username']
+
+    def __str__(self):
+        return self.user_type
+
+# Admin customization for PreRegisteredStudent
+@admin.register(PreRegisteredStudent)
+class PreRegisteredStudentAdmin(admin.ModelAdmin):
+    list_display = ['student_id', 'name', 'email', 'course', 'branch', 'admission_date', 'year']
+    search_fields = ['student_id', 'name', 'email', 'course__name', 'branch__branch']
+    list_filter = ['course', 'branch', 'year']
+    ordering = ['student_id']
+
+# Admin customization for Course
+@admin.register(Course)
+class CourseAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description', 'year']
+    search_fields = ['name']
+    list_filter = ['year']
+    ordering = ['name']
+
+# Admin customization for SemesterCGPA
+@admin.register(SemesterCGPA)
+class SemesterCGPAAdmin(admin.ModelAdmin):
+    list_display = ['student', 'semester', 'sgpa', 'credits']
+    search_fields = ['student__student_id__student_id', 'semester__semester']
+    list_filter = ['semester']
+    ordering = ['student', 'semester']
+
+# Admin customization for Semester
+@admin.register(Semester)
+class SemesterAdmin(admin.ModelAdmin):
+    list_display = ['semester', 'course']
+    search_fields = ['course__name']
+    list_filter = ['course', 'semester']
+    ordering = ['semester']
+
+# Admin customization for Subject
+@admin.register(Subject)
+class SubjectAdmin(admin.ModelAdmin):
+    list_display = ['name', 'course', 'branch', 'semester']
+    search_fields = ['name', 'course__name', 'branch__branch', 'semester__semester']
+    list_filter = ['course', 'branch', 'semester']
+    ordering = ['name']
+
+# Admin customization for Backlog
+@admin.register(Backlog)
+class BacklogAdmin(admin.ModelAdmin):
+    list_display = ['student', 'subject']
+    search_fields = ['student__student_id__student_id', 'subject__name']
+    list_filter = ['subject']
+    ordering = ['student']
+
+# Admin customization for Regulation
+@admin.register(Regulation)
+class RegulationAdmin(admin.ModelAdmin):
+    list_display = ['regulation']
+    search_fields = ['regulation']
+    ordering = ['regulation']
+
+# Admin customization for Branch
+@admin.register(Branch)
+class BranchAdmin(admin.ModelAdmin):
+    list_display = ['course', 'branch']
+    search_fields = ['course__name', 'branch']
+    list_filter = ['course']
+    ordering = ['branch']
+
+# Admin customization for Faculty
+@admin.register(Faculty)
+class FacultyAdmin(admin.ModelAdmin):
+    list_display = ['username', 'faculty_id', 'department']
+    search_fields = ['username', 'faculty_id', 'department__branch']
+    list_filter = ['department']
+    ordering = ['faculty_id']
+
+    def __str__(self):
+        return self.user_type
+
+# Admin customization for Admin
+@admin.register(Admin)
+class AdminAdmin(admin.ModelAdmin):
+    list_display = ['username', 'admin_role']
+    search_fields = ['username', 'admin_role']
+    list_filter = ['admin_role']
+    ordering = ['admin_role']
+
+    def __str__(self):
+        return "admin"

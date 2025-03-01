@@ -1,0 +1,39 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="container my-5">
+    <h2 class="text-center mb-4">College Events & Activities</h2>
+    <div class="row g-4 justify-content-center">
+        {% for event in events %}
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="{{ forloop.counter0|add:100 }}">
+                <a href="{% url 'home:event_detail' event.id %}" class="text-decoration-none w-100">
+                    <div class="card event-card">
+                        <div class="card-overlay" style="background-image: url('{{ event.thumbnail.url }}');">
+                            <div class="event-label">
+                                {% if event.timestamp|date:"Y-m-d" > today|date:"Y-m-d" %}
+                                    <span class="badge bg-danger">Upcoming Event</span>
+                                {% elif event.timestamp|date:"Y-m-d" == today|date:"Y-m-d" %}
+                                    <img class="bg-live" src="/media/event_thumbnails/live.gif" alt="Live Event">
+                                {% else %}
+                                    <span class="badge bg-success">Past Event</span>
+                                {% endif %}
+                            </div>                        
+                            <div class="event-info">
+                                <h5 class="event-title">{{ event.title }}</h5>
+                                <p class="event-date"><i class="bi bi-calendar-event"></i> {{ event.timestamp }}</p>
+                            </div>
+                        </div>
+                        <div class="card-hover-content">
+                            <h5 class="hover-title">{{ event.title }}</h5>
+                            <p><i class="bi bi-calendar"></i> Date: <span>{{ event.timestamp }}</span></p>
+                            <p><i class="bi bi-clock"></i> Time: <span>{% if event.time %}{{ event.time }}{% else %}Not Available{% endif %}</span></p>
+                            <p><i class="bi bi-geo-alt"></i> Venue: <span>{{ event.venue }}</span></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

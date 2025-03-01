@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", serif;
+}
+
+.navSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, #ff5722, #ff7043);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navHeader{
+    display: flex;
+    align-items: center;
+  }
+
+  .navHeader h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+  }
+  
+  .navHeader h1 span {
+    color: #ffe0b2;
+  }
+  
+  .authentication {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button.auth-btn {
+    padding: 8px 20px;
+    background-color: #ffffff;
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+button.auth-btn:hover {
+    background-color: #ff5722;
+    color: white;
+}  
+
+.sidebarSection {
+  position: fixed;
+  top: 100px;
+  left: -290px;
+  width: 250px;
+  height: 100vh;
+  background-color: #ff5722;
+  transition: left 0.3s ease;
+  margin-left: 8px;
+}
+
+.sidebarSection ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebarSection ul li{
+    border: white 1px solid;
+    padding: 10px;
+    color: white;
+}
+
+.sidebarSection.show {
+  left: 0; 
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  color: white;
+}
+
+.mainSection{
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vendorLoginForm, .vendorRegisterForm{
+  margin: 20px;
+  width: 40vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  justify-content: space-around;
+}
+
+.vendorLoginForm input, .vendorRegisterForm input{
+  width: 90%;
+  padding: 8px;
+  margin: 5px;
+}
+
+.addFirmForm, .addProductForm{
+  display: flex;
+  flex-direction: column;
+  width: 60vh;
+  height: auto;
+  margin: 20px;
+  padding: 15px;
+  border: 1px black solid;
+}
+
+.row-view{
+  display: flex;
+}
+
+.addFirmForm input[type=text], .addFirmForm input[type=number], .addProductForm input[type=text], .addProductForm input[type=number]{
+  padding: 10px;
+  margin: 5px;
+}
+
+label{
+  margin: 15px 0 5px 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

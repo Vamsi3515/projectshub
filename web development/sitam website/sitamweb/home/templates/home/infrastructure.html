@@ -1,0 +1,125 @@
+{% extends "home/layout.html" %}
+{% load static %}
+{% block body %}
+
+<div class="container my-5 infra-container">
+  <h2 class="text-center mb-5 infra-heading">SITAM INFRASTRUCTURE</h2>
+
+  <!-- College Overview Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <img src="{% static 'assets/campus/college.jpg' %}" class="img-fluid rounded shadow infra-img-md" alt="College Building">
+      </div>
+      <div class="col-lg-6 d-flex align-items-center infra-text-center-mobile">
+        <div>
+          <h3 class="infra-section-title">Welcome to Our State-of-the-Art Campus</h3>
+          <p class="lead">
+            Our college boasts a modern infrastructure designed to enhance learning and extracurricular activities. From high-tech labs to spacious seminar halls and sports facilities, we provide a conducive environment for holistic education.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classrooms Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">📚 Classrooms</h3>
+    <div class="row infra-row">
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="{% static 'assets/campus/sampleclass1.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Classroom 1">
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <img src="{% static 'assets/campus/sampleclass2.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Classroom 2">
+      </div>
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="{% static 'assets/campus/sampleclass3.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Classroom 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Labs Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">🧪 World Class Labs</h3>
+    <div class="row infra-row">
+      <div class="col-md-4" data-aos="fade-left">
+        <img src="{% static 'assets/campus/ai&ds_lab2.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Computer Lab">
+        <h5 class="text-center mt-2 infra-subheading">Computer Lab</h5>
+      </div>
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="{% static 'assets/campus/samplechemlab.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Chemistry Lab">
+        <h5 class="text-center mt-2 infra-subheading">Chemistry Lab</h5>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <img src="{% static 'assets/campus/cadlab.jpg' %}" class="img-fluid rounded shadow infra-img" alt="CAD Lab">
+        <h5 class="text-center mt-2 infra-subheading">CAD Lab</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seminar Halls Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">🏛 Seminar Halls</h3>
+    <div class="row infra-row">
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="{% static 'assets/events/seminar.jpg' %}" class="img-fluid rounded shadow infra-img" alt="AC Seminar Hall">
+        <h5 class="text-center mt-2 infra-subheading">AC Seminar Hall</h5>
+      </div>
+      <div class="col-md-4" data-aos="fade-left">
+        <img src="{% static 'assets/events/e5.jpeg' %}" class="img-fluid rounded shadow infra-img" alt="Chandriyan Seminar Hall">
+        <h5 class="text-center mt-2 infra-subheading">Chandriyan Seminar Hall</h5>
+      </div>
+      <div class="col-md-4" data-aos="fade-right">
+        <img src="{% static 'assets/events/e1.jpeg' %}" class="img-fluid rounded shadow infra-img" alt="Ranganath Seminar Hall">
+        <h5 class="text-center mt-2 infra-subheading">Ranganath Seminar Hall</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports Facilities Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">🏅 Sports Facilities</h3>
+    <div class="row infra-row">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'assets/campus/indoor.png' %}" class="img-fluid rounded shadow infra-img" alt="Indoor Sports Area">
+        <h5 class="text-center mt-2 infra-subheading">Indoor Sports Area</h5>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="{% static 'assets/campus/gound.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Sports Ground">
+        <h5 class="text-center mt-2 infra-subheading">Big Sports Ground</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library and Canteen Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">📖 Library & 🍽 Canteen</h3>
+    <div class="row infra-row">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="{% static 'assets/campus/library2.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Library">
+        <h5 class="text-center mt-2 infra-subheading">Library</h5>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="{% static 'assets/campus/canteen.jpg' %}" class="img-fluid rounded shadow infra-img" alt="Canteen">
+        <h5 class="text-center mt-2 infra-subheading">Canteen</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- NCC Activities Section -->
+  <section class="infra-section" data-aos="fade-up">
+    <h3 class="mb-4 infra-section-title">🎖 NCC Activities</h3>
+    <div class="row infra-row" data-aos="fade-left">
+        <div class="col-md-6" data-aos="fade-left">
+            <img src="{% static 'assets/events/ncc1.jpg' %}" class="img-fluid rounded shadow infra-img-md" alt="NCC Activities" width="550px">
+        </div>
+        <div class="col-md-6" data-aos="fade-right">
+            <img src="{% static 'assets/events/ncc-event.jpeg' %}" class="img-fluid rounded shadow infra-img-md" alt="NCC Activities" width="550px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

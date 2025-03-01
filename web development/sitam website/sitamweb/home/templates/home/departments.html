@@ -1,0 +1,14 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="departments-block">
+    {% for dept in departments %}
+        <a href="{% url 'home:department_details' dept.id %}" class="department dept-{{ dept.code }}">
+            <div>
+                <h3>Department of {{ dept.name }} </h3>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="program-block">
+        <h1>B.Tech at <span>SITAM</span></h1>
+        <div class="horizontal">
+            <img src="{% static 'assets/college/btech-life.jpg'%}" alt="sitam-life">
+            <p>Our Bachelor of Technology (B.Tech) program offers a comprehensive and dynamic education across various engineering disciplines, including Computer Science, Mechanical Engineering, Electrical Engineering, Civil Engineering, and more. The curriculum is designed to provide students with a strong foundation in theoretical concepts and practical skills, ensuring they are well-prepared for the demands of the engineering profession. With state-of-the-art laboratories, industry partnerships, and opportunities for hands-on projects and internships, our B.Tech program fosters innovation, critical thinking, and problem-solving abilities. Join us to embark on a rewarding journey of learning and professional growth, and become a leader in the technological advancements of tomorrow.</p>
+        </div>
+        <h4>Engineering Programs</h4>
+        <div class="engineering-programs">
+            {% for dept in departments %}
+                <div class="card">
+                    <img src="{% static 'assets/programs/'|add:dept.code|add:'.jpg' %}" alt="{{dept.code}}" class="card-img-top" />
+                    <div class="card-body">
+                        <h2>B.Tech. in {{dept.name}}</h2>
+                    <a href="{% url 'home:department_details' dept.id %}" class="btn btn-primary">Learn More</a>
+                    </div> 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

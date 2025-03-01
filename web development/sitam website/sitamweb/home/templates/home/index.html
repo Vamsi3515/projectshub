@@ -1,0 +1,251 @@
+{% extends "home/layout.html" %}
+{% load static %}
+{% block body %}
+<!-- SLIDE SHOW SECTION -->
+    <section class="slideshow-section">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{% static 'assets/slider/sitam-slideshow.jpg' %}" alt="sitam-slideshow.jpg">
+                <div class="carousel-caption">
+                    <h3>WELCOME TO SITAM</h3>
+                    <p>Best Engineering College in AP</p>
+                    <h4>COLLEGE CODE : <span>SGVP</span></h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{% static 'assets/slider/civil.jpeg' %}" alt="slideshow-1.jpeg">
+                <div class="carousel-caption">
+                    <h2>Academic Excellence</h3>
+                    <p>Cutting-edge learning environment</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{% static 'assets/slider/event-2.jpeg' %}" alt="civil.jpeg">
+                <div class="carousel-caption">
+                    <h2>Innovative Research</h3>
+                    <p>Pioneering discoveries and solutions</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{% static 'assets/slider/students.jpg' %}" alt="slideshow-2.jpeg">
+                <div class="carousel-caption">
+                    <h2>Vibrant Student Life</h3>
+                    <p>Beyond the classroom activities</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{% static 'assets/slider/slide.jpg' %}" alt="Alumni.jpeg">
+                <div class="carousel-caption">
+                    <h2>Successful Alumni</h3>
+                    <p>Leaders and innovators worldwide</p>
+                </div>
+              </div>
+              ...
+            </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>     
+    </section>
+
+    <!-- ABOUT US -->
+
+    <section class="about-us-section" data-aos="fade-up">
+        <div class="about-us-block">
+            <div class="about-us">
+                <ul>
+                    <li class="about-us-li" data-linkname="about-us-paragraph"><h3 class="active-link">About Us</h3></li>
+                    <li class="about-us-li" data-linkname="vision-paragraph"><h3>Our Vision</h3></li>
+                    <li class="about-us-li" data-linkname="mission-paragraph"><h3>Our Mission</h3></li>
+                </ul>
+                <p class="about-us-paragraph">Satya Institute of Technology and Management, Vizianagaram is a private Engineering College established in 2008. The institute is affiliated to JNTU, Kakinada and offers various courses in the field of Engineering & Technology and Management at the UG and PG level. Admission to the courses offered by SITAM are based on the candidate’s performance in various national and state level entrance exams such as AP EAMCET and AP PGECET. Additionally, SITAM, Vizianagaram has a group of 97 faculty members, who are highly qualified and experienced. SITAM also has a dedicated Training and Placement cell that provides placement assistance to the students. Some of the top recruiters are Symphony, TATA Steel and Quess Corp.</p>
+                <p class="vision-paragraph">To evolve into and sustain as a Centre of Excellence in Technological Education and Research with a holistic approach.</p>
+                <p class="mission-paragraph">To produce high quality engineering graduates with the requisite theoretical and practical knowledge and social awareness to be able to contribute effectively to the progress of the society through their chosen field of endeavor.</p>
+            </div>            
+            <div class="about-us-image" data-aos="fade-left">
+                <img src="{% static 'assets/about-us/director.jpg' %}" alt="Sashi Bhushan Rao">
+            </div>
+        </div>
+    </section>
+
+    <section class="management-message" data-aos="fade-up">
+        <h1>MESSAGES</h1>
+        <div class="message-section" data-aos="fade-right">
+            <div class="msg-card">
+                <img src="{% static 'assets/about-us/botsa-satyanarayana.jpg' %}" alt="">
+                <div class="msg-text">
+                    <h5>Chairman</h5>
+                    <h3>Botcha Satyanarayana</h3>       
+                       <div class="message">
+                            <p>
+                                "We provide not just education, we prepare you for life"
+                            </p>
+                            <h4>GVP-SITAM is excelling as premier Engineering and Technological Institute. The prestigious aspects of our Institution are Infrastructure,well qualified and experienced Faculties committed to nurture the students with positive outlook.</h4>
+                       </div>
+                </div>
+            </div>
+            <div class="msg-card" data-aos="fade-up">
+                <img src="{% static 'assets/about-us/jhansi.jpg' %}" >
+                <div class="msg-text">
+                    <h5>Secretary and Correspondent</h5>
+                    <h3>Dr.Botcha Jhanshi Lakshmi</h3>
+                    <div class="message">
+                        <p>
+                            "success comes to those who dedicate them selves to their passion"
+                        </p>
+                        <h4>Foresight, ability to seize the oppurtunity, relentless drive to success and tremendous awareness in recognizing the needs of the industry and integrating technical knowledge with professional inputs are the secret of success behind SITAM. However, in the present scenario ,success comes to those who dedicate them selves to their passion.
+                        we believe in imparting quality education with values. Iam glad to welcome you all for opting SITAM to explore the opppurtunities we offer and iam confident that your graduation here wil be challenging and rewarding experience</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-card" data-aos="fade-left">
+                <img src="{% static 'assets/about-us/director.jpg' %}" >
+                <div class="msg-text">
+                    <h5>Director</h5>
+                    <h3>Dr.M.SashiBhushanRao</h3>
+                    <div class="message">
+                        <p>
+                            "You dont have to be great to start, but you have to start to be great"
+                        </p>
+                        <h4>A college is a location where these students can make a right turn in their priceless and promising lives, and I am pleased to witness the energy of the students who have united and focused to the route that would lead them to their desired dream.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-sitam" data-aos="fade-up">
+        <div class="sitam-video" data-aos="fade-right">
+            <h1>HISTORY OF SITAM</h1>
+            <video src="{% static 'assets/videos/sitam.mp4' %}" autoplay controls></video>
+            <p>
+                Gayatri Vidya Parishad Society was founded by eminent educationists, academicians, industrialists and those with a touch of human values to empower the young generation with a high quality technical education. The main objective of the society is to impart quality education as well facilitate value based career to the blooming engineers of future generation. Professor B. SarveswaraRao, the nonagenarian and a former Vice-Chancellor of AcharyaNagarjuna University and a renowned economist was the founder President and Dr. B.Swami, octogenarian the Second President is also a former Vice-Chancellor, AcharyaNagarjuna University renowned Physician in the City, he was also the member of Medical Council of India. <a class="read-more" href="{% url 'home:SitamHistory' %}">Read More..</a>
+            </p>
+        </div>
+        <div class="notification-section" data-aos="fade-left">
+            <h1>NOTIFICATIONS</h1>
+            <div class="notifications">
+                {% for notification in notifications %}
+                    <div class="notification">
+                        <div class="timestamp">{{ notification.timestamp|date:"M. d, Y" }}</div>
+                        {% if notification.is_latest %}
+                            <img src="{% static 'assets/college/new-2.gif' %}" alt="latest" width="50px" height="50px">
+                        {% endif %}
+                        <div class="content">{{ notification.content }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <div class="news-articles-container-index" data-aos="fade-up">
+        <section class="mb-5">
+            <h3 class="mb-4 fw-bold">📝 Featured Articles</h3>
+            <div class="row g-4">
+              {% for article in recent_articles %}
+              <div class="col-md-4">
+                <div class="card shadow h-100">
+                  <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">{{ article.title }}</h5>
+                    <p>{{ article.published_date }}</p>
+                    <p class="card-text flex-grow-1">{{ article.content|truncatewords:20 }}</p>
+                    <a href="{{ article.image.url }}" target="_blank" class="btn btn-outline-primary mt-auto">Read Article</a>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+    </div>
+
+    <div class="events-container-index" data-aos="fade-up">
+        <section class="mb-5">
+            <h3 class="mb-4 fw-bold">🎉 Recent Events</h3>
+            <div class="row g-4">
+                {% for event in recent_events %}
+                <div class="col-md-4">
+                    <div class="card shadow h-100">
+                        <img src="{{ event.thumbnail.url }}" class="card-img-top" alt="{{ event.title }}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">{{ event.title }}</h5>
+                            <p class="event-date"><i class="bi bi-calendar-event"></i> {{ event.timestamp }}</p>
+                            <p class="card-text flex-grow-1">
+                                <i class="bi bi-geo-alt"></i> Venue: {{ event.venue }}
+                            </p>
+                            <div class="mt-auto">
+                                {% if event.timestamp|date:"Y-m-d" > today|date:"Y-m-d" %}
+                                    <span class="badge bg-danger">Upcoming Event</span>
+                                {% elif event.timestamp|date:"Y-m-d" == today|date:"Y-m-d" %}
+                                    <img class="bg-live" src="/media/event_thumbnails/live.gif" alt="Live Event">
+                                {% else %}
+                                    <span class="badge bg-success">Past Event</span>
+                                {% endif %}
+                                <a href="{% url 'home:event_detail' event.id %}" class="btn btn-outline-primary">View Event</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+    <section class="gallery-section">
+        <h1>SITAM GALLERY</h1>
+        <div class="gallery-wrapper">
+            <div class="gallery" id="gallery">
+                {% for image in event_images %}
+                    <div class="gallery-item">
+                        <img src="{{ image.image.url }}" alt="Event Image">
+                    </div>
+                {% endfor %}
+
+                {% for image in event_images %}
+                    <div class="gallery-item">
+                        <img src="{{ image.image.url }}" alt="Event Image">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>   
+
+    <!-- <section class="placement-section">
+        <h1>2023-2024 PLACEMENTS</h1>
+        <div class="placements">
+            
+        </div>
+    </section> -->
+
+    <section class="companies-section">
+        <h1>TOP RECRUITERS</h1>
+        <div class="companies-wrapper">
+            <div class="companies" id="companies">
+                {% for collaboration in collaborations %}
+                    <div class="company-item">
+                        <img src="{{ collaboration.logo.url }}" alt="{{ collaboration.company_name }} Logo">
+                    </div>
+                {% endfor %}
+                <!-- Duplicate the logos for seamless looping -->
+                {% for collaboration in collaborations %}
+                    <div class="company-item">
+                        <img src="{{ collaboration.logo.url }}" alt="{{ collaboration.company_name }} Logo">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>    
+
+{% endblock %}

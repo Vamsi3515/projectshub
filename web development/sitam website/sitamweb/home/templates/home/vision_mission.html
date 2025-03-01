@@ -1,0 +1,23 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="vision-block">
+        <div class="vision-mission-content vision-content">
+            <h1>Vision</h1>
+            <p>
+                Our vision is to develop and maintain a premier institution renowned for its superior standards in technological education and cutting-edge research. We strive to foster an environment that not only emphasizes academic excellence but also nurtures the overall development of our students, faculty, and staff. By integrating a holistic approach, we aim to produce well-rounded individuals who are equipped with the knowledge, skills, and ethical grounding necessary to make significant contributions to society.
+            </p>
+        </div>
+        <img src="{% static 'assets/college/vision.jpeg' %}" alt="vision">
+    </div>
+    <div class="mission-block">
+        <div class="vision-mission-content mission-content">
+            <h1>Mission</h1>
+            <p>
+                Our college aims to produce high-quality engineering graduates equipped with both theoretical knowledge and practical skills. Emphasizing social awareness, we prepare our students to effectively contribute to societal progress through their chosen fields. By fostering a strong foundation in engineering disciplines and ethical responsibility, we empower our graduates to make significant and positive impacts in their professional endeavors and communities.
+            </p>
+        </div>
+        <img src="{% static 'assets/college/mission.jpg' %}" alt="vision">
+    </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "home/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <div class="administration-block">
+        <table>
+            <tr>
+                <th>Name of the Officer</th>
+                <th>Designation</th>
+                <th>Phone (Office)</th>
+                <th>Email</th>
+            </tr>
+            {% for member in members %}
+                <tr>
+                    <td>
+                        <h4>{{ member.name }}</h4>
+                        {% if member.description %}
+                            <p>{{ member.description }}</p>
+                        {% endif %}
+                    </td>
+                    <td>{{ member.designation }}</td>
+                    <td>+91 {{ member.phone }}</td>
+                    <td>{{ member.email }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,1452 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.50s ease;
+}
+  
+:root {
+  --main-color : #211D5A;
+  --second-main : #FF183B;
+  --second : #fff;
+}
+
+  /* HTML RESET */
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  input,
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  /* ION-ICON RESET */
+  ion-icon {
+    --ionicon-stroke-width: 40px;
+    font-size: 24px;
+  }
+  
+  /* BACKGROUND-IMAGE WRAPPER */
+  .background_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .background_wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/college/clg-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.88);
+    z-index: -1;
+  }
+  /* LOGIN-FORM */
+  .login_form_wrapper {
+    z-index: 999;
+    position: relative;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    border: 2px solid hsl(0, 0%, 90%);
+    color: hsla(0, 0%, 100%, 0.897);
+    margin: 5px;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(10px);
+    padding: 2.5rem 2rem 3.5rem;
+    width: 30rem;
+  }
+  /* TITLE */
+  .title {
+    display: block;
+    text-align: center;
+    font-size:  1.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 90%);
+    letter-spacing: 1px;
+  }
+  /* LOGIN-FORM-CONTENT */
+  .login_form_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .login_content_box {
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid hsl(0, 0%, 90%);
+  }
+  .login_content_box--input {
+    width: 100%;
+    position: relative;
+  }
+  
+  /* LOGIN-INPUT */
+  .login__input {
+    width: 100%;
+    padding-block: 0.8rem;
+    background-color: transparent;
+    color: hsl(0, 0%, 90%);
+    position: relative;
+    z-index: 1;
+    height: 1.56rem;
+    font-size: 18px;
+  }
+
+  .forgotpw__input {
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    height: 2rem;
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    border-radius: 5px;
+  }
+
+  input.login__input.email--input:hover {
+    background-color: transparent;
+  }
+
+  /* LOGIN-LABEL */
+  .login__label {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: 400;
+    transition: top 0.3s, font-weight 0.3s;
+  }
+
+  label[for="reg_id"] {
+    margin-left: -13px;
+  }
+
+  .password--input {
+    padding-right: 1.8rem;
+  }
+  .password__hidden {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .remember_login,
+  .remember_login_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .remember_login {
+    margin-bottom: 1rem;
+  }
+  .remember_login_content {
+    column-gap: 0.4rem;
+  }
+  .remember_login_input {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  .forget__login {
+    color: hsl(0, 0%, 90%);
+  }
+  .forget__login:hover {
+    text-decoration: underline;
+    color: lightgreen;
+  }
+  /* BUTTON LOGIN */
+  .button__login, #button__otp {
+    width: 100%;
+    color:black;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background-color: lightgreen;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    transition: background-color 0.4s ease;
+    letter-spacing: 0.5px;
+  }
+  .button__login:hover, #button__otp:hover {
+    background-color: darkgreen;
+    color: hsl(0, 0%, 90%);
+  }
+  
+  .login__input:focus + .login__label {
+    top: -12px;
+    font-weight: 500;
+  }
+  /* STICKY INPUT ON FOCUS WITH TRANSITION */
+  .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+    top: -12px;
+  }
+  /* Back Button */
+  .button__back {
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0.5rem 2rem;
+    background-color: lightgreen;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button__back:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+/* STUDENT PORTAL */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  z-index: 2000;
+  width: 250px;
+  background-color: var(--main-color);
+  color: #fff;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  background-color: #282564;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+/*student profile*/
+
+.student-profile{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.student-profile img{
+  border-radius: 3px;
+}
+
+.student-profile h5{
+  margin: 12px;
+  font-size: 18px;
+}
+
+
+.sidebar-menu, .sidebar-menu-2  {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu-2 {
+  margin-top: -50px;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+  margin: 5px;
+}
+
+.sidebar-menu li:hover, .sidebar-menu-2 > a:hover, .active_bar {
+  background-color: var(--second-main);
+  padding: 16px 23px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-menu-2 > a{
+  padding: 15px 20px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-footer {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--main-color);
+}
+
+.sidebar-footer p{
+  color: var(--second-main);
+  font-size: 16px;
+  font-weight : 500;
+  word-spacing: 3px;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.open-btn {
+  position: fixed;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.badge {
+  background-color: #fff;
+  color: var(--main-color);
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+
+  .login_form_wrapper{
+    width: auto;
+  }
+
+  .sidebar {
+      transform: translateX(-100%);
+  }
+
+  .main-content {
+      margin-left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .open-btn {
+      display: block;
+  }
+
+  .close-btn {
+      display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+      transform: translateX(0) !important;
+  }
+}
+
+/* student-portal main content */
+
+.student-details-container{
+  margin: 5px;
+  padding: 30px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#student-notifications{
+  margin: auto;
+  padding: 10px;
+}
+
+.notification-section{
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-subject{
+  display: flex;
+  flex-direction: column;
+}
+
+#student-profile_settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.student-greet h3 span{
+  color: var(--second-main);
+}
+
+.student-performance{
+  margin: 30px;
+  padding: 30px;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-performance h2{
+  color: var(--main-color);
+}
+
+.student-details{
+  padding: 30px;
+}
+
+.student-details ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.student-details ul li{
+  color: var(--second);
+  background-color: var(--main-color);
+  height: 13vh;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+  font-size: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-details ul li:hover{
+  width: 250px;
+}
+
+.student-details ul li span{
+  color: var(--second-main);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.student-chart {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#studyChart {
+  width: 400px;
+  height: 400px;
+}
+
+.semester-wise-performances, .student-resume-section{
+  height: auto;
+  margin: 10px;
+  padding: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.semester-wise-performance {
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.performance {
+  margin: 10px;
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.student-docs-section{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 30px;
+  padding: 30px;
+}
+
+.resume-container, .cv-container{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.resume-container img, .cv-container img{
+  margin: 5px;
+  width: 300px;
+  height: auto;
+}
+
+.resume-container img:hover, .cv-container img:hover{
+  width: 350px;
+  height: auto;
+}
+
+.download-btn{
+  text-decoration: none;
+  color: white;
+  background-color: #FF183B;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 200px;
+}
+
+.download-btn:hover{
+  width: 300px;
+}
+
+/*certificates section*/
+
+.certificates-achievements, .projects-section{
+  width: 90%;
+  margin: 30px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.certificates-achievements > h3{
+  color: var(--main-color);
+}
+
+.certificates-container {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.certificates-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.certificate-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  max-height: 80vh;
+}
+
+.certificate-item img {
+  max-width: 100%;
+  max-height: 60vh;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.certificate-info h4 {
+  margin-top: 10px;
+}
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Portfolio Section */
+.portfolio-section{
+  width: auto;
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+}
+
+.portfolio-section > h3{
+  margin: 30px;
+}
+
+#view_portfolio{
+  width: 350px;
+  background-color: var(--second-main);
+  color: var(--second);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#view_portfolio:hover{
+  padding: 10px 30px;
+  background-color: var(--main-color);
+}
+
+#view_portfolio > img{
+  margin-right: 10px;
+}
+
+.projects-section h2{
+  font-weight: 600;
+  padding: 30px;
+  color: var(--main-color);
+}
+
+.projects-container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  white-space: nowrap; 
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px;
+  position: relative; 
+  display: inline;
+  text-align: center;
+  background-color: white;
+  transition: opacity 0.5s ease;
+}
+
+.project-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black, transparent),
+              linear-gradient(to left, black, transparent),
+              linear-gradient(to bottom, black, transparent),
+              linear-gradient(to top, black, transparent);
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-card h5{
+  z-index: 100;
+  position: relative;
+  font-size: 21px;
+  color: var(--main-color);
+  margin: 0 auto;
+  font-weight: 600;
+  top: 10px;
+  text-wrap: wrap;
+  transition: top 0.5s ease;
+}
+
+.project-card:hover::before {
+  opacity: 0.6;
+}
+
+.project-card:hover > h5, .project-card:hover > .view-project{
+  display: block;
+  top: -60%;
+  z-index: 10;
+  color: var(--second);
+}
+
+.project-card:hover > img{
+  height: 100%;
+}
+
+.view-project{
+  position: relative;
+  display: none;
+  text-decoration: none;
+  color: white;
+  background-color: var(--second-main);
+  padding: 10px 30px;
+  margin: 15px;
+  font-weight: 500;
+}
+
+/* Extracurricular Activity Section */
+
+.extracurricular{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.extracurricular > h3{
+  text-align: center;
+}
+
+.activity-container{
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.activity-img{
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+  margin: 3px;
+  padding: 5px;
+}
+
+.activity-img > img{
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+.activity-img:hover{
+  scale: 0.9;
+}
+
+/* Contact */
+
+.student-contact{
+  width: 90%;
+  margin: 20px;
+  padding: 30px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-contact h3{
+  margin: 20px;
+}
+
+.student-contact a{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.student-contact i{
+  font-size: 25px;
+  margin: 0px 10px;  
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.student-contact span{
+  font-size: 18px;
+  color: black;
+}
+
+.bxs-envelope{
+  color: var(--second-main);
+}
+
+.bxs-phone-call{
+  color: rgb(33, 150, 0);
+}
+
+.bxl-linkedin-square{
+  color: #0077AF;
+}
+
+.bxl-github{
+  color: #000000;
+}
+
+@media (max-width : 768px) {
+  .student-contact i{
+    font-size: 20px;
+    margin: 0px 8px;  
+    font-family: "Poppins";
+    cursor: pointer;
+    width: auto;
+  }
+
+  .student-contact span{
+    font-size: 15px;
+    color: black;
+    width: auto;
+  }
+
+  .popUpFormProfile{
+    width: auto;
+  }
+}
+
+@media (max-width : 480px) {
+  .student-contact i{
+    font-size: 20px;
+    margin: 0px 8px;  
+    font-family: "Poppins";
+    cursor: pointer;
+    width: auto;
+  }
+
+  .student-contact span{
+    font-size: 15px;
+    color: black;
+    width: auto;
+  }
+
+  .popUpFormProfile{
+    width: auto;
+  }
+}
+
+/* Sidebar Profile */
+
+.student-profile-update{
+  padding: 30px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-profile-pic-update{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 10px;
+}
+
+.student-profile-pic-update img{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.stundent_profile_update_btn{
+  width: 200px;
+  padding: 15px 30px;
+  background-color: var(--main-color);
+  color: var(--second);
+}
+
+.stundent_profile_update_btn:hover{
+  background-color: #39347e;
+}
+
+.profile-details-update{
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.profile-details-update h3{
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.place-row{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.place-row i{
+  font-size: 25px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.popUpFormProfile{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileFile{
+  margin: 10px;
+  margin-left: 180px;
+}
+
+.profileUpdate, .passwordUpdate{
+  border-radius: 8px;
+  background-color: var(--second-main);
+  color: var(--second);
+  padding: 10px 30px;
+}
+
+.editContact, .changePassword{
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+
+.editContact button, .changePassword button{
+  background-color: #FF183B;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.changePassword button{
+  color: white;
+  background-color: #128535;
+}
+
+.popUpFormContact{
+  width: 100px;
+  height: 100px;
+  background-color: #FF183B;
+}
+
+.emailContactInput, .phoneContactInput, .linkedinContactInput, .githubContactInput{
+  border: 1px solid black;
+  width: 80%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+/* student document upload */
+
+#student-profile_settings, #certificate-updates, #projects-updates, #extracurricular-activities-update{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 30px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-upload-documents{
+  margin: 10px;
+  padding: 30px 50px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.resume-upload form, .cv-upload form, .portfolio-upload form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-upload form > input, .cv-upload form > input, .portfolio-upload form > input{
+  margin: 20px;
+}
+
+#upload-resume-btn, #upload-cv-btn, #upload-portfolio-btn, .certificatesave, .projectSave, .activitySave{
+  width: 150px;
+  background-color: var(--second-main);
+  color: white;
+  padding: 5px 10px;
+}
+
+#upload-resume-btn:hover, #upload-cv-btn:hover, #upload-portfolio-btn:hover{
+  background-color: var(--main-color);
+}
+
+.file-input {
+  display: none;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.custom-file-label:hover {
+  background-color: #0056b3;
+}
+
+.custom-file-upload{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.custom-file-upload input{
+  margin: 5px;
+}
+
+.custom-file-upload input[type=text]{
+  width: 250px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#resume-upload, #cv-upload{
+  margin-bottom: 0;
+}
+
+#upload-resume-btn, #upload-cv-btn{
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.row-line{
+  display: flex;
+  flex-direction: row;
+}
+
+.bxs-trash-alt{
+  font-size: 22px;
+  color: red;
+  cursor: pointer;
+}
+
+/*Certificates & Projects Manage Section*/
+#certificate-updates, #projects-updates,  #extracurricular-activities-update{
+  text-align: center;
+}
+
+.certificates-updates-container, .projects-updates-container, .activity-updates-container{
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.certificate-update-block, .project-update-block, .activity-block{
+  width: 100%;
+  height: 6vh;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(227, 227, 227);
+  margin: 3px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificate_delete i, .project_delete i{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#certificate_view_btn > a, .project_edit > i{
+  color: rgb(68, 182, 68);
+}
+
+#certificate_view_btn > .fa{
+  font-size: 16px;
+}
+
+#project_edit > .bx{
+  font-size: 20px;
+}
+
+#add_certificate, #add_project, #add_activity{
+  margin: 5px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+
+#add_certificate:hover, #add_project:hover{
+  background-color: #0056B3;
+}
+
+.addCertificateCancel, .addProjectCancel, .passwordUpdateCancel{
+  width: 150px;
+  background-color: #717171;
+  color: white;
+  padding: 5px 8px;
+}
+
+.dynamic-certificate-block, .dynamic-project-block{
+  width: 100%;
+  margin: 0px 5px;
+}
+
+.certificate-actions a, .project-actions a{
+  margin: 0px 5px;
+}
+
+.activity-updates-container{
+  align-items: center;
+}
+
+.dynamic-activity-block{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 90%;
+  overflow: scroll;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+}
+
+.dynamic-activity-block::-webkit-scrollbar{
+  display: none;
+}
+
+.activity-update-block{
+  width: 200px;
+  height: 200px;
+  margin: 5px 10px;
+}
+
+.activity-update-block img{
+  width: 100%;
+  height: 100%;
+}
+
+.bxs-message-square-x{
+  font-size: 25px;
+  position: relative;
+  top: -95%;
+  left: 40%;
+  display: none;
+  color: #FF183B;
+}
+
+.activity-update-block img:hover > .bxs-message-square-x{
+  display: block;
+}
+
+.old_password, .new_password, .confirm_password{
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 500px;
+}
+
+
+
+
+
+/* Responsive Screen */
+@media (max-width: 1000px) {
+  
+  .old_password, .new_password, .confirm_password{
+    width: auto;
+  }
+  
+}
+@media (max-width: 768px) {
+  .certificate-item {
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .certificate-item img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .place-row span{
+    font-size: 16px;
+  }
+   
+  .certificates-updates-container{
+    width: 100%;
+  }
+
+  #add_certificate{
+    width: 80px;
+    height: 30px;
+  }
+  
+  .certificate-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    max-height: 60vh;
+  }
+  
+  .certificate-item img {
+    max-width: 100%;
+    max-height: 40vh;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .activity-update-block{
+    width: 100px;
+    height: 100px;
+    margin: 3px 8px;
+  }
+  
+  .activity-updates-container{
+    max-width: 100%;
+  }
+
+  .activity-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  .activity-img{
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  .activity-img > img{
+    width: 95%;
+    height: 95%;
+    margin: 3px;
+  }
+  
+  .activity-updates-container{
+    padding: 5px;
+    margin: 5% auto;
+    width: 100%;
+  }
+
+  .old_password, .new_password, .confirm_password{
+    width: auto;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .certificate-item {
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .certificate-item img {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .place-row span{
+    font-size: 16px;
+  }
+     
+  .certificates-updates-container{
+    width: 100%;
+  }
+
+  #add_certificate{
+    width: 85px;
+    height: 40px;
+  }
+
+  .certificate-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    max-height: 60vh;
+  }
+  
+  .certificate-item img {
+    max-width: 100%;
+    max-height: 40vh;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+    
+  .activity-update-block{
+    width: 100px;
+    height: 100px;
+    margin: 3px 8px;
+  }
+  
+  .activity-updates-container{
+    max-width: 100%;
+  }
+
+  .activity-container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  .activity-img{
+    width: 150px;
+    height: 150px;
+    margin: 3px;
+    padding: 3px;
+  }
+  
+  .activity-img > img{
+    width: 95%;
+    height: 95%;
+    margin: 3px;
+  }
+
+  .activity-updates-container{
+    padding: 5px;
+    margin: 5% auto;
+    width: 100%;
+  }
+
+  .old_password, .new_password, .confirm_password{
+    width: auto;
+  }
+  
+}
