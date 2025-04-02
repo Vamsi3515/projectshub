@@ -1,0 +1,124 @@
+/* Basic Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.blog-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+/* Grid Layout for Blogs */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+/* Blog Card Styling with Smooth Animation */
+.blog-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease-in-out;
+  transform: translateY(0);
+  opacity: 0;
+  animation: fadeInScale 0.6s ease forwards;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-12px) rotate(1deg); /* Slight float and rotation */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Add depth */
+}
+
+/* Image Styling with Animation */
+.blog-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0%;
+  margin-top: 25px;
+  margin-left: 25px;
+  padding-right: 50px;
+  
+  
+  transition: transform 0.4s ease-in-out;
+}
+
+.blog-card:hover .blog-image {
+  transform: scale(1.1) rotate(0deg); /* Slight zoom and rotate */
+}
+
+/* Blog Content */
+.blog-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-content h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #333;
+  font-weight: 600;
+}
+
+.blog-content p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+.blog-content .read-more {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog-content .read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Keyframes for Smooth Fade-in and Scale Effect on Page Load */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-content {
+    text-align: left;
+  }
+}

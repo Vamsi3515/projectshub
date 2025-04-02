@@ -1,0 +1,218 @@
+/* Container for the Course Page */
+.course-page {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Title for the page */
+.course-page h2 {
+  font-size: 36px;
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInHeading 1s ease-in-out forwards;
+}
+
+@keyframes fadeInHeading {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.course-page h2:hover {
+  color: #007BFF;
+  transform: scale(1.08);
+}
+
+.course-page h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007BFF;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Search input styling */
+.search-input {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 12px 15px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 6px 12px rgba(0, 115, 255, 0.2);
+  background-color: #ffffff;
+  transform: scale(1.02);
+}
+
+/* Branch list styling */
+.branch-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 40px; /* Horizontal gap between cards */
+  justify-content: center;
+  padding: 15px;
+  column-gap: 20px;
+}
+
+/* Initial hidden state for branch cards */
+.branch-list .branch-card {
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 20px; /* Vertical gap between cards */
+}
+
+/* When a card becomes visible on scroll */
+.branch-list .branch-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1.1);
+}
+
+/* For desktop, display 4 cards */
+@media (min-width: 1024px) {
+  .branch-list {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 80px; /* Increased horizontal gap for larger screens */
+  }
+}
+
+/* Styling each branch card */
+.branch-list .branch-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+/* Hover effect for branch cards */
+.branch-list .branch-card:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each branch card */
+.branch-list .branch-card h3 {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Description or other content in the card */
+.branch-list .branch-card p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* 'View' button style */
+.branch-list .branch-card button {
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.branch-list .branch-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Keep the active state for the button */
+.branch-list .branch-card button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design for smaller devices */
+@media (max-width: 600px) {
+  .branch-list {
+      row-gap: 25px; /* Increased vertical gap for tablet view */
+      column-gap: 50px; /* Horizontal gap for smaller screens */
+  }
+
+  .branch-list .branch-card {
+      height: 300px;
+      margin-bottom: 15px; /* Vertical gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+      max-width: 100%;
+  }
+  .branch-list {
+      row-gap: 25px; /* Increased vertical gap for mobile view */
+      column-gap: 100px; /* Horizontal gap for smaller screens */
+  }
+  
+  .branch-list .branch-card {
+      height: 100px;
+      margin-bottom: 15px; /* Vertical gap for smaller screens */
+  }
+}
+
+/* Text element animation (for example, headings or paragraphs) */
+.text-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Scroll effect - as the text scrolls into view */
+.text-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes for fading and sliding text */
+@keyframes fadeInText {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

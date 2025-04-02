@@ -1,0 +1,165 @@
+/* Header.css */
+
+.header {
+  position: relative; /* Position for the overlay */
+  height: 600px; /* Height of the header */
+  background-image: url('/src/assets/meeting.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire header */
+  background-position: top; /* Center the background image */
+  
+}
+
+/* Overlay styles */
+.header-overlay {
+  position: absolute; /* Position overlay over the header */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Vertical alignment */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  color: whitesmoke; /* Text color */
+  text-align: center; /* Center text alignment */
+}
+
+.header-title {
+  font-size: 7.5rem; /* Title font size */
+  margin: 0; /* Remove margin */
+  color: transparent;
+  -webkit-text-stroke: 1px #fff; /* Stroke for the text */
+  background: url('/src/assets/back.png'); /* Background for text animation */
+  -webkit-background-clip: text; /* Clip background to text */
+  background-position: 0 0; /* Initial background position */
+  animation: back 20s linear infinite; /* Animation for background */
+  font-family: wfont_118f01_9bef948fd2f54c03b008fef61cc7dc38, wf_9bef948fd2f54c03b008fef61cc7dc38, orig_monument_extended_regular;
+
+}
+
+@keyframes back {
+  100% {
+      background-position: 2000px 0; /* Move background over time */
+  }
+}
+
+.header-subtitle {
+  font-size: 2.5rem; /* Subtitle font size */
+  margin-top: 10px; /* Margin above subtitle */
+  border: 0px solid #ddd; /* No border */
+  height: 50px; /* Fixed height */
+  line-height: 50px; /* Line height */
+  font-size: 45px; /* Font size for subtitle */
+  text-transform: uppercase; /* Uppercase text */
+  overflow: hidden; /* Hide overflow */
+}
+
+.header-subtitle span {
+  position: relative; /* Position for animation */
+  color: #fff; /* Text color */
+  animation: animation 10s ease infinite; /* Animation */
+}
+
+@keyframes animation {
+  0%, 100% {
+      top: 0; /* Start and end at original position */
+  }
+  20% {
+      top: 0; /* Hold at original position */
+  }
+  25% {
+      top: -50px; /* Move up */
+  }
+  45% {
+      top: -50px; /* Hold up */
+  }
+  50% {
+      top: -100px; /* Move up further */
+  }
+  70% {
+      top: -100px; /* Hold up */
+  }
+  75% {
+      top: -150px; /* Move up further */
+  }
+  95% {
+      top: -150px; /* Hold final position */
+  }
+}
+
+/* Styling for word animation */
+.word-animation {
+  display: inline-block;
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* Fade to visible */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .header {
+      height: 500px; /* Reduce height for tablets */
+  }
+  
+  .header-title {
+      font-size: 5rem; /* Reduce title font size */
+  }
+  
+  .header-subtitle {
+      font-size: 2rem; /* Reduce subtitle font size */
+  }
+
+  .fa {
+      font-size: 50px; /* Reduce icon size */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      height: 400px; /* Further reduce height for mobile */
+  }
+
+  .header-title {
+      font-size: 4rem; /* Further reduce title font size */
+  }
+
+  .header-subtitle {
+      font-size: 1.5rem; /* Further reduce subtitle font size */
+  }
+
+  .header-icons {
+      flex-direction: row; /* Align icons in a row */
+      justify-content: center; /* Center icons */
+      margin-top: 10px; /* Space above icons */
+  }
+
+  .fa {
+      font-size: 40px; /* Further reduce icon size */
+      margin: 0 10px; /* Space between icons */
+  }
+}
+
+/* Additional media queries for very small screens */
+@media (max-width: 480px) {
+  .header {
+      height: 300px; /* Further reduce height for very small screens */
+  }
+
+  .header-title {
+      font-size: 3rem; /* Further reduce title font size */
+  }
+
+  .header-subtitle {
+      font-size: 1.2rem; /* Further reduce subtitle font size */
+  }
+
+  .fa {
+      font-size: 30px; /* Further reduce icon size */
+  }
+}

@@ -3,3 +3,13 @@ utils
 requirements.txt
 venv
 .gitattributes
+sitambot/chatbot_model.keras
+sitambot/classes.pkl
+sitambot/words.pkl
+sitambot/chatbot_model.h5
+sitambot/.dist
+sitambot/__pycache__
+sitambot/chatbot
+.dist
+media
+profile

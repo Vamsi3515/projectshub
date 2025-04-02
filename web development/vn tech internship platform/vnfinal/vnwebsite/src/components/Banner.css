@@ -1,0 +1,53 @@
+/* Banner.css */
+.banner-container {
+    position: relative;
+    height: 500px; /* Set a consistent height for the banner */
+    width: 100%; /* Full width */
+    background-size: cover; /* Cover the entire banner area with the background image */
+    background-position: center; /* Center the background image */
+    display: flex; /* Flexbox for centering the content */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clip overflow content */
+    transition: background-image 1s ease-in-out; /* Smooth transition for background image change */
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners for the content background */
+}
+
+.banner-content h2 {
+    font-size: 24px; /* Font size for the banner text */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.discount-price {
+    font-size: 20px; /* Font size for the discount price */
+    font-weight: bold; /* Bold for emphasis */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.quote {
+    font-style: italic; /* Italic for the quote */
+    margin: 15px 0; /* Margin for spacing */
+}
+
+.banner-button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size for the button text */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.banner-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

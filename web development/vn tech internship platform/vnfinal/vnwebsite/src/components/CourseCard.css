@@ -1,0 +1,31 @@
+.course-card {
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  margin: 10px; /* Margin between cards */
+  width: 300px; /* Fixed width */
+  text-align: center; /* Center align text */
+  transition: box-shadow 0.3s; /* Smooth transition for box shadow */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.course-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.course-card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Slightly rounded corners for images */
+}
+
+.course-card h3 {
+  font-size: 1.5rem; /* Font size for course name */
+  margin: 10px 0; /* Margin around course name */
+}
+
+.course-card p {
+  font-size: 1rem; /* Font size for description */
+  color: #555; /* Dark grey color for description text */
+}

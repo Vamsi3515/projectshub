@@ -1,0 +1,112 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 8px 8px; /* Padding around the navbar */
+  background-color: #1f2641; /* Navbar background color */
+  color: white; /* Text color */
+  position: relative; /* For absolute positioning of dropdown */
+  z-index: 10; /* Keep navbar on top */
+}
+
+.navbar-brand {
+  display: flex; /* Flexbox for brand items */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0px;
+}
+
+.logo {
+  width: 100px; /* Adjust logo width to match the button size */
+  height: 40px; /* Fixed height to match button size */
+  object-fit: cover;
+  border-radius: 50px; /*Ensure logo maintains aspect ratio*/
+}
+
+.logo-description {
+  margin-left: 10px; /* Space between logo and text */
+}
+
+.logo-description h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5rem;
+  color:aliceblue;
+
+  
+}
+
+.logo-description p {
+  margin: 0; /* Remove default margin */
+  font-size: 0.9rem; /* Description font size */
+  color:rgb(204, 204, 212); /* Logo font size */
+}
+
+.navbar-toggle {
+  display: none; /* Hide toggle button by default */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.5rem; /* Font size for the hamburger icon */
+}
+
+.navbar-links {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Flexbox for horizontal alignment */
+}
+
+/* Individual link styles */
+.navbar-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.navbar-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 1rem; /* Link font size */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navbar-links a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navbar-links {
+      display: flex; /* Flexbox for horizontal alignment on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none; /* Hide links by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Position links absolutely */
+      top: 60px; /* Position below navbar */
+      left: 0; /* Align to left */
+      width: 100%; /* Full width */
+      background-color: #1f2641; /* Match navbar color */
+      z-index: 1; /* Layer on top */
+      opacity: 0; /* Start invisible */
+      transform: translateY(-10px); /* Start slightly above */
+      transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+
+  .navbar-links.show {
+      display: flex; /* Show links when toggled */
+      opacity: 1; /* Make visible */
+      transform: translateY(0); /* Original position */
+  }
+
+  .navbar-toggle {
+      display: block; /* Show toggle button on small screens */
+  }
+
+  /* Adjust the logo size to match the toggle button on mobile screens */
+  .logo {
+      width: 40px; /* Same size as toggle button */
+      height: 50px; /* Adjust height as needed */
+      border-radius: 50px; /* Rounded logo */
+  }
+}

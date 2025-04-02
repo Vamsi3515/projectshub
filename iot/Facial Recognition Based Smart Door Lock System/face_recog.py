@@ -18,7 +18,7 @@ for filename in os.listdir(auth_faces_folder):
         if encodings:
             known_encodings.append(encodings[0])
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(2)
 
 while True:
     ret, frame = video_capture.read()

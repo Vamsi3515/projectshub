@@ -1,0 +1,191 @@
+/* src/pages/InternshipDetailPage.css */
+.internship-detail-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.internship-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.internship-title {
+  font-size: 2.5em; /* Font size for desktop view */
+  color: #007BFF;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.internship-title:hover {
+  color: #0056b3;
+}
+
+.internship-description {
+  font-size: 1.2em; /* Font size for desktop view */
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.projects-heading {
+  font-size: 2em; /* Font size for desktop view */
+  color: #333;
+  margin-top: 20px;
+  position: relative;
+}
+
+.projects-heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #007BFF;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.projects-heading:hover::after {
+  width: 70px;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.project-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 1.5em; /* Font size for desktop view */
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+.project-description {
+  color: #666;
+  font-size: 1em;
+}
+
+.internship-info {
+  margin-top: 20px;
+  font-size: 1.1em; /* Font size for desktop view */
+  color: #333;
+}
+
+.duration,
+.paid-status,
+.schedule {
+  margin: 5px 0;
+}
+
+.register-button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px; /* Padding for desktop view */
+  border-radius: 5px;
+  font-size: 1.2em; /* Font size for desktop view */
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.internship-image-container {
+  flex: 0 0 50%; /* Set width to 50% for the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.internship-image {
+  width: 100%; /* Maintain full width of the container */
+  max-height: 100%; /* Prevent overflow */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+  .internship-title {
+    font-size: 2.2em; /* Font size for tablet view */
+  }
+
+  .internship-description {
+    font-size: 1.1em; /* Font size for tablet view */
+  }
+
+  .projects-heading {
+    font-size: 1.7em; /* Font size for tablet view */
+  }
+
+  .project-title {
+    font-size: 1.3em; /* Font size for tablet view */
+  }
+
+  .register-button {
+    font-size: 1em; /* Font size for tablet view */
+    padding: 10px 16px; /* Padding for tablet view */
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-detail-page {
+    flex-direction: column; /* Stack elements vertically for mobile */
+  }
+
+  .internship-content {
+    margin-right: 0; /* Reset margin for mobile */
+    margin-bottom: 20px; /* Add margin below content */
+  }
+
+  .internship-image-container {
+    order: 1; /* Ensure image is always last in stacking order */
+    margin-top: 0; /* Reset margin for mobile */
+  }
+
+  .internship-title {
+    font-size: 1.6em; /* Font size for mobile view */
+  }
+
+  .internship-description {
+    font-size: 1em; /* Font size for mobile view */
+  }
+
+  .projects-heading {
+    font-size: 1.5em; /* Font size for mobile view */
+  }
+
+  .project-title {
+    font-size: 1.2em; /* Font size for mobile view */
+  }
+
+  .register-button {
+    font-size: 1em; /* Font size for mobile view */
+    padding: 8px 15px; /* Padding for mobile view */
+  }
+}

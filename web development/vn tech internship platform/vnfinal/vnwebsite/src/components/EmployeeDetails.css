@@ -1,0 +1,154 @@
+.page-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Padding around the container */
+  
+}
+
+.employee-row {
+  display: flex;                    /* Displays items in a row */
+  flex-direction: row;             /* Ensures items are aligned in a row */
+  flex-wrap: wrap;                 /* Allows items to wrap to the next line */
+  justify-content:space-between; 
+  width:100%;     /* Aligns items at the start of the row */
+  box-sizing: border-box;
+  margin-right: 10px;
+  column-gap: 0px;   
+  row-gap: 20px; 
+  padding-left:80px;
+  padding-right: 80px;
+  
+                  /* Increased space between cards */
+}
+
+.employee-container {
+  display: flex;                   /* Aligns image and text in a row */
+  border: 1px solid #ccc;
+  padding: 10px 40px;             /* Padding to create space inside the card */
+  border-radius:70px;            /* Increased border radius for a more rounded look */
+  min-width: 100px;               /* Increased minimum width of each card */
+  max-width: 350px;               /* Increased maximum width of each card */
+  height: 120px;                  /* Height of each card */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow for emphasis */
+  text-align: left;               /* Aligns text to the left within the card */
+  overflow: hidden;               /* Prevents overflow of text */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover effect */
+  margin: 10px;
+  padding-left: 10px;
+  padding-right:120px;
+  float:left;
+  background: linear-gradient(to right, #455aa5,#4f5878);
+  
+  
+}
+
+.employee-container:hover {
+  transform: translateY(-5px);    /* Lift card up on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+}
+
+.employee-image {
+  width: 120px;                   /* Adjusted size of image */
+  height: 120px; 
+  object-fit: cover; 
+                  /* Adjusted size of image */
+  border-radius: 50%;             /* Keep image circular */
+ 
+
+  
+   
+         /* Space between image and text */
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;        /* Aligns text vertically */
+  justify-content: center;       /* Centers content vertically */
+  flex-grow: 1;                  /* Allows this section to grow and take available space */
+}
+.emp-Name{
+  color:white;
+  margin-left:30px;
+}
+
+.emp-pos{
+  color:white;
+  font-size: 20px;
+  margin-left: 50px;
+  
+}
+.social{
+  color:white;
+  height:20px;
+ 
+}
+
+.social-media {
+           /* Space above social media icons */
+  display: flex;                /* Aligns social media icons in a row */
+  gap: 10px; 
+  margin-left:100px; 
+                 /* Space between icons */
+}
+
+.social-media img {
+  width:10px;
+   height:10px;
+}
+
+h2 {
+  font-size: 1.4rem;            /* Increased font size for name */
+  margin: 0;
+}
+
+p {
+  font-size: 1.1rem;            /* Increased font size for position */
+  color: #666;
+  margin: 0;                   /* Remove default margin */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .employee-row {
+    column-gap: 100px;         /* Adjust column gap for medium screens */
+  }
+  .employee-container {
+    max-width: 300px;          /* Reduce max width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .employee-row {
+    column-gap: 60px;          /* Further adjust column gap for small screens */
+  }
+  .employee-container {
+    max-width: 90%;            /* Allow cards to take more width on small screens */
+    padding: 10px 20px;       /* Adjust padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-row {
+    column-gap: 30px;          /* Smallest gap for mobile screens */
+  }
+  .employee-container {
+    flex-direction: column;    /* Stack image and text vertically */
+    align-items: center;       /* Center items */
+    height: auto;              /* Auto height for flexibility */
+  }
+
+  .employee-image {
+    margin-bottom: 10px;       /* Space below image on mobile */
+  }
+
+  h2 {
+    font-size: 1.2rem;         /* Smaller font size for mobile */
+  }
+
+  p {
+    font-size: 1rem;           /* Smaller font size for mobile */
+  }
+}

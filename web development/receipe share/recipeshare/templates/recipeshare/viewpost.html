@@ -1,0 +1,79 @@
+{% extends "recipeshare/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="post_container">
+    <h2 id="post_title">{{ post.recipe_name }}</h2>
+    <div class="author_info">
+        <i class="fa fa-user-circle-o" style="font-size:24px"></i>
+        <h4 id="author">By <a href="{% url 'profile' post.author %}" id="author_name">{{ post.author }}</a></h4>
+        <i class="fa fa-eye views" aria-hidden="true"> {{ post.views_count }}</i>
+    </div>
+    <img id="post_image" src="{{ post.image_url }}" alt="{{ post.recipe_name }}">
+    <p class="post_description">{{ post.description }}</p>
+    <button class="favorite" {% if is_favorite %} title="remove form favorites" {% else %} title="add to favorites" {% endif %} data-postid="{{ post.id }}">Favorite <i {% if is_favorite %} class="fa fa-heart" {% else %} class="fa fa-heart-o" {% endif %} aria-hidden="true"></i></button>
+    <button class="like_post" {% if is_liked %} title="unlike this post" {% else %} title="like this post" {% endif %} data-postid="{{ post.id }}">Like <i {% if is_liked %} class="fa fa-thumbs-up" {% else %} class="fa fa-thumbs-o-up" {% endif %} aria-hidden="true"></i></button>
+    
+    <div class="comment-section">
+        <li class="comment_box user_comment">
+            <i class="fa fa-user-circle-o user_profile"></i>
+            <div class="commenter_name">{{ current_user_comment.user }}</div>
+            <div class="comment_rating">
+            {% if user_rating %}
+                {% for _ in checked_stars %}
+                    <span class="fa fa-star checked"></span>
+                {% endfor %}                    
+                {% for _ in unchecked_stars %}
+                    <span class="fa fa-star"></span>
+                {% endfor %}                    
+            {% endif %}                       
+            </div>
+            <div class="comment_description">{{ current_user_comment.content }}</div>
+            <div class="comment_time">{{ current_user_comment.timestamp|date:"F j, Y" }}</div>
+            <a href="#" class="edit_comment" data-postid="{{post.id}}" data-comment="{{current_user_comment.content}}" data-rating="{{checked_stars|length}}">Edit your comment</a>
+        </li>
+
+        <div class="comment_box_form" data-postid="{{ post.id }}">
+            <h2 class="leave_comment_text">Leave a Comment</h2>
+            <form class="comment-form" id="commentForm" method="post" action="{% url 'addComment' post.id %}" >
+                {% csrf_token %}
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="fa fa-star"></label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="fa fa-star"></label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="fa fa-star"></label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="fa fa-star"></label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="fa fa-star"></label>
+                </div>
+                <textarea name="comment" id="comment" rows="4" placeholder="Enter your comment" required></textarea>
+                <button type="submit" class="comment_submit" data-postid="{{ post.id }}">Submit</button>
+            </form>
+        </div>
+
+        <h3>Comments</h3>
+        <ul class="comment-list" id="commentList">
+            {% if post.comments %}
+                {% for comment in post.comments %}
+                    <li class="comment_box">
+                        <i class="fa fa-user-circle-o user_profile"></i>
+                        <div class="commenter_name">{{ comment.user }}</div>
+                        <div class="comment_rating">
+                        {% if user_rating %}
+                            {% for _ in checked_stars %}
+                                <span class="fa fa-star checked"></span>
+                            {% endfor %}                    
+                            {% for _ in unchecked_stars %}
+                                <span class="fa fa-star"></span>
+                            {% endfor %}                    
+                        {% endif %}                       
+                        </div>
+                        <div class="comment_description">{{ comment.content }}</div>
+                        <div class="comment_time">{{ comment.timestamp|date:"F j, Y" }}</div>
+                    </li>
+                {% endfor %}        
+            {% else %}
+                <p>No comments yet.</p>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Creat Page
+{% endblock %}
+
+{% block body %}
+    <h3>Create a Wiki Page</h3>
+    <form action="{% url 'newpage' %}" method="post">
+        <label for="title">Enter Title :</label>
+        <input type="text" name="title" id="title">
+        <textarea id="description" name="w3review" rows="10" cols="50" placeholder="enter description">
+    </form>
+{% endblock %}

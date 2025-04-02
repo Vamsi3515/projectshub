@@ -1,0 +1,832 @@
+[
+  {
+    "id": 1,
+    "branchName": "Computer Science",
+    "branchDescription": "The Computer Science branch focuses on the study of computer systems, programming, and software engineering.",
+    "image": "/src/assets/internimg/1.jpeg",
+    "internships": [
+      {
+        "internshipId": 101,
+        "title": "Web Development Intern",
+        "description": "In this internship, interns will work on developing and maintaining web applications.",
+        "projects": [
+          "Developed a responsive e-commerce website",
+          "Implemented user authentication system",
+          "Created RESTful APIs for data management"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/101.jpeg"
+      },
+      {
+        "internshipId": 102,
+        "title": "Data Science Intern",
+        "description": "Interns will analyze data and build machine learning models.",
+        "projects": [
+          "Analyzed customer data to improve sales",
+          "Built a predictive model for customer retention",
+          "Visualized data trends using Tableau"
+        ],
+        "duration": "6 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/102.png"
+      },
+      {
+        "internshipId": 103,
+        "title": "Mobile App Development Intern",
+        "description": "Interns will create mobile applications for iOS and Android platforms.",
+        "projects": [
+          "Developed a fitness tracking app",
+          "Integrated payment gateway for e-commerce apps",
+          "Created user-friendly UI/UX designs"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1200,
+        "schedule": "Mon-Fri, 9 AM - 6 PM",
+        "image": "/src/assets/internimg/103.jpg"
+      },
+      {
+        "internshipId": 104,
+        "title": "DevOps Intern",
+        "description": "Interns will assist with deployment and monitoring of applications.",
+        "projects": [
+          "Automated deployment processes",
+          "Set up CI/CD pipelines",
+          "Monitored system performance"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 5 PM",
+        "image": "/src/assets/internimg/104.jpg"
+      },
+      {
+        "internshipId": 105,
+        "title": "Cybersecurity Intern",
+        "description": "Interns will work on securing applications and networks.",
+        "projects": [
+          "Conducted security audits",
+          "Developed security policies",
+          "Analyzed vulnerabilities"
+        ],
+        "duration": "6 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 9 AM - 4 PM",
+        "image": "/src/assets/internimg/105.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "branchName": "Electronics",
+    "branchDescription": "The Electronics branch deals with the study of electrical circuits, devices, and systems.",
+    "image": "/src/assets/internimg/2.jpeg",
+    "internships": [
+      {
+        "internshipId": 201,
+        "title": "Embedded Systems Intern",
+        "description": "Interns will work on designing and testing embedded systems.",
+        "projects": [
+          "Developed firmware for microcontroller-based systems",
+          "Tested and debugged embedded applications",
+          "Collaborated on hardware design for new products"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 10 AM - 5 PM",
+        "image": "/src/assets/internimg/201.jpg"
+      },
+      {
+        "internshipId": 202,
+        "title": "Circuit Design Intern",
+        "description": "Interns will assist in the design and analysis of electronic circuits.",
+        "projects": [
+          "Designed PCB layouts",
+          "Conducted circuit simulations",
+          "Assisted in prototype development"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 9 AM - 4 PM",
+        "image": "/src/assets/internimg/202.jpg"
+      },
+      {
+        "internshipId": 203,
+        "title": "Robotics Intern",
+        "description": "Interns will work on building and programming robotic systems.",
+        "projects": [
+          "Built a line-following robot",
+          "Programmed robotic arms",
+          "Participated in robotics competitions"
+        ],
+        "duration": "5 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 6 PM",
+        "image": "/src/assets/internimg/203.png"
+      },
+      {
+        "internshipId": 204,
+        "title": "Signal Processing Intern",
+        "description": "Interns will analyze and process signals in various applications.",
+        "projects": [
+          "Developed algorithms for signal filtering",
+          "Analyzed audio and video signals",
+          "Implemented DSP techniques"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/204.jpg"
+      },
+      {
+        "internshipId": 205,
+        "title": "Telecommunications Intern",
+        "description": "Interns will assist in the design and management of telecom networks.",
+        "projects": [
+          "Worked on network optimization",
+          "Conducted telecom market research",
+          "Assisted in equipment testing"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/205.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "branchName": "Mechanical Engineering",
+    "branchDescription": "This branch focuses on the design, analysis, and manufacturing of mechanical systems.",
+    "image": "/src/assets/internimg/3.jpeg",
+    "internships": [
+      {
+        "internshipId": 301,
+        "title": "Design Engineering Intern",
+        "description": "Interns will work on CAD designs and product development.",
+        "projects": [
+          "Designed components using CAD software",
+          "Assisted in prototype testing",
+          "Collaborated on design projects"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/301.jpeg"
+      },
+      {
+        "internshipId": 302,
+        "title": "Manufacturing Intern",
+        "description": "Interns will assist in the production and manufacturing processes.",
+        "projects": [
+          "Optimized manufacturing processes",
+          "Conducted quality control tests",
+          "Worked on assembly lines"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/302.jpg"
+      },
+      {
+        "internshipId": 303,
+        "title": "Thermal Engineering Intern",
+        "description": "Interns will work on heat transfer and energy systems.",
+        "projects": [
+          "Conducted thermal analysis",
+          "Assisted in HVAC system design",
+          "Worked on energy efficiency projects"
+        ],
+        "duration": "5 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 9 AM - 6 PM",
+        "image": "/src/assets/internimg/303.jpg"
+      },
+      {
+        "internshipId": 304,
+        "title": "Robotics Engineering Intern",
+        "description": "Interns will work on robotic systems design and automation.",
+        "projects": [
+          "Built robotic prototypes",
+          "Programmed automation systems",
+          "Participated in robotics competitions"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/304.jpg"
+      },
+      {
+        "internshipId": 305,
+        "title": "Project Management Intern",
+        "description": "Interns will assist in managing engineering projects.",
+        "projects": [
+          "Coordinated project schedules",
+          "Assisted in budgeting and planning",
+          "Collaborated with engineering teams"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/305.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "branchName": "Civil Engineering",
+    "branchDescription": "This branch covers the design and construction of infrastructure projects.",
+    "image": "/src/assets/internimg/4.jpeg",
+    "internships": [
+      {
+        "internshipId": 401,
+        "title": "Structural Engineering Intern",
+        "description": "Interns will assist in designing and analyzing structures.",
+        "projects": [
+          "Conducted structural analysis using software",
+          "Assisted in preparing engineering reports",
+          "Collaborated on design projects"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/401.jpg"
+      },
+      {
+        "internshipId": 402,
+        "title": "Geotechnical Intern",
+        "description": "Interns will work on soil analysis and foundation design.",
+        "projects": [
+          "Conducted soil tests and analysis",
+          "Assisted in foundation design",
+          "Prepared technical reports"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/402.jpg"
+      },
+      {
+        "internshipId": 403,
+        "title": "Transportation Engineering Intern",
+        "description": "Interns will assist in planning and designing transportation systems.",
+        "projects": [
+          "Conducted traffic studies",
+          "Assisted in highway design",
+          "Prepared project reports"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/403.jpg"
+      },
+      {
+        "internshipId": 404,
+        "title": "Environmental Engineering Intern",
+        "description": "Interns will work on projects related to environmental sustainability.",
+        "projects": [
+          "Conducted environmental impact assessments",
+          "Assisted in pollution control projects",
+          "Collaborated on sustainable design"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/404.jpg"
+      },
+      {
+        "internshipId": 405,
+        "title": "Construction Management Intern",
+        "description": "Interns will assist in managing construction projects.",
+        "projects": [
+          "Coordinated project schedules",
+          "Assisted in budgeting and planning",
+          "Worked on-site for project monitoring"
+        ],
+        "duration": "6 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 9 AM - 6 PM",
+        "image": "/src/assets/internimg/405.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "branchName": "Chemical Engineering",
+    "branchDescription": "This branch focuses on the processes of converting raw materials into valuable products.",
+    "image": "/src/assets/internimg/5.jpeg",
+    "internships": [
+      {
+        "internshipId": 501,
+        "title": "Process Engineering Intern",
+        "description": "Interns will assist in designing and optimizing chemical processes.",
+        "projects": [
+          "Developed process flow diagrams",
+          "Conducted feasibility studies",
+          "Assisted in equipment design"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/501.jpg"
+      },
+      {
+        "internshipId": 502,
+        "title": "Quality Control Intern",
+        "description": "Interns will assist in ensuring product quality and compliance.",
+        "projects": [
+          "Conducted quality assurance tests",
+          "Assisted in developing quality standards",
+          "Collaborated with production teams"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/502.png"
+      },
+      {
+        "internshipId": 503,
+        "title": "Environmental Safety Intern",
+        "description": "Interns will work on safety and environmental compliance projects.",
+        "projects": [
+          "Conducted safety audits",
+          "Assisted in risk assessments",
+          "Developed safety protocols"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 9 AM - 6 PM",
+        "image": "/src/assets/internimg/503.png"
+      },
+      {
+        "internshipId": 504,
+        "title": "Research and Development Intern",
+        "description": "Interns will assist in developing new chemical products.",
+        "projects": [
+          "Conducted experiments for product development",
+          "Assisted in data analysis",
+          "Collaborated on research projects"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/504.jpg"
+      },
+      {
+        "internshipId": 505,
+        "title": "Pharmaceutical Intern",
+        "description": "Interns will assist in the development of pharmaceutical products.",
+        "projects": [
+          "Conducted stability studies",
+          "Assisted in formulation development",
+          "Collaborated on regulatory compliance"
+        ],
+        "duration": "5 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/505.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "branchName": "Information Technology",
+    "branchDescription": "The IT branch focuses on the use of technology and systems for processing data.",
+    "image": "/src/assets/internimg/6.jpeg",
+    "internships": [
+      {
+        "internshipId": 601,
+        "title": "Software Development Intern",
+        "description": "Interns will assist in software design and development projects.",
+        "projects": [
+          "Developed features for existing applications",
+          "Participated in code reviews",
+          "Collaborated on software design"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/601.jpg"
+      },
+      {
+        "internshipId": 602,
+        "title": "Network Administration Intern",
+        "description": "Interns will assist in managing and maintaining IT networks.",
+        "projects": [
+          "Configured network devices",
+          "Monitored network performance",
+          "Assisted in troubleshooting issues"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/602.jpg"
+      },
+      {
+        "internshipId": 603,
+        "title": "IT Support Intern",
+        "description": "Interns will assist in providing technical support to users.",
+        "projects": [
+          "Resolved technical issues",
+          "Assisted in user training",
+          "Documented support processes"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/603.jpg"
+      },
+      {
+        "internshipId": 604,
+        "title": "Data Analysis Intern",
+        "description": "Interns will analyze data and assist in decision-making processes.",
+        "projects": [
+          "Analyzed data trends",
+          "Prepared reports for management",
+          "Assisted in data visualization"
+        ],
+        "duration": "5 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/604.jpg"
+      },
+      {
+        "internshipId": 605,
+        "title": "Cloud Computing Intern",
+        "description": "Interns will work on cloud-based solutions and services.",
+        "projects": [
+          "Assisted in deploying applications on the cloud",
+          "Conducted cloud service evaluations",
+          "Collaborated on cloud architecture design"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/605.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "branchName": "Mechanical Engineering",
+    "branchDescription": "This branch covers the design and manufacturing of mechanical systems.",
+    "image": "/src/assets/internimg/7.jpeg",
+    "internships": [
+      {
+        "internshipId": 701,
+        "title": "Mechanical Design Intern",
+        "description": "Interns will assist in designing mechanical components.",
+        "projects": [
+          "Created 3D models and simulations",
+          "Conducted design reviews",
+          "Assisted in prototype development"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/701.jpg"
+      },
+      {
+        "internshipId": 702,
+        "title": "Manufacturing Intern",
+        "description": "Interns will work on manufacturing processes and quality control.",
+        "projects": [
+          "Assisted in process optimization",
+          "Conducted quality inspections",
+          "Collaborated with production teams"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/702.jpg"
+      },
+      {
+        "internshipId": 703,
+        "title": "Thermal Engineering Intern",
+        "description": "Interns will assist in thermal analysis and HVAC systems.",
+        "projects": [
+          "Conducted thermal simulations",
+          "Assisted in HVAC system design",
+          "Prepared technical reports"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/703.png"
+      },
+      {
+        "internshipId": 704,
+        "title": "Robotics Intern",
+        "description": "Interns will work on robotic systems and automation.",
+        "projects": [
+          "Assisted in programming robotic systems",
+          "Conducted testing and debugging",
+          "Collaborated on automation projects"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/704.jpg"
+      },
+      {
+        "internshipId": 705,
+        "title": "Materials Engineering Intern",
+        "description": "Interns will assist in materials testing and analysis.",
+        "projects": [
+          "Conducted material tests",
+          "Assisted in material selection",
+          "Collaborated on research projects"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1600,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/705.png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "branchName": "Electrical Engineering",
+    "branchDescription": "This branch deals with electrical systems and electronics.",
+    "image": "/src/assets/internimg/8.jpeg",
+    "internships": [
+      {
+        "internshipId": 801,
+        "title": "Power Systems Intern",
+        "description": "Interns will assist in designing and analyzing power systems.",
+        "projects": [
+          "Conducted power flow analysis",
+          "Assisted in equipment specifications",
+          "Prepared project documentation"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/801.jpg"
+      },
+      {
+        "internshipId": 802,
+        "title": "Control Systems Intern",
+        "description": "Interns will work on control systems and automation.",
+        "projects": [
+          "Assisted in control system design",
+          "Conducted system testing",
+          "Collaborated on automation projects"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/802.jpg"
+      },
+      {
+        "internshipId": 803,
+        "title": "Electronics Intern",
+        "description": "Interns will assist in designing and testing electronic circuits.",
+        "projects": [
+          "Conducted circuit simulations",
+          "Assisted in PCB design",
+          "Prepared technical documentation"
+        ],
+        "duration": "4 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/803.png"
+      },
+      {
+        "internshipId": 804,
+        "title": "Telecommunications Intern",
+        "description": "Interns will work on communication systems and networks.",
+        "projects": [
+          "Assisted in network design",
+          "Conducted signal testing",
+          "Collaborated on telecommunication projects"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/804.jpg"
+      },
+      {
+        "internshipId": 805,
+        "title": "Renewable Energy Intern",
+        "description": "Interns will work on renewable energy projects and systems.",
+        "projects": [
+          "Assisted in solar panel design",
+          "Conducted feasibility studies for wind projects",
+          "Collaborated on energy sustainability initiatives"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/805.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "branchName": "Data Science",
+    "branchDescription": "This branch focuses on data analysis and machine learning.",
+    "image": "/src/assets/internimg/9.jpeg",
+    "internships": [
+      {
+        "internshipId": 901,
+        "title": "Data Analyst Intern",
+        "description": "Interns will assist in analyzing data and generating insights.",
+        "projects": [
+          "Analyzed sales data trends",
+          "Created data visualizations",
+          "Collaborated with marketing teams"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/901.png"
+      },
+      {
+        "internshipId": 902,
+        "title": "Machine Learning Intern",
+        "description": "Interns will assist in developing machine learning models.",
+        "projects": [
+          "Developed predictive models",
+          "Conducted model evaluations",
+          "Collaborated on algorithm optimization"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/902.png"
+      },
+      {
+        "internshipId": 903,
+        "title": "Business Intelligence Intern",
+        "description": "Interns will assist in creating business intelligence reports.",
+        "projects": [
+          "Developed dashboards for data presentation",
+          "Conducted market research",
+          "Collaborated with management teams"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/903.jpg"
+      },
+      {
+        "internshipId": 904,
+        "title": "Data Engineering Intern",
+        "description": "Interns will assist in building data pipelines and ETL processes.",
+        "projects": [
+          "Developed ETL workflows",
+          "Assisted in data warehousing",
+          "Collaborated on data integration projects"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/904.jpg"
+      },
+      {
+        "internshipId": 905,
+        "title": "Data Visualization Intern",
+        "description": "Interns will assist in creating visualizations for data analysis.",
+        "projects": [
+          "Created interactive dashboards",
+          "Assisted in reporting data insights",
+          "Collaborated with cross-functional teams"
+        ],
+        "duration": "3 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/905.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "branchName": "Civil Engineering",
+    "branchDescription": "This branch focuses on infrastructure and construction.",
+    "image": "/src/assets/internimg/10.jpeg",
+    "internships": [
+      {
+        "internshipId": 1001,
+        "title": "Site Engineering Intern",
+        "description": "Interns will assist in site management and construction activities.",
+        "projects": [
+          "Conducted site surveys",
+          "Assisted in project management",
+          "Collaborated with construction teams"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/1001.jpg"
+      },
+      {
+        "internshipId": 1002,
+        "title": "Structural Engineering Intern",
+        "description": "Interns will assist in structural analysis and design.",
+        "projects": [
+          "Conducted structural calculations",
+          "Assisted in design reviews",
+          "Collaborated on material selection"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1400,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/1002.jpg"
+      },
+      {
+        "internshipId": 1003,
+        "title": "Transportation Engineering Intern",
+        "description": "Interns will work on transportation systems and infrastructure.",
+        "projects": [
+          "Assisted in traffic studies",
+          "Conducted feasibility analyses",
+          "Collaborated on transportation planning"
+        ],
+        "duration": "3 months",
+        "paid": true,
+        "amount": 1300,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/1003.jpg"
+      },
+      {
+        "internshipId": 1004,
+        "title": "Environmental Engineering Intern",
+        "description": "Interns will assist in environmental assessments and sustainability projects.",
+        "projects": [
+          "Conducted environmental impact studies",
+          "Assisted in waste management projects",
+          "Collaborated on sustainability initiatives"
+        ],
+        "duration": "4 months",
+        "paid": false,
+        "amount": 0,
+        "schedule": "Mon-Fri, 10 AM - 4 PM",
+        "image": "/src/assets/internimg/1004.jpg"
+      },
+      {
+        "internshipId": 1005,
+        "title": "Construction Management Intern",
+        "description": "Interns will assist in managing construction projects.",
+        "projects": [
+          "Assisted in budgeting and scheduling",
+          "Conducted project meetings",
+          "Collaborated with subcontractors"
+        ],
+        "duration": "4 months",
+        "paid": true,
+        "amount": 1500,
+        "schedule": "Mon-Fri, 9 AM - 5 PM",
+        "image": "/src/assets/internimg/1005.jpg"
+      }
+    ]
+  }
+]

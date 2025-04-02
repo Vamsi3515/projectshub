@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Primary color for headings */
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+/* Container for pages */
+.container {
+  max-width: 1200px;
+  margin: 20px auto; /* Centered with margin */
+  padding: 20px; /* Padding for inner content */
+  background: white; /* White background for content */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Button Styles */
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Link Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* For fixed positioning if needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on mobile */
+  }
+}

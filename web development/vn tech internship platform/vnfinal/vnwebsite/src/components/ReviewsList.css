@@ -1,0 +1,23 @@
+/* Scrolling container for reviews */
+.scroll-container {
+    animation: scrollReviews 20s linear infinite;
+  }
+  
+  @keyframes scrollReviews {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Adjust the container */
+  .reviews-list {
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

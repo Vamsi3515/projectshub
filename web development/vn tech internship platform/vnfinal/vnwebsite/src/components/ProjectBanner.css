@@ -1,0 +1,74 @@
+/* Basic styles for the banner */
+.banner {
+    background-color:#1f2641;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    box-shadow: #fff;
+    transition: padding 0.3s ease;
+    max-width: 1020px; /* Increased width */
+    margin: 0 auto; /* Centers the banner */
+    width: 100%; /* Ensures full width up to max-width */
+  }
+  
+  .banner:hover {
+    padding: 50px 20px; /* Increase height on hover */
+  }
+  
+  /* Text styling */
+  .banner h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  /* Link button styling */
+  .book-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .book-link:hover {
+    transform: translateY(-3px); /* Lifts the button slightly */
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3); /* Light blue shadow */
+  }
+  
+  /* Responsive styles for mobile, tablet, and desktop */
+  @media (max-width: 600px) {
+    .banner h1 {
+      font-size: 1.5em;
+    }
+    .book-link {
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .banner h1 {
+      font-size: 1.8em;
+    }
+    .book-link {
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .banner h1 {
+      font-size: 2em;
+    }
+    .book-link {
+      padding: 12px 25px;
+    }
+  }
+  

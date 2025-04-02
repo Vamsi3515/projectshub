@@ -1,0 +1,17 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div>
+    <h2>Following</h2>
+    <body onload="get_following_posts()">
+        <body class="following_page">
+            <div class="post_container"></div>
+            <div class="pagination_container"></div>
+        </body>
+    </body>
+</div>
+{% block static %}
+    <script src="{% static 'network/index.js' %}" type="text/javascript"></script>
+{% endblock %}
+{% endblock %}

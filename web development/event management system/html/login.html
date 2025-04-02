@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Honey Events</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="logo">
+        <h2><span>H</span>oney Events</h2>
+    </div>
+        <div class="container">
+            <div class="box">
+                <form action="/html/login.php" method="post">
+                    <div class="form">
+                        <h2>Login</h2>
+                        <br>
+                        <br>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <br>
+                        <a href="#"><h5>forgot password ?</h5></a>
+                        <br><br>
+                        <button type="submit">Log In</button>
+                    </div>
+                </form>
+            </div>
+                <div class="box">
+                    <form action="/html/signup.php">
+                        <div class="form">
+                            <h2>Sign Up</h2>
+                            <div class="horizontal">
+                                <div class="name">
+                                    <label for="firstName">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                </div>
+                                <div class="name">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                </div>
+                            </div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                                <label for="checkboxAgree">
+                                    <div class="horizontal">
+                                        <input type="checkbox" id="checkboxAgree" name="checkboxAgree" required>
+                                    <h4>
+                                        I agree to the terms and conditions
+                                    </h4>
+                                    </div>
+                                </label>
+                            <button>Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+</body>
+</html>

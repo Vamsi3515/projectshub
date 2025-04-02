@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .registration {
+    max-width: 600px; /* Default width for desktop */
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .registration:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  textarea {
+    height: 100px; /* Height for textarea */
+    resize: none;  /* Disable resizing */
+  }
+  
+  button {
+    height: 45px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-message {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+  }
+  
+  /* Payment options */
+  .payment-options {
+    display: flex;
+    justify-content: space-around; /* Space out the buttons evenly */
+    margin-bottom: 15px; /* Space below the buttons */
+  }
+  
+  .payment-options button {
+    height: 35px; /* Smaller button height */
+    width: 80px; /* Fixed button width */
+    background-color: #28a745; /* Green for Yes button */
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .payment-options button:nth-child(2) {
+    background-color: #dc3545; /* Red for No button */
+  }
+  
+  .payment-options button:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+  }
+  
+  /* Responsive Styles */
+  
+  /* Mobile view */
+  @media (max-width: 480px) {
+    .registration {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+    }
+  
+    button {
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    input,
+    textarea {
+      height: 40px; /* Smaller input height for mobile */
+    }
+  
+    .payment-options button {
+      height: 30px; /* Smaller button height for mobile */
+      width: 70px; /* Smaller button width for mobile */
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .registration {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.75rem; /* Medium heading size */
+    }
+  
+    button {
+      height: 45px;
+      font-size: 15px;
+    }
+  
+    input,
+    textarea {
+      height: 45px; /* Medium input height */
+    }
+  }
+  
+  /* Desktop view */
+  @media (min-width: 769px) {
+    .registration {
+      padding: 30px; /* More padding for desktop */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Larger heading size */
+    }
+  
+    button {
+      height: 50px;
+      font-size: 18px;
+    }
+  
+    input,
+    textarea {
+      height: 50px; /* Larger input height for desktop */
+    }
+  }
+  

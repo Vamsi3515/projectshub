@@ -1,0 +1,2613 @@
+{
+  "projects": [
+    {
+      "projectId": "001",
+      "projectName": "A Data Sharing Protocol To Minimize Security And Privacy Risks Of Cloud Storage In Big Data Era",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "002",
+      "projectName": "Blockchain-Based Management For Organ Donation And Transplantation",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "003",
+      "projectName": "Blockchain As A Cyber Defense: Opportunities, Applications, And Challenges",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "004",
+      "projectName": "Web Cloud: Web-Based Cloud Storage For Secure Data Sharing Across Platforms",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "005",
+      "projectName": "Enabling Trust And Privacy-Preserving E-KYC System Using Blockchain",
+      "projectDomain": "Blockchain",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "006",
+      "projectName": "Trust-Based Privacy-Preserving Photo Sharing In Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "007",
+      "projectName": "Global-Aware Ranking Deep Metric Learning For Remote Sensing Image Retrieval",
+      "projectDomain": "Image Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "008",
+      "projectName": "The Social Media Break-Up: Psycho-Behavioral Measures And Implications",
+      "projectDomain": "Social Media",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "009",
+      "projectName": "A Lightweight Secure Auditing Scheme For Shared Data In Cloud Storage",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "010",
+      "projectName": "A Lightweight Secure Data Sharing Scheme For Mobile Cloud Computing",
+      "projectDomain": "Mobile Cloud",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "011",
+      "projectName": "Automated Decision Making In Airport Checkpoints",
+      "projectDomain": "Artificial Intelligence",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "012",
+      "projectName": "Item Recommendation For Word-Of-Mouth Scenario In Social E-commerce",
+      "projectDomain": "E-commerce",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "013",
+      "projectName": "Filtering Instagram Hash Tags Through Crowd Tagging And The Hits Algorithm",
+      "projectDomain": "Social Media",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "014",
+      "projectName": "Social Media Driven Big Data Analysis For Disaster Situation Awareness: A Tutorial",
+      "projectDomain": "Big Data",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "015",
+      "projectName": "Detecting Pickpocket Suspects From Large-Scale Public Transit Records",
+      "projectDomain": "Data Analytics",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "016",
+      "projectName": "Secure Key Agreement And Key Protection For Mobile Device User Authentication",
+      "projectDomain": "Mobile Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "017",
+      "projectName": "Hidden Ciphertext Policy Attribute-Based",
+      "projectDomain": "Cryptography",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "018",
+      "projectName": "Cyber Security Awareness In Online Education: A Case Study Analysis",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "019",
+      "projectName": "Design Of Secure Authenticated Key Management Protocol For Cloud Computing Environments",
+      "projectDomain": "Cloud Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "020",
+      "projectName": "Composite Behavioral Modeling For Identity Theft Detection In Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "021",
+      "projectName": "Secure Data Transfer And Deletion Form Counting Bloom Filter In Cloud Computing",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000
+    },
+    {
+      "projectId": "022",
+      "projectName": "BOEW: A Content-Based Image Retrieval Scheme Using Bag-of-Encrypted-Words in Cloud Computing",
+      "projectDomain": "Image Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "023",
+      "projectName": "Scalable and Secure Big Data IoT System Based on Multifactor Authentication Lightweight Cryptography",
+      "projectDomain": "IoT",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "024",
+      "projectName": "Code-Personality Aware Product Recommendation System Based on User Interest Mining",
+      "projectDomain": "Recommendation System",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "025",
+      "projectName": "Catch You if You Misbehave: Ranked Keyword Search Results Verification in Cloud Computing",
+      "projectDomain": "Cloud Computing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "026",
+      "projectName": "Dual Access Control for Cloud-Based Data Storage and Sharing",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "027",
+      "projectName": "Product Suggestion for Online Shopping Word-of-Mouth Scenario",
+      "projectDomain": "E-commerce",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "028",
+      "projectName": "Securing Cloud Data under Key Exposure",
+      "projectDomain": "Cloud Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "029",
+      "projectName": "PASPORT: A Secure and Private Location Proof Generation and Verification Framework",
+      "projectDomain": "Location-Based Services",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "030",
+      "projectName": "Activity Minimization of Misinformation Influence in Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "031",
+      "projectName": "An Efficient Ciphertext Index Retrieval Scheme based on Edge Computing Framework",
+      "projectDomain": "Edge Computing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "032",
+      "projectName": "An Efficient Feedback Control Mechanism for Positive/Negative Information Spread in Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "033",
+      "projectName": "Privacy Protection and Intrusion Avoidance for Cloudlet-based Medical Data Sharing",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "034",
+      "projectName": "Blockchain-based Data Validation with Proxy Re-Encryption on Cloud",
+      "projectDomain": "Blockchain",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "035",
+      "projectName": "A Blockchain-based Autonomous Decentralized Online Social Network",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "036",
+      "projectName": "Composite Behavioral Modeling for Identity Theft Detection in Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "037",
+      "projectName": "CryptCloud+: Secure and Expressive Data Access Control for Cloud Storage",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "038",
+      "projectName": "Cyber Security Awareness in Online Education: A Case Study Analysis",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "039",
+      "projectName": "Data Privatization Technique for Cryptencryption on Cloud Environment",
+      "projectDomain": "Cloud Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "040",
+      "projectName": "Feature Selection Algorithm for Predicting Students' Academic Performance Using Data Mining Techniques",
+      "projectDomain": "Data Mining",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "041",
+      "projectName": "Fraud Detection in Online Product Review Systems via Heterogeneous Graph Transformer",
+      "projectDomain": "E-commerce",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "042",
+      "projectName": "Lightweight Cloud Storage Auditing with Deduplication Supporting Strong Privacy Protection",
+      "projectDomain": "Cloud",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "043",
+      "projectName": "Lightweight Cloud Storage Auditing with Deduplication Supporting Strong Privacy Protection",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "044",
+      "projectName": "Privacy-Aware Personal Data Storage (P-PDS) Learning How to Protect User Privacy from External Applications",
+      "projectDomain": "Data Privacy",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "045",
+      "projectName": "Protecting Personal Healthcare Record Using Blockchain & Federated Learning Technologies",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "046",
+      "projectName": "A Secure Blockchain-Based Scheme for IoT Data Credibility in Fog Environment",
+      "projectDomain": "IoT",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "047",
+      "projectName": "Secure Cloud Data Deduplication with Efficient Re-Encryption",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "048",
+      "projectName": "The Effect of Social Media User Behaviors on Security and Privacy Threats",
+      "projectDomain": "Social Media",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "049",
+      "projectName": "Trust-Based Privacy-Preserving Photo Sharing in Online Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "050",
+      "projectName": "Stealthy Denial of Service Strategy in Cloud Computing",
+      "projectDomain": "Cloud Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "051",
+      "projectName": "A Proxy Re-Encryption Approach to Secure Data Sharing in the Internet of Things Based on Blockchain",
+      "projectDomain": "IoT Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "052",
+      "projectName": "Active Online Learning for Social Media Analysis to Support Crisis Management",
+      "projectDomain": "Social Media Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "053",
+      "projectName": "A Secure Privacy-Preserving Cloud-Framework for Sharing Electronic Health Data",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "054",
+      "projectName": "Privacy Protection and Instruction Avoidance for Cloudlet-Based Medical Data Sharing",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "055",
+      "projectName": "Detecting Mobile Malicious Webpages in Real-Time",
+      "projectDomain": "Mobile Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "056",
+      "projectName": "Efficient Regular Languages Search for Secure Cloud Storage",
+      "projectDomain": "Cloud Storage",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "057",
+      "projectName": "Enable Efficient Secure and Privacy-Preserving Mobile Cloud Storage",
+      "projectDomain": "Mobile Cloud",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "058",
+      "projectName": "Evaluating Public Anxiety for Topic-Based Communities in Social Networks",
+      "projectDomain": "Social Network Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "059",
+      "projectName": "Intelligent Distribution of Fresh Agricultural Products in Smart City",
+      "projectDomain": "Smart City",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "060",
+      "projectName": "Fingerprint-Based ATM System",
+      "projectDomain": "Biometric Security",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+   
+    {
+      "projectId": "061",
+      "projectName": "Similarity Search for Encrypted Images in Secure Cloud Computing",
+      "projectDomain": "Cloud Computing",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "062",
+      "projectName": "Social Engineering Attacks Prevention: A Systematic Literature Review",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "063",
+      "projectName": "Protecting Your Shopping Preference with Differential Privacy",
+      "projectDomain": "Data Privacy",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "064",
+      "projectName": "Secure Keyword Search and Data Sharing Mechanism for Cloud Computing",
+      "projectDomain": "Cloud Computing",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "065",
+      "projectName": "Sentiment Analysis of Lockdown in India During COVID-19: A Case Study on Twitter",
+      "projectDomain": "Social Media Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "066",
+      "projectName": "Suicidal Ideation Detection: A Review of Machine Learning Methods and Applications",
+      "projectDomain": "Machine Learning",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "067",
+      "projectName": "A Blockchain-Based Autonomous Decentralized Online Social Network",
+      "projectDomain": "Blockchain",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "068",
+      "projectName": "A Trusted Blockchain-Based Traceability System for Fruit and Vegetable Agricultural Products",
+      "projectDomain": "Blockchain",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "069",
+      "projectName": "Designing Secure and Efficient Biometric-Based Secure Access Mechanism for Cloud Services",
+      "projectDomain": "Cloud Security",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "070",
+      "projectName": "SBBS: A Secure Blockchain-Based Scheme for IoT Data Credibility in Fog Environment",
+      "projectDomain": "IoT",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "071",
+      "projectName": "Personality-Aware Product Recommendation System Based on User Interest Mining and Meta-Path Discovery",
+      "projectDomain": "Recommendation System",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "072",
+      "projectName": "Pay as You Decrypt: Decryption Outsourcing for Functional Encryption Using Blockchain",
+      "projectDomain": "Blockchain",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "073",
+      "projectName": "Dynamic Control of Fraud Information Spreading in Mobile Social Networks",
+      "projectDomain": "Social Network",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "074",
+      "projectName": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
+      "projectDomain": "Fraud Detection",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "075",
+      "projectName": "Online Public Shaming on Twitter: Detection, Analysis, and Mitigation",
+      "projectDomain": "Social Media Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "076",
+      "projectName": "CoDetect: Financial Fraud Detection with Anomaly Feature Detection",
+      "projectDomain": "Fraud Detection",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "077",
+      "projectName": "Health Monitoring on Social Media Over Time",
+      "projectDomain": "Social Media Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+      {
+      "projectId": "078",
+      "projectName": "Web Media and Stock Markets: A Survey and Future Directions from a Big",
+      "projectDomain": "Social Media Analysis",
+      "cost": 10000,
+      "branch": "CSE"
+      },
+    
+
+{
+"projectId": "079",
+"projectName": "Verifiable and Multi-Keyword Searchable Attribute",
+"projectDomain": "Information Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "080",
+"projectName": "Energy Efficient Clustering Algorithm for Multi-Hop Wireless Sensor Network Using Type-2 Fuzzy Logic",
+"projectDomain": "Wireless Sensor Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "081",
+"projectName": "Trust-Based Privacy-Preserving Photo Sharing in Online Social Networks",
+"projectDomain": "Social Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "082",
+"projectName": "Risk Assessment in Social Networks Based on User Anomalous Behaviours",
+"projectDomain": "Social Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "083",
+"projectName": "A Workflow Management System for Scalable Data Mining on Clouds",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "084",
+"projectName": "Privacy Protection Based Access Control Scheme in Cloud-Based Services",
+"projectDomain": "Cloud Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "085",
+"projectName": "A Secure and Verifiable Access Control Scheme for Big Data Storage in Clouds",
+"projectDomain": "Cloud Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "086",
+"projectName": "Search Rank Fraud and Malware Detection in Google Play",
+"projectDomain": "Cybersecurity",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "087",
+"projectName": "Social Network Rumor Diffusion Prediction Based on Equal Responsibility Game Model",
+"projectDomain": "Social Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "088",
+"projectName": "Unified Fine-Grained Access Control for Personal Health Records in Cloud Computing",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "089",
+"projectName": "Fast Cosine Similarity Search in Binary Space with Angular Multi-Index Hashing",
+"projectDomain": "Information Retrieval",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "090",
+"projectName": "Detection of Suicide-Related Posts in Twitter Data Streams",
+"projectDomain": "Social Media Analysis",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "091",
+"projectName": "Protecting Location Privacy for Task Allocation in Ad Hoc Mobile Cloud Computing",
+"projectDomain": "Mobile Cloud",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "092",
+"projectName": "Towards Shared Ownership in the Cloud",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "093",
+"projectName": "A Workflow Management System for Scalable Data Mining on Clouds",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "094",
+"projectName": "Online Product Quantization",
+"projectDomain": "E-commerce",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "095",
+"projectName": "Traffic and Energy-Aware Routing for Heterogeneous Wireless Sensor Networks",
+"projectDomain": "Wireless Sensor Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "096",
+"projectName": "SeDaSC: Secure Data Sharing in Clouds",
+"projectDomain": "Cloud Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "097",
+"projectName": "Automated Decision Making in Airport Checkpoints: Bias Detection Toward Smarter Security and Fairness",
+"projectDomain": "Artificial Intelligence",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "098",
+"projectName": "Filtering Instagram Hashtags Through Crowd Tagging and the HITS Algorithm",
+"projectDomain": "Social Media Analysis",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "099",
+"projectName": "SPFM: Scalable and Privacy-Preserving Friend Matching in Mobile Cloud",
+"projectDomain": "Mobile Cloud",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "100",
+"projectName": "A Comprehensive Study on Social Network Mental Disorders Detection via Online Social Media Mining",
+"projectDomain": "Social Media Analysis",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "101",
+"projectName": "Spammer Detection and Fake User Identification on Social Networks",
+"projectDomain": "Social Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "102",
+"projectName": "Chaotic Searchable Encryption for Mobile Cloud Storage",
+"projectDomain": "Cloud Storage",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "103",
+"projectName": "Credit Card Fraud Detection Using AdaBoost and Majority Voting",
+"projectDomain": "Fraud Detection",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "104",
+"projectName": "Securing Data in Internet of Things Using Cryptography",
+"projectDomain": "IoT Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "105",
+"projectName": "Scalable Content-Aware Collaborative Filtering for Location Recommendation",
+"projectDomain": "Recommendation System",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "106",
+"projectName": "Efficient Retrieval over Documents Encrypted by Attributes in Cloud Computing",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "107",
+"projectName": "Secure Key Agreement and Key Protection for Mobile Device User Authentication",
+"projectDomain": "Mobile Security",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "108",
+"projectName": "An Efficient and Secured Framework for Mobile Cloud Computing",
+"projectDomain": "Mobile Cloud",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "109",
+"projectName": "Road Traffic Speed Prediction: A Probabilistic Model Fusing Multi-Source Data",
+"projectDomain": "Data Analytics",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "110",
+"projectName": "Using Data Mining to Predict Hospital Admissions From the Emergency Department",
+"projectDomain": "Data Mining",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "111",
+"projectName": "A Developer-Centered Bug Prediction Model",
+"projectDomain": "Software Engineering",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "112",
+"projectName": "PASPORT: A Secure and Private Location Proof Generation and Verification Framework",
+"projectDomain": "Location-Based Services",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "113",
+"projectName": "An Approach to Balance Maintenance Costs and Electricity Consumption in Cloud Data Centers",
+"projectDomain": "Cloud Computing",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "114",
+"projectName": "Authentication by Encrypted Negative Password",
+"projectDomain": "Cybersecurity",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "115",
+"projectName": "CryptCloud+: Secure and Expressive Data Access Control for Cloud Storage",
+"projectDomain": "Cloud Storage",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "116",
+"projectName": "Banking Application (SBI)",
+"projectDomain": "Banking",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "117",
+"projectName": "Cybernetics Protector",
+"projectDomain": "Cybersecurity",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "118",
+"projectName": "Graphical Representation of Students Performance and Project Reporting System",
+"projectDomain": "Education",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "119",
+"projectName": "Dynamic Rumor Influence Minimization with the User Experience in Social Networks",
+"projectDomain": "Social Network",
+"cost": 10000,
+"branch": "CSE"
+},
+{
+"projectId": "120",
+"projectName": "Spam Blocker for Application",
+"projectDomain": "Cybersecurity",
+"cost": 10000,
+"branch": "CSE"
+},{
+  "projectId": "121",
+  "projectName": "Detecting Stress Based On Social Interactions In Social Networks",
+  "projectDomain": "Social Network Analysis",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "122",
+  "projectName": "Coverless Information Hiding Method Based On Web Text",
+  "projectDomain": "Information Security",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "123",
+  "projectName": "My Privacy My Decision: Control Of Photo Sharing On Online Social Networks",
+  "projectDomain": "Social Network",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "124",
+  "projectName": "Fine-Grained Two-Factor Access Control For Web-Based Cloud Computing Services",
+  "projectDomain": "Cloud Computing",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "125",
+  "projectName": "Detecting Malicious Social Bots Based On Click Stream Sequence",
+  "projectDomain": "Cybersecurity",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "126",
+  "projectName": "Online Fraud Detection",
+  "projectDomain": "Fraud Detection",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "127",
+  "projectName": "Credit Card Fraud Detection Using Adaboost And Majority Voting",
+  "projectDomain": "Fraud Detection",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "128",
+  "projectName": "Online Voting System For Election",
+  "projectDomain": "E-Voting",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "129",
+  "projectName": "Online Fee Payment System",
+  "projectDomain": "E-Payment",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "130",
+  "projectName": "Two-Factor Data Security Protection Mechanism For Cloud Storage System",
+  "projectDomain": "Cloud Security",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "131",
+  "projectName": "Crime Record System",
+  "projectDomain": "Law Enforcement",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "132",
+  "projectName": "Hostel Management System",
+  "projectDomain": "Education",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "133",
+  "projectName": "Image Steganography Hidden Information",
+  "projectDomain": "Information Security",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "134",
+  "projectName": "Privacy Protection Based Access Control Scheme In Cloud-Based Services",
+  "projectDomain": "Cloud Security",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "135",
+  "projectName": "Privacy Preserving Ranked Multi-Keyword Search For Multiple Data Owners In Cloud Computing",
+  "projectDomain": "Cloud Computing",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "136",
+  "projectName": "Restaurant On Cloud",
+  "projectDomain": "Cloud Computing",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "137",
+  "projectName": "Ambulance Service Provider",
+  "projectDomain": "Healthcare",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "138",
+  "projectName": "Food Safety Portal",
+  "projectDomain": "Food Safety",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "139",
+  "projectName": "Corruption Control Through Budget Maintenance",
+  "projectDomain": "Governance",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "140",
+  "projectName": "Pharmacy Management System",
+  "projectDomain": "Healthcare",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "141",
+  "projectName": "Citizen Card System",
+  "projectDomain": "Governance",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "142",
+  "projectName": "Handlooms And Handicrafts In Online Stores",
+  "projectDomain": "E-Commerce",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "143",
+  "projectName": "Business Directory",
+  "projectDomain": "Business",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  
+  
+
+  {
+  "projectId": "144",
+  "projectName": "Bug Tracking System",
+  "projectDomain": "Software Engineering",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "145",
+  "projectName": "RTO Management",
+  "projectDomain": "Governance",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "146",
+  "projectName": "Spammer Detection And Fake Identification On Social Networks",
+  "projectDomain": "Social Network Analysis",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "147",
+  "projectName": "Human Resource Database Management System",
+  "projectDomain": "HR Management",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "148",
+  "projectName": "University Admission System",
+  "projectDomain": "Education",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "149",
+  "projectName": "Student Database Management System For A University",
+  "projectDomain": "Education",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "150",
+  "projectName": "My Privacy My Decision: Photo Sharing On Online Social Networks",
+  "projectDomain": "Social Network",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "151",
+  "projectName": "Online Housing Rental System",
+  "projectDomain": "Real Estate",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "152",
+  "projectName": "A Secure And Verifiable Access Control Scheme For Big Data Storage In Clouds",
+  "projectDomain": "Cloud Security",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "153",
+  "projectName": "Crime Records Management System",
+  "projectDomain": "Law Enforcement",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "154",
+  "projectName": "Survey On Social Media Posts Possess Stress Or Stress-Less Post Detection",
+  "projectDomain": "Social Media Analysis",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "155",
+  "projectName": "School Management",
+  "projectDomain": "Education",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "156",
+  "projectName": "Online Food Delivery System With Menu Details",
+  "projectDomain": "Food Delivery",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "157",
+  "projectName": "Air Lines Reservation System",
+  "projectDomain": "Airline Management",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "158",
+  "projectName": "E-Commerce: Cold-Start Product Recommendation",
+  "projectDomain": "E-Commerce",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "159",
+  "projectName": "An Hybrid Approach For Detecting Automated Spammers In Twitter",
+  "projectDomain": "Social Media Analysis",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "160",
+  "projectName": "Catering Management System",
+  "projectDomain": "Food Service Management",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "161",
+  "projectName": "CBI Crime Identification And Investigation",
+  "projectDomain": "Law Enforcement",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "162",
+  "projectName": "Teachers Feedback Project",
+  "projectDomain": "Education",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+  "projectId": "163",
+  "projectName": "Movie Rating System",
+  "projectDomain": "Recommendation System",
+  "cost": 10000,
+  "branch": "CSE"
+  },
+  {
+    "projectId": "164",
+    "projectName": "Unveiling The Unreal: Deepfake Face Detection using CNN and LSTM",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "165",
+    "projectName": "Brain Tumour Detection Using UNET and Deep Learning",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "166",
+    "projectName": "Human Action Recognition from Video using ML and DL Classifiers",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "167",
+    "projectName": "Online Medical Application using ML",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "168",
+    "projectName": "Medical App Lung Cancer Stage Prediction using ML (Data Analysis)",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "169",
+    "projectName": "Accident Detection System from Videos using CNN",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "170",
+    "projectName": "Hand Gesture Recognition with CNN and Python",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "171",
+    "projectName": "Skin Diseases Diagnosis Using Convolutional Neural Network",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "172",
+    "projectName": "Breast Cancer Detection using CNN and RNN (Hybrid)",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "173",
+    "projectName": "Facial Emoji Avatars Generation Based on Face Emotion",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "174",
+    "projectName": "Traffic Sign Detection and Recognition using Deep Learning",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "175",
+    "projectName": "Image Captioning using Deep Learning Algorithms (CNN-LSTM)",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "176",
+    "projectName": "Convolutional Neural Network based Dietary Assessment using Food Image",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "177",
+    "projectName": "A Deep Learning-Based Approach for Inappropriate Content Detection",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "178",
+    "projectName": "Sentiment Based Model for Recommender System in YouTube",
+    "projectDomain": "Recommendation System",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "179",
+    "projectName": "Classification of Pests using Computer Vision CNN Algorithm",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "180",
+    "projectName": "Minimizing Financial Cost of DDoS Attack Defense in Clouds",
+    "projectDomain": "Cybersecurity",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "181",
+    "projectName": "Depression Detection from Text, Image & Speech using Deep Learning",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "182",
+    "projectName": "Crop Recommendation using Machine Learning Approaches",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "183",
+    "projectName": "Facial Emotion based Music Recommendation System Using Deep Learning",
+    "projectDomain": "Recommendation System",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "184",
+    "projectName": "Resume Analyzer using Natural Language Processing",
+    " projectDomain": "Recommendation System",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "185",
+    "projectName": "Online Voting System",
+    "projectDomain": "E-Voting",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "186",
+    "projectName": "Automated Recruitment Process",
+    "projectDomain": "HR Management",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "187",
+    "projectName": "Web Framework",
+    "projectDomain": "Web Development",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "188",
+    "projectName": "Automatic Managing an Exam Invigilation Duty",
+    "projectDomain": "Education",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "189",
+    "projectName": "QR Based Food Ordering System",
+    "projectDomain": "Food Service Management",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "190",
+    "projectName": "Faculty Management System",
+    "projectDomain": "Education",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "191",
+    "projectName": "Fingerprint Based ATM System",
+    "projectDomain": "Banking",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "192",
+    "projectName": "TEXT and IMAGE Plagiarism Detection using Python",
+    "projectDomain": "Education",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "193",
+    "projectName": "Courier Management System",
+    "projectDomain": "Logistics",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "194",
+    "projectName": "Online Bus Ticketing Application",
+    "projectDomain": "Transportation",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "195",
+    "projectName": "Price Prediction of Agriculture Commodities using ML and NLP",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "196",
+    "projectName": "Car Pooling Application for Driver and Passenger",
+    "projectDomain": "Transportation",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "197",
+    "projectName": "Data Management Service for Morris Health Service",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "198",
+    "projectName": "Online Event Management System",
+    "projectDomain": "Event Management",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "199",
+    "projectName": "Online Grievance System",
+    "projectDomain": "Governance",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "200",
+    "projectName": "Turtle Back Zoo Management Application",
+    "projectDomain": "Wildlife Management",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "201",
+    "projectName": "Prediction of Admissions in Engineering Colleges using Machine Learning",
+    "projectDomain": "Education",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "202",
+    "projectName": "Fingerprint Based ATM System",
+    "projectDomain": "Banking",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "203",
+    "projectName": "Online Blood Bank System",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "204",
+    "projectName": "Inverse Cooking: Recipe Generation from Food Images",
+    "projectDomain": "Food Service Management",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "205",
+    "projectName": "Suspicious Activity Detection from Videos using CNN",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "206",
+    "projectName": "Face Recognition using CNN",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "207",
+    "projectName": "Missing Child Identification System",
+    "projectDomain": "Law Enforcement",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "208",
+    "projectName": "AI-Enabled Water Well Predictor",
+    "projectDomain": "Environmental Science",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "209",
+    "projectName": "AI-Enabled Water Well Predictor",
+    "projectDomain": "Environmental Science",
+    "cost": 10000,
+    "branch": "CSE"
+    }, 
+    {
+    "projectId": "210",
+    "projectName": "Stock Market Analysis using Supervised Machine Learning",
+    "projectDomain": "Finance",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "211",
+    "projectName": "A Novel Approach for ABO Blood Group Prediction using Fingerprint through Optimized CNN",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "212",
+    "projectName": "Air Quality Strategies, Exploratory Data Analysis using Machine Learning",
+    "projectDomain": "Environmental Science",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "213",
+    "projectName": "Global Environment Analysis using ML",
+    "projectDomain": "Environmental Science",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "214",
+    "projectName": "Abstractive Text Summarization using Transformers",
+    "projectDomain": "NLP",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "215",
+    "projectName": "Blockchain Technology for Agricultural Supply Chain",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "216",
+    "projectName": "Blockchain-Quality of Assurance and Food Authenticity using Blockchain",
+    "projectDomain": "Food Safety",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "217",
+    "projectName": "A Blockchain-Based System for Safe Food Supply & Supervision",
+    "projectDomain": "Food Safety",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "218",
+    "projectName": "E-Voting System Using Ethereum Blockchain",
+    "projectDomain": "E-Voting",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "219",
+    "projectName": "Securing Data with Blockchain and AI",
+    "projectDomain": "Cybersecurity",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "220",
+    "projectName": "Secure E-Health Records on Cloud using Cryptography and Blockchain",
+    "projectDomain": "Healthcare",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "221",
+    "projectName": "Smart Contracts",
+    "projectDomain": "Blockchain",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "222",
+    "projectName": "PETCHAIN: A Blockchain-Based Privacy-Enhanced Technology",
+    "projectDomain": "Blockchain",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "223",
+    "projectName": "Fake Media Detection Based on Natural Language Processing and Blockchain Approaches",
+    "projectDomain": "Media Analysis",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "224",
+    "projectName": "Fake Product Identification using Blockchain",
+    "projectDomain": "E-Commerce",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "225",
+    "projectName": "NLP-Based Content Search using DISTILL BERT API",
+    "projectDomain": "NLP",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "226",
+    "projectName": "Crop Prediction/Recommendation using Machine Learning",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "227",
+    "projectName": "Driver Drowsiness Monitoring System using Visual Behavior and Machine Learning",
+    "projectDomain": "Transportation",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "228",
+    "projectName": "Malicious URL Detection using ML",
+    "projectDomain": "Cybersecurity",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "229",
+    "projectName": "Prediction of Fake Job Ad using Machine Learning",
+    "projectDomain": "Job Portal",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "230",
+    "projectName": "Identifying Fake Profiles Across Online Social Networks using Neural Network",
+    "projectDomain": "Social Media Analysis",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "231",
+    "projectName": "Plant Leaf Disease Detection & Classification using Machine Learning Technique",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "232",
+    "projectName": "Predictive Maintenance for Factory",
+    "projectDomain": "Agriculture",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    
+    {
+    "projectId": "233",
+    "projectName": "Predictive Maintenance for Factory Equipment using Machine Learning",
+    "projectDomain": "Industrial Automation",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "234",
+    "projectName": "Predicting Bank Loan Defaults Using Machine Learning Techniques",
+    "projectDomain": "Finance",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "235",
+    "projectName": "Neural Abstractive Text Summarizer for Telugu Language",
+    "projectDomain": "NLP",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "236",
+    "projectName": "Machine Learning Framework for Prediction of Admission in Engineering College",
+    "projectDomain": "Education",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "237",
+    "projectName": "Opinion Mining for Social Networking Sites",
+    "projectDomain": "Social Media Analysis",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "238",
+    "projectName": "Emotion Recognition from Text using Deep Learning",
+    "projectDomain": "NLP",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "239",
+    "projectName": "Image Segmentation using Deep Learning Techniques",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "240",
+    "projectName": "Speech Recognition using Deep Learning",
+    "projectDomain": "Speech Processing",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "241",
+    "projectName": "Natural Language Processing for Sentiment Analysis",
+    "projectDomain": "NLP",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "242",
+    "projectName": "Recommendation System using Collaborative Filtering",
+    "projectDomain": "Recommendation System",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "243",
+    "projectName": "Image Classification using Transfer Learning",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "244",
+    "projectName": "Object Detection using YOLO",
+    "projectDomain": "Computer Vision",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "245",
+    "projectName": "Time Series Forecasting using LSTM",
+    "projectDomain": "Time Series Analysis",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "246",
+    "projectName": "Anomaly Detection using Autoencoders",
+    "projectDomain": "Anomaly Detection",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "247",
+    "projectName": "Clustering Analysis using K-Means",
+    "projectDomain": "Data Mining",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "248",
+    "projectName": "Decision Trees for Classification",
+    "projectDomain": "Machine Learning",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "249",
+    "projectName": "Random Forest Classifier",
+    "projectDomain": "Machine Learning",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+    "projectId": "250",
+    "projectName": "Support Vector Machines for Classification",
+    "projectDomain": "Machine Learning",
+    "cost": 10000,
+    "branch": "CSE"
+    },
+    {
+      "projectId": "251",
+      "projectName": "Identify Skin Disorder using Dermoscopic Analysis through Federated Learning",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "252",
+      "projectName": "Drug Recommendation System based on Sentiment Analysis of Drug Reviews using Machine Learning",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "253",
+      "projectName": "Cervical Cancer Prediction using Deep Learning",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "254",
+      "projectName": "Deep Learning detection of Electricity Theft Cyber Attacks in renewable Distributed Generation",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "255",
+      "projectName": "CyberGuard: Advance ML Model for Anticipating and Preventing Cyber Hacking Breaches using RF and MLP",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "256",
+      "projectName": "Electricity Theft Detection in Power Grid with Deep Learning and Random Forest",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "257",
+      "projectName": "Res2U-net (R2U-net) Based Melanoma Segmentation: Towards Efficient & Accurate Skin Lesion Analysis",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "258",
+      "projectName": "Underwater Image Enhancement with Multi-Scale Residual Attention Network",
+      "projectDomain": "Computer Vision",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "259",
+      "projectName": "Evaluating the Performance of LSTM in Traffic Flow Prediction at Different Time Scales",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "260",
+      "projectName": "Prediction Of COVID-19 Severity by Applying Machine and Deep Learning Techniques",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "261",
+      "projectName": "Rainfall Prediction Using Machine Learning Techniques",
+      "projectDomain": "Meteorology",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "262",
+      "projectName": "Speech Emotion Recognition Using MFCC Features and CNN",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "263",
+      "projectName": "Resume Builder System with AES Encryption based Security",
+      "projectDomain": "Software Development",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "264",
+      "projectName": "Toward Detection and Attribution of Cyber-Attacks in IoT-enabled Cyber-physical Systems",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "265",
+      "projectName": "Network Intrusion Detection Using Deep Learning Technique",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "266",
+      "projectName": "Visual Question Answering",
+      "projectDomain": "Artificial Intelligence",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "267",
+      "projectName": "Generating Synthetic images from Text using CNN and RNN",
+      "projectDomain": "Computer Vision",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "268",
+      "projectName": "Multimodal Emotion Recognition Using Multiple AI Algorithms",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "269",
+      "projectName": "Language Detection and Translation (Hindi, Marathi, Tamil)",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "270",
+      "projectName": "Battery Management System to estimate Battery aging using ML and DL",
+      "projectDomain": "IoT",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "271",
+      "projectName": "Lung Cancer Detection using CNN",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "272",
+      "projectName": "Melanoma Detection using transfer Learning Algorithm",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "273",
+      "projectName": "Diabetic retinopathy detection using CNN",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "274",
+      "projectName": "Detection of Ransomware attacks using Processor and Disk Usage Data",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "275",
+      "projectName": "Violation of Triple Ride and Helmet Traffic Rule Detection",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "276",
+      "projectName": "Water Quality Prediction Using Machine learning",
+      "projectDomain": "Environmental Science",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "277",
+      "projectName": "IPL Score Prediction using Machine Learning",
+      "projectDomain": "Sports Analytics",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "278",
+      "projectName": "Predicting Customer Churn using Neural Networks",
+      "projectDomain": "Business Intelligence",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "279",
+      "projectName": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "280",
+      "projectName": "Language Identification for Multilingual Machine Translation",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "281",
+      "projectName": "Machine Learning and End-to-end Deep Learning for the Detection of Chronic Heart Failure from Heart Sounds",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "282",
+      "projectName": "Calorie Burnt Prediction using XGBoost & Exercise Duration",
+      "projectDomain": "Health and Fitness",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "283",
+      "projectName": "Cyberspace News Prediction of Text and Image with Report Generation",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "284",
+      "projectName": "An Online Learning Platform with Intelligent Tutoring using AI Components",
+      "projectDomain": "Education",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "285",
+      "projectName": "Bitcoin-Price-Prediction-Using-RNN-LSTM",
+      "projectDomain": "Finance",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "286",
+      "projectName": "DeepGrip: Cricket Bowling Delivery Detection with Superior CNN Architectures",
+      "projectDomain": "Sports Analytics",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "287",
+      "projectName": "Mitigating DDOS Attack in IOT Network Environment",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "288",
+      "projectName": "A Neural Network Based Smart Agriculture System",
+      "projectDomain": "Agriculture",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "289",
+      "projectName": "Covid 19 Detection from Chest X-ray Images using AI Techniques",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "290",
+      "projectName": "A Study on Fake News Detection Using Machine Learning",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "291",
+      "projectName": "Predicting Heart Disease Using Machine Learning",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "292",
+      "projectName": "Automated Essay Scoring System",
+      "projectDomain": "Education",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "293",
+      "projectName": "Enhancing Solar Energy Output Through AI-based Optimization Techniques",
+      "projectDomain": "Renewable Energy",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "294",
+      "projectName": "Gesture Recognition using Convolutional Neural Networks",
+      "projectDomain": "Computer Vision",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "295",
+      "projectName": "Crime Prediction Using Machine Learning Techniques",
+      "projectDomain": "Criminal Justice",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "296",
+      "projectName": "A Hybrid Approach for Predicting Stock Prices using Machine Learning and Deep Learning",
+      "projectDomain": "Finance",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "297",
+      "projectName": "IoT-based Smart Traffic Management System",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "298",
+      "projectName": "Smart Parking System Using IOT",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "299",
+      "projectName": "Predicting Heart Disease Using SVM Algorithm",
+      "projectDomain": "Healthcare",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "300",
+      "projectName": "Developing a Chatbot for Medical Diagnosis Using NLP Techniques",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "301",
+      "projectName": "Smart Control of Traffic Light Using Artificial Intelligence",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "302",
+      "projectName": "Automatic Text Summarization for Hindi using Real Coded Genetic Algorithm",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "303",
+      "projectName": "An Improved Energy Efficient Clustering Protocol to Prolong The Lifetime Of WSN Based IOT",
+      "projectDomain": "IoT",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "304",
+      "projectName": "Image Classification using Transfer Learning",
+      "projectDomain": "Computer Vision",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "305",
+      "projectName": "Smart Banking Chatbot using Machine Learning",
+      "projectDomain": "Finance",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "306",
+      "projectName": "Web Vulnerability using Machine Learning",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "307",
+      "projectName": "Skin Care Product Detection using Image Processing",
+      "projectDomain": "Image Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "308",
+      "projectName": "Student Performance: Navigating the Path to Academic Success using Machine Learning",
+      "projectDomain": "Education",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "309",
+      "projectName": "Software Defect Prediction using Ensemble Learning",
+      "projectDomain": "Software Engineering",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "310",
+      "projectName": "IT System Log Analyzer",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "311",
+      "projectName": "Campus Placement Prediction Analysis using Machine Learning",
+      "projectDomain": "Education",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "312",
+      "projectName": "Prediction of Used Car Prices using Machine Learning",
+      "projectDomain": "Finance",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "313",
+      "projectName": "Road Accident Prediction Model using Data Mining Techniques",
+      "projectDomain": "Transportation",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "314",
+      "projectName": "Attendance Application to Read Attendance from Image to XLSheet",
+      "projectDomain": "Education",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "315",
+      "projectName": "Improved File Security System using Multiple Image Steganography",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "316",
+      "projectName": "Vehicle Counting using OpenCV",
+      "projectDomain": "Computer Vision",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "317",
+      "projectName": "Prediction of Accuracy of Players in Cricket using ML",
+      "projectDomain": "Sports Analytics",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "318",
+      "projectName": "Cyber Security and AI for Cloud-based Internet of Transportation System",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "319",
+      "projectName": "Encrypted Network Traffic Classification using Deep and Parallel Network-in-Network Model",
+      "projectDomain": "Cybersecurity",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    {
+      "projectId": "320",
+      "projectName": "Zero Shot Text Classification Via Knowledge Graph Embedding for Social Media Data",
+      "projectDomain": "Natural Language Processing",
+      "cost": 10000,
+      "branch": "CSE"
+    },
+    
+      {
+        "projectId": "Tv001",
+        "projectName": "Voice Based Email for Visually Impaired People",
+        "projectDomain": "Web Application",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 1500,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv002",
+        "projectName": "Optimal Agriculture Using ML And DL",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1800,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv003",
+        "projectName": "Customer Churn Prediction Using ML",
+        "projectDomain": "Data Analysis",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2000,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv004",
+        "projectName": "Multimodal Emotion Recognition Using Transfer Learning",
+        "projectDomain": "NLP, Computer Vision",
+        "technologies": ["NLP", "OpenCV", "ML", "Python"],
+        "cost": 2500,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv005",
+        "projectName": "Online E Voting System using Face and Fingerprint",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML", "Python"],
+        "cost": 2200,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv006",
+        "projectName": "Resume Builder System Using Web",
+        "projectDomain": "Web Application",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1500,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv007",
+        "projectName": "Suspicious Activity Detection Using CNN",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2300,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv008",
+        "projectName": "AI Enabled Ground Water and Water Level Prediction",
+        "projectDomain": "Web Application",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2000,
+        "branch": "EEE"
+      },
+      {
+        "projectId": "Tv009",
+        "projectName": "Predictive Maintenance for Factory Equipment",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2700,
+        "branch": "ME"
+      },
+      {
+        "projectId": "Tv010",
+        "projectName": "Employee Face Recognition System with Check-in And Check-out Logging",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1800,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv011",
+        "projectName": "Crop Prediction/ Crop Recommendation Using Machine Learning Approaches",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1900,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv012",
+        "projectName": "Block Chain Quality Assurance and Food Authenticity Using Blockchain",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2400,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv013",
+        "projectName": "Identify Skin Disorder Using Dermoscopic Analysis Through Federated Learning",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2600,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv014",
+        "projectName": "Online Farming Route System Using DL",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2000,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv015",
+        "projectName": "Deepfake Video Detection Using CNN And LSTM",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2800,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv016",
+        "projectName": "Automatic Managing of Exam Invigilation Duty",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1600,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv017",
+        "projectName": "Suspicious Activity Detection from Videos using CNN",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2300,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv018",
+        "projectName": "Crop Prediction Or Crop Recommendation Using Machine Learning",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 1800,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv019",
+        "projectName": "Cervical Cancer Detection Using Deep Learning",
+        "projectDomain": "Healthcare",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2700,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv020",
+        "projectName": "Fake Currency Detection using Deep Learning",
+        "projectDomain": "Computer Vision",
+        "technologies": ["OpenCV", "ML/DL", "Python"],
+        "cost": 2100,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv021",
+        "projectName": "Object Detection, Classification And Tracking Using Python",
+        "projectDomain": "Computer Vision, NLP",
+        "technologies": ["NLP", "Python"],
+        "cost": 1900,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv022",
+        "projectName": "Eye Blink and Head Nod Detection Using Machine Learning",
+        "projectDomain": "Web Application",
+        "technologies": ["Python"],
+        "cost": 1500,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv023",
+        "projectName": "Prediction Of Covid-19 Severity by Applying Machine and Deep Learning Techniques",
+        "projectDomain": "Healthcare",
+        "technologies": ["Web Application", "Python"],
+        "cost": 2400,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv024",
+        "projectName": "Malicious URL Detection Using ML",
+        "projectDomain": "Cybersecurity",
+        "technologies": ["Web Application", "Python"],
+        "cost": 1800,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv025",
+        "projectName": "Hepatitis Prediction using Deep Learning",
+        "projectDomain": "Healthcare",
+        "technologies": ["GUI", "Python"],
+        "cost": 2600,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv026",
+        "projectName": "Brain Tumor Detection and Classification using Deep Learning",
+        "projectDomain": "Healthcare",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 3000,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv027",
+        "projectName": "Online Medical App using Machine Learning",
+        "projectDomain": "Healthcare",
+        "technologies": ["Web Application", "Python"],
+        "cost": 2300,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv028",
+        "projectName": "Hand Gesture Recognition using CNN and Python",
+        "projectDomain": "Computer Vision",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2200,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv029",
+        "projectName": "Classification of Pests using Computer Vision and CNN Algorithm",
+        "projectDomain": "Agriculture",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 1900,
+        "branch": "AGRI"
+      },
+      {
+        "projectId": "Tv030",
+        "projectName": "Minimizing Financial cost of DDoS Attacks in Cloud",
+        "projectDomain": "Cybersecurity",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2500,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv031",
+        "projectName": "Fog Removal from Image with an Efficient Algorithm",
+        "projectDomain": "Computer Vision",
+        "technologies": ["Image Processing", "Python"],
+        "cost": 1800,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv032",
+        "projectName": "Missing Child Identification System",
+        "projectDomain": "Computer Vision",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2700,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv033",
+        "projectName": "R2UNET based Melanoma Segmentation : Skin Lesion Segmentation",
+        "projectDomain": "Healthcare",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2900,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv034",
+        "projectName": "Image Captioning using CNN-LSTM",
+        "projectDomain": "Computer Vision, NLP",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2200,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv035",
+        "projectName": "Violation of Triple Ride and Helmet Detection",
+        "projectDomain": "Computer Vision",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2000,
+        "branch": "EEE"
+      },
+      {
+        "projectId": "Tv036",
+        "projectName": "Parkinson's Disease Prediction from Speech Data",
+        "projectDomain": "Healthcare",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2800,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv037",
+        "projectName": "Telugu Text Summarization",
+        "projectDomain": "NLP",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2000,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv038",
+        "projectName": "Skin Care Product Detection using Image Processing",
+        "projectDomain": "Healthcare",
+        "technologies": ["Image Processing", "Python"],
+        "cost": 1500,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv039",
+        "projectName": "Student Performance: Navigation to Success Path",
+        "projectDomain": "Education",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 1600,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv040",
+        "projectName": "Smart Control of Traffic Light using AI",
+        "projectDomain": "Traffic Management",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2100,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv041",
+        "projectName": "Voice Conversion using Deep Learning",
+        "projectDomain": "Audio Processing",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2500,
+        "branch": "ECE"
+      },
+      {
+        "projectId": "Tv042",
+        "projectName": "Healthcare Chatbot using English and Telugu",
+        "projectDomain": "Healthcare, NLP",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2800,
+        "branch": "BIO"
+      },
+      {
+        "projectId": "Tv043",
+        "projectName": "Generating Synthetic Images from Text using CNN and RNN",
+        "projectDomain": "Computer Vision, NLP",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2400,
+        "branch": "CSE"
+      },
+      {
+        "projectId": "Tv044",
+        "projectName": "Pre-Owned Merchandise using Web Application",
+        "projectDomain": "E-commerce",
+        "technologies": ["Web Application", "Python"],
+        "cost": 1700,
+        "branch": "IT"
+      },
+      {
+        "projectId": "Tv045",
+        "projectName": "Face Emoji Generation based on Facial Emotion",
+        "projectDomain": "Computer Vision",
+        "technologies": ["ML/DL", "Python"],
+        "cost": 2600,
+        "branch": "CSE"
+      }
+ 
+ 
+      
+  ]
+}

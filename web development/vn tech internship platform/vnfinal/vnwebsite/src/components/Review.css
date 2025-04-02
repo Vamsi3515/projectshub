@@ -1,0 +1,53 @@
+/* Review.css */
+
+.reviews-container {
+  width: 100%;
+  overflow: hidden; /* Hide overflow to hide scrollbar */
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  animation: scroll 30s linear infinite; /* Define animation for continuous scrolling */
+  padding: 10px; /* Optional padding */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0); /* Start scrolling from the beginning */
+  }
+  100% {
+      transform: translateX(calc(-100% - 20px)); /* Scroll all items to the left (adjust for margins) */
+  }
+}
+
+.review-card {
+  flex: 0 0 auto; /* Let the width grow as per content */
+  width: 300px; /* Adjust width as needed */
+  margin-right: 10px; /* Space between cards */
+  border: 1px solid #8b81e2;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth transform transition */
+}
+.review-image{
+  margin:0px;
+  width:50px;
+  border-radius: 50px;
+}
+
+.review-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.review-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.review-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}

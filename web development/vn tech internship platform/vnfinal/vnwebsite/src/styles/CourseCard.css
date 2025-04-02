@@ -1,0 +1,19 @@
+.course-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px; /* Adjust the card width */
+    transition: transform 0.2s;
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px; /* Adjust the image height */
+    border-radius: 8px;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,130 @@
+/* HomePage.css */
+
+/* General styling for the entire HomePage */
+.home-page {
+    width: 100%;
+    min-height: 100vh; /* Minimum height to cover the viewport */
+    padding: 0; /* Remove margin */
+    background-color: #f9f9f9; /* Light background color */
+    font-family: "Abril Fatface", serif; 
+    color: #333; 
+}
+
+/* Top courses section */
+.top-courses {
+    margin: 0 auto; /* Centering the section */
+    padding: 20px; /* Padding for spacing */
+    max-width: 1200px; /* Maximum width for large screens */
+    text-align: center; /* Center align text */
+}
+
+.top-courses h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004080; /* Change as needed */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Course cards styling */
+.course-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between course cards */
+}
+
+/* Card styling */
+.course-card {
+    background-color: #fff; /* Card background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 15px; /* Inner padding */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit max width */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Employee details section */
+.employee-details {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the section */
+    max-width: 1200px; /* Limit max width */
+    text-align: center; /* Center align text */
+}
+
+.employee-details h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Banner styling */
+.banner {
+    margin: 20px auto; /* Center the banner */
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 1200px; /* Limit max width */
+}
+
+/* Collaboration styling */
+.collaboration {
+    margin: 20px auto; /* Center collaboration section */
+    text-align: center; /* Center align text */
+    max-width: 1200px; /* Limit max width */
+}
+
+/* Review section */
+.review {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 20px auto; /* Center the section */
+    max-width: 1200px; /* Limit max width */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .top-courses h2,
+    .employee-details h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .course-card {
+        max-width: 90%; /* Make card wider on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-courses h2,
+    .employee-details h2 {
+        font-size: 22px; /* Further reduce font size for mobile */
+    }
+
+    .course-card {
+        max-width: 95%; /* Make card wider on medium screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .top-courses h2,
+    .employee-details h2 {
+        font-size: 20px; /* Adjust font size for very small screens */
+    }
+
+    .course-card {
+        max-width: 100%; /* Full width for mobile */
+    }
+}

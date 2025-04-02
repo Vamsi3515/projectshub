@@ -1,0 +1,975 @@
+[
+    {
+      "id": 1,
+      "name": "Computer Science",
+      "image": "/src/assets/images/1.jpg",
+      "description": "Learn about algorithms, programming, and software development.",
+      "courses": [
+        {
+          "id": 101,
+          "title": "Programming Basics",
+          "duration": "3 months",
+          "description": "An introduction to programming concepts and languages.",
+          "image": "/src/assets/images/101.png",
+          "content": [
+            "Variables and data types",
+            "Control structures",
+            "Functions and modules",
+            "Basic data structures",
+            "Project: Build a simple application"
+          ],
+          "whatWeLearn": [
+            "Foundational programming skills",
+            "Real-world programming challenges",
+            "Problem-solving skills",
+            "Project development experience"
+          ]
+        },
+        {
+          "id": 102,
+          "title": "Web Development",
+          "duration": "4 months",
+          "description": "Learn to create dynamic websites using HTML, CSS, and JavaScript.",
+          "image": "/src/assets/images/102.jpeg",
+          "content": [
+            "HTML and CSS fundamentals",
+            "JavaScript programming",
+            "Responsive design",
+            "Web frameworks",
+            "Project: Develop a personal website"
+          ],
+          "whatWeLearn": [
+            "Web development skills",
+            "User experience design",
+            "Framework usage",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 103,
+          "title": "Data Structures",
+          "duration": "4 months",
+          "description": "Study the organization and management of data.",
+          "image": "/src/assets/images/103.jpeg",
+          "content": [
+            "Arrays and linked lists",
+            "Stacks and queues",
+            "Trees and graphs",
+            "Searching and sorting algorithms",
+            "Project: Implement data structures"
+          ],
+          "whatWeLearn": [
+            "Understanding data management",
+            "Algorithm efficiency",
+            "Real-world application of data structures",
+            "Implementation experience"
+          ]
+        },
+        {
+          "id": 104,
+          "title": "Database Systems",
+          "duration": "4 months",
+          "description": "Learn about database design, querying, and management.",
+          "image":"/src/assets/images/104.jpeg",
+          "content":[
+            "Database concepts",
+            "SQL and NoSQL databases",
+            "Database design principles",
+            "Data modeling",
+            "Project: Create a database application"
+          ],
+          "whatWeLearn": [
+            "Database management skills",
+            "Real-world database challenges",
+            "Data modeling techniques",
+            "Project development experience"
+          ]
+        },
+        {
+          "id": 105,
+          "title": "Software Engineering",
+          "duration": "4 months",
+          "description": "Study software development methodologies and practices.",
+          "image": "/src/assets/images/105.jpeg",
+          "content": [
+            "Software development life cycle",
+            "Agile methodologies",
+            "Testing and quality assurance",
+            "Version control systems",
+            "Project: Develop a software project"
+          ],
+          "whatWeLearn": [
+            "Understanding software development processes",
+            "Real-world software challenges",
+            "Quality assurance techniques",
+            "Project management skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Electrical Engineering",
+      "image": "/src/assets/images/2.jpeg",
+      "description": "Explore the principles of electrical systems and electronics.",
+      "courses": [
+        {
+          "id": 201,
+          "title": "Circuit Analysis",
+          "duration": "4 months",
+          "description": "Study the fundamentals of electrical circuits.",
+          "image": "/src/assets/images/201.jpeg",
+          "content": [
+            "Ohm's law",
+            "Kirchhoff's laws",
+            "AC and DC circuits",
+            "Circuit theorems",
+            "Project: Analyze a circuit"
+          ],
+          "whatWeLearn": [
+            "Understanding electrical principles",
+            "Real-world circuit analysis techniques",
+            "Problem-solving skills",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 202,
+          "title": "Electronics",
+          "duration": "4 months",
+          "description": "Learn about electronic components and their applications.",
+          "image": "/src/assets/images/202.jpeg",
+          "content": [
+            "Semiconductors",
+            "Diodes and transistors",
+            "Amplifiers",
+            "Digital electronics",
+            "Project: Design an electronic circuit"
+          ],
+          "whatWeLearn": [
+            "Understanding electronic components",
+            "Real-world electronics applications",
+            "Circuit design skills",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 203,
+          "title": "Control Systems",
+          "duration": "5 months",
+          "description": "Study the principles of control systems and automation.",
+          "image": "/src/assets/images/203.jpeg",          
+          "content": [
+            "Feedback control systems",
+            "Stability analysis",
+            "PID controllers",
+            "Automation techniques",
+            "Project: Design a control system"
+          ],
+          "whatWeLearn": [
+            "Understanding control system principles",
+            "Real-world control challenges",
+            "Automation skills",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 204,
+          "title": "Signal Processing",
+          "duration": "4 months",
+          "description": "Learn about signal analysis and processing techniques.",
+          "image": "/src/assets/images/204.jpeg",
+          "content": [
+            "Signal representation",
+            "Fourier analysis",
+            "Digital signal processing",
+            "Applications of signal processing",
+            "Project: Analyze a signal"
+          ],
+          "whatWeLearn": [
+            "Understanding signal processing techniques",
+            "Real-world applications of signal analysis",
+            "Problem-solving skills",
+            "Project development experience"
+          ]
+        },
+        {
+          "id": 205,
+          "title": "Power Systems",
+          "duration": "5 months",
+          "description": "Study the principles of electrical power generation and distribution.",
+          "image": "/src/assets/images/205.jpeg",
+          "content": [
+            "Power generation methods",
+            "Transmission and distribution",
+            "Power system analysis",
+            "Renewable energy sources",
+            "Project: Design a power system"
+          ],
+          "whatWeLearn": [
+            "Understanding power system concepts",
+            "Real-world power generation challenges",
+            "Renewable energy applications",
+            "Project management skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mechanical Engineering",
+      "image": "/src/assets/images/3.jpeg",
+      "description": "Explore the principles of mechanics, thermodynamics, and material science.",
+      "courses": [
+        {
+          "id": 301,
+          "title": "Thermodynamics",
+          "duration": "4 months",
+          "description": "Study the principles of thermodynamics and energy transfer.",
+          "image": "/src/assets/images/301.jpeg",
+          "content": [
+            "Laws of thermodynamics",
+            "Heat engines",
+            "Refrigeration cycles",
+            "Thermodynamic processes",
+            "Project: Analyze a thermodynamic system"
+          ],
+          "whatWeLearn": [
+            "Understanding energy transfer processes",
+            "Real-world thermodynamic applications",
+            "Problem-solving in thermodynamics",
+            "System design skills"
+          ]
+        },
+        {
+          "id": 302,
+          "title": "Fluid Mechanics",
+          "duration": "4 months",
+          "description": "Learn about the behavior of fluids and their applications.",
+          "image": "/src/assets/images/302.jpeg",
+          "content": [
+            "Fluid properties and statics",
+            "Fluid dynamics",
+            "Bernoulli's principle",
+            "Viscous flow and turbulence",
+            "Project: Analyze a fluid system"
+          ],
+          "whatWeLearn": [
+            "Understanding fluid behavior",
+            "Real-world fluid dynamics applications",
+            "Problem-solving skills in fluid mechanics",
+            "System design capabilities"
+          ]
+        },
+        {
+          "id": 303,
+          "title": "Materials Science",
+          "duration": "5 months",
+          "description": "Study the properties and applications of materials in engineering.",
+          "image": "/src/assets/images/303.jpeg",
+          "content": [
+            "Material properties and selection",
+            "Material processing techniques",
+            "Failure analysis",
+            "Composite materials",
+            "Project: Design a material application"
+          ],
+          "whatWeLearn": [
+            "Understanding material properties",
+            "Real-world applications of materials science",
+            "Problem-solving in materials selection",
+            "Design skills for material applications"
+          ]
+        },
+        {
+          "id": 304,
+          "title": "Mechanical Design",
+          "duration": "4 months",
+          "description": "Learn about the principles of mechanical design and CAD.",
+          "image": "/src/assets/images/304.jpg",
+          "content": [
+            "Design principles",
+            "CAD software usage",
+            "Prototyping techniques",
+            "Design validation methods",
+            "Project: Design a mechanical component"
+          ],
+          "whatWeLearn": [
+            "Understanding mechanical design principles",
+            "Real-world CAD applications",
+            "Design validation techniques",
+            "Prototyping skills"
+          ]
+        },
+        {
+          "id": 305,
+          "title": "Manufacturing Processes",
+          "duration": "4 months",
+          "description": "Study the processes and technologies involved in manufacturing.",
+          "image": "/src/assets/images/305.jpeg",
+          "content": [
+            "Manufacturing methods",
+            "Machining and tooling",
+            "Additive manufacturing",
+            "Quality control techniques",
+            "Project: Develop a manufacturing plan"
+          ],
+          "whatWeLearn": [
+            "Understanding manufacturing processes",
+            "Real-world applications of manufacturing technologies",
+            "Quality control skills",
+            "Project management capabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Civil Engineering",
+      "image": "/src/assets/images/4.jpeg",
+      "description": "Explore the principles of construction, structural analysis, and project management.",
+      "courses": [
+        {
+          "id": 401,
+          "title": "Structural Analysis",
+          "duration": "4 months",
+          "description": "Study the behavior of structures and their components.",
+          "image": "/src/assets/images/401.jpeg",
+          "content": [
+            "Load and stress analysis",
+            "Structural design principles",
+            "Beam and frame analysis",
+            "Stability of structures",
+            "Project: Analyze a structure"
+          ],
+          "whatWeLearn": [
+            "Understanding structural behavior",
+            "Real-world structural design challenges",
+            "Problem-solving in structural analysis",
+            "Design skills for engineering applications"
+          ]
+        },
+        {
+          "id": 402,
+          "title": "Geotechnical Engineering",
+          "duration": "5 months",
+          "description": "Learn about soil mechanics and foundation design.",
+          "image": "/src/assets/images/402.jpeg",
+          "content": [
+            "Soil properties and classification",
+            "Foundation design principles",
+            "Slope stability analysis",
+            "Groundwater control",
+            "Project: Design a foundation"
+          ],
+          "whatWeLearn": [
+            "Understanding soil behavior",
+            "Real-world geotechnical applications",
+            "Problem-solving in foundation design",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 403,
+          "title": "Transportation Engineering",
+          "duration": "4 months",
+          "description": "Study the principles of transportation systems and design.",
+          "image": "/src/assets/images/403.jpeg",
+          "content": [
+            "Transportation system planning",
+            "Traffic engineering principles",
+            "Roadway design",
+            "Public transportation systems",
+            "Project: Analyze a transportation system"
+          ],
+          "whatWeLearn": [
+            "Understanding transportation systems",
+            "Real-world transportation challenges",
+            "Problem-solving in roadway design",
+            "System analysis skills"
+          ]
+        },
+        {
+          "id": 404,
+          "title": "Construction Management",
+          "duration": "4 months",
+          "description": "Learn about construction processes, project management, and safety.",
+          "image": "/src/assets/images/404.jpeg",
+          "content": [
+            "Project planning and scheduling",
+            "Construction materials and methods",
+            "Cost estimation and control",
+            "Safety management in construction",
+            "Project: Manage a construction project"
+          ],
+          "whatWeLearn": [
+            "Understanding construction management principles",
+            "Real-world project management skills",
+            "Safety management techniques",
+            "Leadership and collaboration skills"
+          ]
+        },
+        {
+          "id": 405,
+          "title": "Environmental Engineering",
+          "duration": "4 months",
+          "description": "Study the principles of environmental protection and sustainable design.",
+          "image": "/src/assets/images/405.jpeg",
+          "content": [
+            "Water and wastewater treatment",
+            "Air pollution control",
+            "Sustainable design principles",
+            "Environmental impact assessment",
+            "Project: Design an environmental solution"
+          ],
+          "whatWeLearn": [
+            "Understanding environmental engineering principles",
+            "Real-world environmental challenges",
+            "Sustainability practices",
+            "Problem-solving skills in environmental issues"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Chemical Engineering",
+      "image": "/src/assets/images/5.jpeg",
+      "description": "Explore the principles of chemical processes and materials.",
+      "courses": [
+        {
+          "id": 501,
+          "title": "Chemical Process Principles",
+          "duration": "4 months",
+          "description": "Study the fundamentals of chemical processes and reactions.",
+          "image": "/src/assets/images/501.jpeg",
+          "content": [
+            "Material balances",
+            "Energy balances",
+            "Chemical reaction engineering",
+            "Process design principles",
+            "Project: Analyze a chemical process"
+          ],
+          "whatWeLearn": [
+            "Understanding chemical engineering principles",
+            "Real-world chemical process challenges",
+            "Problem-solving in chemical reactions",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 502,
+          "title": "Thermodynamics for Chemists",
+          "duration": "4 months",
+          "description": "Learn about thermodynamics applied to chemical processes.",
+          "image": "/src/assets/images/502.jpeg",
+          "content": [
+            "Thermodynamic laws",
+            "Phase equilibria",
+            "Chemical equilibrium",
+            "Refrigeration and heat pump cycles",
+            "Project: Analyze a thermodynamic system"
+          ],
+          "whatWeLearn": [
+            "Understanding thermodynamics in chemistry",
+            "Real-world applications of thermodynamics",
+            "Problem-solving skills in chemical processes",
+            "System design capabilities"
+          ]
+        },
+        {
+          "id": 503,
+          "title": "Chemical Reaction Engineering",
+          "duration": "5 months",
+          "description": "Study the design and analysis of chemical reactors.",
+          "image": "/src/assets/images/503.jpeg",
+          "content": [
+            "Reactor design principles",
+            "Kinetics of chemical reactions",
+            "Catalysis",
+            "Reactor safety and optimization",
+            "Project: Design a chemical reactor"
+          ],
+          "whatWeLearn": [
+            "Understanding reactor design principles",
+            "Real-world reactor challenges",
+            "Problem-solving in chemical kinetics",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 504,
+          "title": "Separation Processes",
+          "duration": "4 months",
+          "description": "Learn about separation techniques in chemical engineering.",
+          "image": "/src/assets/images/504.jpeg",
+          "content": [
+            "Distillation",
+            "Filtration and absorption",
+            "Membrane processes",
+            "Extraction methods",
+            "Project: Analyze a separation process"
+          ],
+          "whatWeLearn": [
+            "Understanding separation techniques",
+            "Real-world applications of separation processes",
+            "Problem-solving skills in chemical engineering",
+            "Process design skills"
+          ]
+        },
+        {
+          "id": 505,
+          "title": "Process Control",
+          "duration": "4 months",
+          "description": "Study control systems in chemical processes.",
+          "image": "/src/assets/images/505.jpeg",
+          "content": [
+            "Control theory principles",
+            "Process dynamics",
+            "Feedback control systems",
+            "Control system design",
+            "Project: Design a process control system"
+          ],
+          "whatWeLearn": [
+            "Understanding process control principles",
+            "Real-world control challenges",
+            "Problem-solving skills in process dynamics",
+            "Project management skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Information Technology",
+      "image": "/src/assets/images/6.jpeg",
+      "description": "Learn about IT systems, networking, and cybersecurity.",
+      "courses": [
+        {
+          "id": 601,
+          "title": "Networking Fundamentals",
+          "duration": "4 months",
+          "description": "Study the basics of computer networks.",
+          "image": "/src/assets/images/601.jpeg",
+          "content": [
+            "Network types and topologies",
+            "IP addressing",
+            "Routing and switching",
+            "Network security basics",
+            "Project: Set up a small network"
+          ],
+          "whatWeLearn": [
+            "Understanding networking concepts",
+            "Real-world networking challenges",
+            "Problem-solving skills in network design",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 602,
+          "title": "Cybersecurity Essentials",
+          "duration": "4 months",
+          "description": "Learn about the fundamentals of cybersecurity.",
+          "image": "/src/assets/images/602.jpeg",
+          "content": [
+            "Cyber threats and vulnerabilities",
+            "Network security practices",
+            "Data protection techniques",
+            "Incident response planning",
+            "Project: Conduct a security assessment"
+          ],
+          "whatWeLearn": [
+            "Understanding cybersecurity principles",
+            "Real-world security challenges",
+            "Problem-solving in cybersecurity",
+            "Security assessment skills"
+          ]
+        },
+        {
+          "id": 603,
+          "title": "Cloud Computing",
+          "duration": "4 months",
+          "description": "Study the principles and applications of cloud computing.",
+          "image": "/src/assets/images/603.jpeg",
+          "content": [
+            "Cloud service models",
+            "Deployment strategies",
+            "Virtualization technologies",
+            "Cloud security considerations",
+            "Project: Deploy a cloud application"
+          ],
+          "whatWeLearn": [
+            "Understanding cloud computing concepts",
+            "Real-world cloud applications",
+            "Problem-solving in cloud deployment",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 604,
+          "title": "Database Management",
+          "duration": "4 months",
+          "description": "Learn about database design and management.",
+          "image": "/src/assets/images/604.jpeg",
+          "content": [
+            "Database models and design",
+            "SQL basics",
+            "Data normalization",
+            "Transaction management",
+            "Project: Design a database system"
+          ],
+          "whatWeLearn": [
+            "Understanding database principles",
+            "Real-world database challenges",
+            "Problem-solving skills in database management",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 605,
+          "title": "Web Development",
+          "duration": "5 months",
+          "description": "Learn about web technologies and application development.",
+          "image": "/src/assets/images/605.jpeg",
+          "content": [
+            "HTML, CSS, and JavaScript basics",
+            "Frontend frameworks",
+            "Backend development techniques",
+            "Web application security",
+            "Project: Build a web application"
+          ],
+          "whatWeLearn": [
+            "Understanding web development concepts",
+            "Real-world web development challenges",
+            "Problem-solving in application design",
+            "Project management skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Electrical Engineering",
+      "image": "/src/assets/images/7.jpeg",
+      "description": "Explore electrical systems, circuits, and power generation.",
+      "courses": [
+        {
+          "id": 701,
+          "title": "Circuit Analysis",
+          "duration": "4 months",
+          "description": "Study the fundamentals of electrical circuits.",
+          "image": "/src/assets/images/201.jpeg",
+          "content": [
+            "Ohm's Law",
+            "Kirchhoff's laws",
+            "AC and DC circuits",
+            "Circuit theorems",
+            "Project: Analyze an electrical circuit"
+          ],
+          "whatWeLearn": [
+            "Understanding circuit principles",
+            "Real-world circuit analysis skills",
+            "Problem-solving in electrical engineering",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 702,
+          "title": "Power Systems",
+          "duration": "5 months",
+          "description": "Learn about generation, transmission, and distribution of electrical power.",
+          "image": "/src/assets/images/202.jpeg",
+          "content": [
+            "Power generation methods",
+            "Transmission line parameters",
+            "Power distribution networks",
+            "Power system protection",
+            "Project: Design a power distribution system"
+          ],
+          "whatWeLearn": [
+            "Understanding power systems",
+            "Real-world power engineering challenges",
+            "Problem-solving in power distribution",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 703,
+          "title": "Control Systems",
+          "duration": "4 months",
+          "description": "Study control theory and its applications in engineering.",
+          "image": "/src/assets/images/203.jpeg",
+          "content": [
+            "Feedback control systems",
+            "Stability analysis",
+            "Control system design",
+            "Applications of control systems",
+            "Project: Design a control system"
+          ],
+          "whatWeLearn": [
+            "Understanding control theory",
+            "Real-world control engineering challenges",
+            "Problem-solving in control systems",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 704,
+          "title": "Electronics Engineering",
+          "duration": "5 months",
+          "description": "Learn about electronic devices and their applications.",
+          "image": "/src/assets/images/204.jpeg",
+          "content": [
+            "Diodes and transistors",
+            "Operational amplifiers",
+            "Digital electronics fundamentals",
+            "Electronic circuit design",
+            "Project: Design an electronic circuit"
+          ],
+          "whatWeLearn": [
+            "Understanding electronics principles",
+            "Real-world electronics design challenges",
+            "Problem-solving in electronics engineering",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 705,
+          "title": "Signal Processing",
+          "duration": "4 months",
+          "description": "Study the processing and analysis of signals.",
+          "image": "/src/assets/images/205.jpeg",
+          "content": [
+            "Signals and systems",
+            "Fourier analysis",
+            "Digital signal processing techniques",
+            "Applications of signal processing",
+            "Project: Analyze a signal"
+          ],
+          "whatWeLearn": [
+            "Understanding signal processing concepts",
+            "Real-world signal processing applications",
+            "Problem-solving skills in signal analysis",
+            "Project implementation experience"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mechanical Engineering",
+      "image": "/src/assets/images/8.jpeg",
+      "description": "Explore the principles of mechanics, thermodynamics, and materials science.",
+      "courses": [
+        {
+          "id": 801,
+          "title": "Thermodynamics",
+          "duration": "4 months",
+          "description": "Study the principles of thermodynamics and heat transfer.",
+          "image": "/src/assets/images/301.jpeg",
+          "content": [
+            "Laws of thermodynamics",
+            "Heat engines",
+            "Refrigeration cycles",
+            "Thermal properties of materials",
+            "Project: Analyze a thermodynamic system"
+          ],
+          "whatWeLearn": [
+            "Understanding thermodynamic principles",
+            "Real-world thermodynamic applications",
+            "Problem-solving in thermodynamics",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 802,
+          "title": "Fluid Mechanics",
+          "duration": "4 months",
+          "description": "Learn about the behavior of fluids in motion and at rest.",
+          "image": "/src/assets/images/302.jpeg",
+          "content": [
+            "Fluid properties and classification",
+            "Fluid statics and dynamics",
+            "Bernoulli's equation",
+            "Flow measurement techniques",
+            "Project: Analyze a fluid system"
+          ],
+          "whatWeLearn": [
+            "Understanding fluid behavior",
+            "Real-world fluid dynamics challenges",
+            "Problem-solving in fluid mechanics",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 803,
+          "title": "Materials Science",
+          "duration": "5 months",
+          "description": "Study the properties and applications of engineering materials.",
+          "image": "/src/assets/images/303.jpeg",
+          "content": [
+            "Material properties and selection",
+            "Metallurgy",
+            "Polymer science",
+            "Composite materials",
+            "Project: Analyze a material's properties"
+          ],
+          "whatWeLearn": [
+            "Understanding materials science principles",
+            "Real-world materials selection challenges",
+            "Problem-solving skills in materials engineering",
+            "Project implementation experience"
+          ]
+        },
+        {
+          "id": 804,
+          "title": "Machine Design",
+          "duration": "4 months",
+          "description": "Learn about the design and analysis of machine components.",
+          "image": "/src/assets/images/304.jpg",
+          "content": [
+            "Design principles of machines",
+            "Mechanisms and kinematics",
+            "Stress analysis of components",
+            "Material selection for machine parts",
+            "Project: Design a machine component"
+          ],
+          "whatWeLearn": [
+            "Understanding machine design principles",
+            "Real-world machine design challenges",
+            "Problem-solving in mechanical engineering",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 805,
+          "title": "Thermal Engineering",
+          "duration": "4 months",
+          "description": "Study heat transfer and thermal systems.",
+          "image": "/src/assets/images/305.jpeg",
+          "content": [
+            "Conduction, convection, and radiation",
+            "Heat exchangers",
+            "Thermal system design",
+            "Energy efficiency principles",
+            "Project: Analyze a thermal system"
+          ],
+          "whatWeLearn": [
+            "Understanding thermal engineering principles",
+            "Real-world thermal system challenges",
+            "Problem-solving skills in thermal analysis",
+            "Project implementation experience"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Aerospace Engineering",
+      "image": "/src/assets/images/9.jpeg",
+      "description": "Explore the design and development of aircraft and spacecraft.",
+      "courses": [
+        {
+          "id": 901,
+          "title": "Aerodynamics",
+          "duration": "4 months",
+          "description": "Study the principles of fluid flow around aircraft.",
+          "image": "/src/assets/images/901.jpeg",
+          "content": [
+            "Fluid dynamics and airflow",
+            "Lift and drag forces",
+            "Airfoil design",
+            "Wind tunnel testing",
+            "Project: Analyze an aerodynamic shape"
+          ],
+          "whatWeLearn": [
+            "Understanding aerodynamics principles",
+            "Real-world challenges in aerodynamics",
+            "Problem-solving skills in fluid dynamics",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 902,
+          "title": "Propulsion Systems",
+          "duration": "5 months",
+          "description": "Learn about the design and operation of propulsion systems.",
+          "image": "/src/assets/images/902.jpeg",
+          "content": [
+            "Jet propulsion principles",
+            "Rocket engine design",
+            "Propulsion system analysis",
+            "Thermodynamic cycles",
+            "Project: Design a propulsion system"
+          ],
+          "whatWeLearn": [
+            "Understanding propulsion systems",
+            "Real-world propulsion challenges",
+            "Problem-solving skills in propulsion design",
+            "Project management skills"
+          ]
+        },
+        {
+          "id": 903,
+          "title": "Structural Mechanics",
+          "duration": "4 months",
+          "description": "Study the mechanics of structures in aerospace applications.",
+          "image": "/src/assets/images/903.jpeg",
+          "content": [
+            "Material properties in aerospace",
+            "Stress and strain analysis",
+            "Aircraft structural design",
+            "Failure analysis",
+            "Project: Analyze an aerospace structure"
+          ],
+          "whatWeLearn": [
+            "Understanding structural mechanics principles",
+            "Real-world structural challenges in aerospace",
+            "Problem-solving skills in structural design",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 904,
+          "title": "Avionics Systems",
+          "duration": "5 months",
+          "description": "Learn about the electronic systems in aircraft.",
+          "image": "/src/assets/images/904.jpeg",
+          "content": [
+            "Navigation and control systems",
+            "Communication systems",
+            "Avionics design principles",
+            "Testing and certification",
+            "Project: Design an avionics system"
+          ],
+          "whatWeLearn": [
+            "Understanding avionics principles",
+            "Real-world avionics challenges",
+            "Problem-solving skills in avionics design",
+            "Project management experience"
+          ]
+        },
+        {
+          "id": 905,
+          "title": "Flight Mechanics",
+          "duration": "4 months",
+          "description": "Study the motion of aircraft and spacecraft.",
+          "image": "/src/assets/images/905.jpeg",
+          "content": [
+            "Aircraft motion equations",
+            "Stability and control",
+            "Flight performance analysis",
+            "Simulation techniques",
+            "Project: Analyze flight dynamics"
+          ],
+          "whatWeLearn": [
+            "Understanding flight mechanics principles",
+            "Real-world flight dynamics challenges",
+            "Problem-solving skills in flight analysis",
+            "Project management experience"
+          ]
+        }
+      ]
+    }
+  ]
+  

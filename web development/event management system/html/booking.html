@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <link rel="stylesheet" href="/css/booking.css">
+    <script src="/JS/script.js"></script>
+</head>
+<body>
+
+    <div class="background">
+        <div class="transparent-box">
+            <h1>Event Booking</h1>
+            <form action="process.php" method="post" onsubmit="submitForm(event)">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="eventType">Select Event Type:</label>
+                <select id="eventType" name="eventType" onchange="toggleCustomInput()" required>
+                    <option value="select" selected>select</option>
+                    <option value="conference">Conference</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="concert">Concert</option>
+                    <option value="festival">Festival</option>
+                    <option value="exhibition">Exhibition</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="cultural">Cultural Event</option>
+                    <option value="sports">Sports Event</option>
+                    <option value="religious">Religious Ceremony</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="custom">Custom (Enter Your Event Type)</option>
+                </select>
+
+                <input type="text" id="customEventType" name="customEventType" placeholder="Enter custom event type">
+
+                <label for="attendees">Number of Attendees:</label>
+                <input type="number" id="attendees" name="attendees" required>
+
+                <label for="contactName">Your Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+
+                <label for="contactPhone">Your Phone Number:</label>
+                <input type="tel" id="contactPhone" name="contactPhone" required>
+
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+            <div class="submitted-message" id="submittedMessage">
+                Your booking has been submitted. We will reach you soon!. Please check your mail to know your booking confirmation and status......Thank you! <br><br>Your Booking Id: <span id="bookingId"></span> <span id="companyName">...HONEY EVENTS</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+.about-page {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f8ff;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.values, .goal, .journey, .executives {
+  padding: 50px;
+}
+
+.values .value-item {
+  margin-bottom: 20px;
+}
+
+.journey .timeline {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.executive {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.executive img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+/* Custom styles for AOS animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 10s;
+  transition-timing-function: ease;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(50px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-50px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(50px);
+}
+

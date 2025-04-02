@@ -1,0 +1,51 @@
+{% extends "recipeshare/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <section class="author-profile">
+        <div class="profile-info">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Author Avatar" class="profile-avatar">
+            <h2 class="profile-name">{{ author }}</h2>
+            <div class="author_status">
+                <h5 class="profile-followers"><span class="followers_count">{{ followers }}</span> Followers</h5>
+                <h5 class="profile-posts"><span class="posts_count">{{ posts_count }}</span> Posts</h5>
+            </div>
+            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+            {% if request.user.username != author %}
+                <button class="profile-follow" data-author="{{ author }}">
+                    {% if is_following %}
+                    Unfollow
+                    {% else %}
+                    Follow
+                    {% endif %}
+                </button>
+            {% endif %}
+        </div>
+    </section>
+    <div class="posts_container">
+        {% if posts %}
+            {% for post in posts %}
+                <a href="{% url 'viewPost' post.id %}" class="view_post">
+                    <div class="post_card">
+                        <div class="post_image">
+                            <img src="{{ post.image_url }}" alt="{{ post.recipe_name }}">
+                        </div>
+                        <div class="recipe_details_1">
+                            <div class="recipe_author">{{ post.author }}</div>
+                            <div class="recipe_date_created">{{ post.timestamp|date:"F j, Y" }}</div>
+                        </div>
+                        <div class="recipe_name">{{ post.recipe_name }}</div>
+                        <div class="recipe_details_2">
+                            <i class="fa fa-thumbs-up" aria-hidden="true">  {{ post.likes_count }}</i>
+                            <i class="fa fa-eye" aria-hidden="true">  {{ post.views_count }}</i>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        {% else %}
+            <div class="alert alert-secondary" role="alert">
+                No recipes available.
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

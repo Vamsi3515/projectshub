@@ -1,0 +1,7 @@
+db.sqlite3
+.dist
+dist/assets/*
+dist/node_modules
+requirements.in
+.venv
+env

@@ -1,0 +1,25 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Creat Page
+{% endblock %}
+
+{% block body %}
+    <h3>Create a Wiki Page</h3>
+    {% if error %}
+        <div class="alert alert-danger mt-3">
+            "{{ title }}".....{{ error }}
+        </div>
+    {% endif %}
+    {% if msg %}
+        <div class="alert alert-success">{{ msg }}</div>
+    {% endif %}
+    <br>
+    <form action="{% url 'newpage' %}" method="post">
+        {% csrf_token %}
+        <label for="title">Enter Title :</label>
+        <input type="text" name="title" id="title" required>
+        <textarea id="description" name="description" rows="8" cols="20" placeholder="enter description" required></textarea>
+        <input type="submit" name="submit_page" id="submit_page" class="btn btn-primary mt-3" value="Save entry">
+    </form>
+{% endblock %}

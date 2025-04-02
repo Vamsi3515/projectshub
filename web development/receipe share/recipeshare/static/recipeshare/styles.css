@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.posts_container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.view_post{
+    text-decoration: none;
+}
+
+.view_post:hover{
+    text-decoration: none;
+}
+
+.post_card {
+    border-radius: 5px;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.post_image {
+    width: 100%;
+    height: 200px;
+}
+
+.post_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe_details_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.recipe_name {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.recipe_details_2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa-edit{
+    font-size: 20px;
+    z-index: 10;
+}
+
+.fa-edit:hover{
+    color: yellow;
+}
+
+.recipe_details_2 i:first-child {
+    margin-right: auto;
+}
+
+.recipe_details_2 i:not(:first-child) {
+    margin: 0px 5px;
+}
+
+
+.post_container{
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#post_title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.author_info{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-user-circle-o{
+    margin-right: 10px;
+}
+
+#author{
+    margin-top: -3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#author_name{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.views{
+    margin: 4px 0px 0px 30px;
+    font-size: 18px;
+}
+
+#post_image {
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    #post_image {
+        height: auto;
+    }
+}
+
+.post_description{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.favorite, .like_post, .profile-follow{
+    margin: 10px 20px;
+    background-color: #D54215;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+
+.favorite:hover{
+    background-color: #9e2905;
+}
+
+.like_post, .profile-follow{
+    background-color: #0066F0;
+    margin: 0;
+    padding: 10px 25px;
+}
+
+.like_post:hover, .profile-follow:hover{
+    background-color: #064bad;
+}
+
+.comment-section {
+    max-width: 90%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2em;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+.comment-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.comment-list li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comment-list .rating {
+    color: gold;
+}
+
+.comment-list .comment-text {
+    margin-top: 5px;
+}
+
+.comment_submit, .edited_comment_submit{
+    background-color: #212529;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+
+.checked {
+    color: gold;
+}
+
+.comment_box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative; 
+}
+
+.comment_header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user_profile {
+    font-size: 24px;
+}
+
+.commenter_name {
+    font-weight: bold;
+}
+
+.comment_rating {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+}
+
+.comment_description {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+}
+
+.comment_time {
+    grid-column: 1 / -1;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.edit_comment {
+    grid-column: 2 / -1;
+    justify-self: end; 
+    color: #007bff; 
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+.edit_comment:hover {
+    text-decoration: underline;
+}
+
+.author-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.profile-bio {
+    margin-top: 10px;
+    color: #666;
+}
+
+.author_status{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.author_status h5{
+    font-size: 17px;
+    margin: 5px 15px;
+    margin-bottom: 10px;
+}
+
+.search-header {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#search_query_text {
+    font-size: 25px; 
+}

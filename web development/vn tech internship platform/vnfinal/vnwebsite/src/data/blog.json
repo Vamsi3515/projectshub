@@ -1,0 +1,84 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Exploring AI in Everyday Life",
+      "author": "John Doe",
+      "date": "2024-09-10",
+      "category": "Technology",
+      "purpose": "Understanding the impact of AI in daily tasks",
+      "description": "Artificial Intelligence is transforming industries and shaping the future. This blog dives into how AI is affecting our day-to-day lives, from voice assistants to autonomous vehicles.",
+      "image": {
+         "url":"https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-117808.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+        "alt": "AI in daily life",
+        "sizes": {
+          "small": "https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-117808.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "medium": "https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-117808.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "large": "https://img.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-117808.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid"
+        }
+      },
+      "events": [
+        {
+          "name": "AI Webinar",
+          "date": "2024-10-15",
+          "location": "Virtual",
+          "details": "An interactive webinar about AI trends."
+        }
+      ]
+    },
+    
+    {
+      "id": 2,
+      "title": "The Future of Remote Work",
+      "author": "Sam Johnson",
+      "date": "2024-07-22",
+      "category": "Workplace",
+      "purpose": "Discussing the evolution of remote work and its long-term effects.",
+      "description": "Remote work has revolutionized the workplace, increasing flexibility and productivity, with studies showing that remote employees are often 13% more productive than their in-office counterparts.",
+      "image": {
+        "url": "https://img.freepik.com/free-vector/flat-design-gamer-room_23-2148917502.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+        "alt": "Remote work future",
+        "sizes": {
+          "small": "https://img.freepik.com/free-vector/flat-design-gamer-room_23-2148917502.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "medium": "https://img.freepik.com/free-vector/flat-design-gamer-room_23-2148917502.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "large": "https://img.freepik.com/free-vector/flat-design-gamer-room_23-2148917502.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid"
+        }
+      },
+      "events": [
+        {
+          "name": "Remote Work Expo",
+          "date": "2024-09-30",
+          "location": "New York, NY",
+          "details": "An exhibition featuring the latest in remote work technology."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sustainability and Technology",
+      "author": "Jane Smith",
+      "date": "2024-08-05",
+      "category": "Environment",
+      "purpose": "Exploring the intersection of sustainability and technology.",
+      "description": "How technology is being used to create sustainable solutions for our environment. From renewable energy to reducing waste, tech innovations are shaping a greener future.",
+      "image": {
+        "url": " https://img.freepik.com/free-vector/technological-ecology-concept_23-2148437384.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+        "alt": "Sustainable technology",
+        "sizes": {
+          "small": "https://img.freepik.com/free-vector/technological-ecology-concept_23-2148437384.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "medium": "https://img.freepik.com/free-vector/technological-ecology-concept_23-2148437384.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid",
+          "large": "https://img.freepik.com/free-vector/technological-ecology-concept_23-2148437384.jpg?uid=R168272675&ga=GA1.1.1347609200.1728884525&semt=ais_hybrid"
+        }
+      },
+      "events": [
+        {
+          "name": "Green Tech Conference",
+          "date": "2024-11-20",
+          "location": "San Francisco, CA",
+          "details": "A conference discussing innovations in green technology."
+        }
+      ]
+    }
+   
+  ]
+}

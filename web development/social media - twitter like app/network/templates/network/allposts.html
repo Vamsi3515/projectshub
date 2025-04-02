@@ -1,0 +1,13 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <body onload="getPost()">
+        <h2>All Posts</h2>
+        <div class="post_container"></div>
+        <div class="pagination_container"></div>
+        {% block static %}
+            <script src="{% static 'network/index.js' %}" type="text/javascript"></script>
+        {% endblock %}
+    </body>
+{% endblock %}

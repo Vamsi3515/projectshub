@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/html/assets/event1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo{
+    position: absolute;
+    top: 5%;
+}
+
+.logo h2 {
+    font-family: 'McLaren', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.logo h2 span {
+    color: rgb(246, 57, 0);
+    font-size: 4rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.box {
+    background : linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    height: 70vh;
+    width: 60vh;
+    border: 1px solid rgb(88, 88, 88);
+    margin: 100px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 1);
+}
+
+.box:hover h2{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: black;
+    transition: text-decoration-color 0.3s ease-in-out;
+}
+
+.form {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: yellow;
+    font-size: 20px;
+}
+
+.form h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: white;
+    transition: text-decoration-color 0.3s ease-in-out;
+}
+
+
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+}
+
+.box:hover .form label{
+    color: black;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.horizontal{
+    display: flex;
+}
+
+.name{
+    margin: 10px;
+}
+
+label .horizontal{
+    display: flex;
+    margin: 10px;
+}
+
+label .horizontal input{
+    width: 15px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4caf50, #45a049);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.form button:hover {
+    background: linear-gradient(to right, #45a049, #4caf50);
+}
